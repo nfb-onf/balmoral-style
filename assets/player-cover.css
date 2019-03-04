@@ -1,0 +1,62 @@
+/* ( o ) ---------- */
+/*  | |  CSS Styles */
+/*----------------- */
+
+.player-cover{display: table;position: absolute;top:0;left: 0;width:100%;height : 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0.65+0,0+100;Neutral+Density */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 75%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 75%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    color:#fff; pointer-events:none;
+}
+.player-cover a,
+.player-cover .btn {pointer-events:auto;}
+.cover-image{width:100%;height:auto; position: absolute; z-index: 0;}
+.cover-panel{padding:0 10px; position: absolute; z-index: 1; bottom: 0; }
+.cover-panel p{font-size: 12px;line-height: 1.2; margin: 0px; margin-top: 0.75em;}
+.player-cover a{color:#fff;}
+.cover-panel{padding: 10px 10px; }
+.campus-cover{ background-color: #225566; background-color: rgba(20, 56, 95, .65)}
+.campus-brand{font-weight:normal; color:#00ccff;text-transform: uppercase}
+.ttl{font-size: 1.2rem;font-weight: 400;line-height: 1.2;margin: 0.2em 0}
+.ttl a{color: #fff}
+.ttl a:hover{text-decoration:none;color: #fff}
+.lk a{text-decoration: underline}
+.player-cover .btn{font-family: Ciutadella-Bold,"Helvetica Neue",Helvetica,Arial,sans-serif,sans-serif;}
+.player-cover .btn{text-decoration: none;}
+.lk-buttons{overflow: hidden;}
+.lk-buttons .btn{float:left; margin-right: 3px;}
+.btn .icon{font-size: 0.8em;}
+.btn{  font-size: 0.6rem;}
+.logo-onf{font-size: 20px; position: absolute; right: 0px; top:10px; width: 50px; height: 30px; line-height: 1em; padding: 5px;}
+.btn-transparent.hoverImage{color: #000;background-color: #fff;border-color: #e0e0e0;}
+.cover-panel > div > p:last-child{margin-bottom: 0px;}
+
+@media (min-width: 350px){
+    .logo-onf{top:initial; bottom:10px;}
+}
+
+@media (min-width: 500px){
+    .cover-panel{padding:20px 20px}
+    .cover-panel p{margin-right: 61px;}
+    .cover-panel .lk-buttons {margin:8px 0 16px}
+    .lk-buttons .btn{margin-right: 10px;}
+    .btn{  font-size: 1rem;}
+    .ttl{font-size: 1.6rem;font-weight: 400;line-height: 1.2;margin: 0.5em 0}
+    .cap-ttl{width: auto}
+    .logo-onf{bottom: 20px;}
+}
+
+@media (min-width: 758px){
+    .ttl{font-size: 2rem;}
+    .lk-lst{margin-bottom:36px;}
+    .btn{ font-size: 1.1667rem;}
+    .cover-panel p{font-size: 16px;}
+    .logo-onf{width: 63px; font-size: 26px; height: 35px;}
+}
+
+@media (min-width: 953px){
+    .btn{ font-size: 22px; }
+    .lk-buttons .btn{margin-right: 15px;}
+}

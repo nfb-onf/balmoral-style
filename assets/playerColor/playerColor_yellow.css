@@ -1,0 +1,13 @@
+.mwPlayerContainer .watched{background:rgba(255,209,0,0.75);}
+.mwPlayerContainer .scrubber .playHead:hover{background:#ffffff !important;}
+.mwPlayerContainer .playPauseBtn, .mwPlayerContainer .largePlayBtn{background:#FFD100; border-color: #FFD100;}
+.mwPlayerContainer .playPauseBtn:hover, .mwPlayerContainer .largePlayBtn:hover,
+.mwPlayerContainer .playPauseBtn:focus, .mwPlayerContainer .largePlayBtn:focus{background:#ffffff; border-color: #E3A909;}
+.mwPlayerContainer .largePlayBtn:before,
+.mwPlayerContainer .playPauseBtn:before{color: #000;}
+.mwPlayerContainer .largePlayBtn:hover:before,
+.mwPlayerContainer .playPauseBtn:hover:before,
+.mwPlayerContainer .largePlayBtn:focus:before,
+.mwPlayerContainer .playPauseBtn:focus:before{color: #E3A909;}
+.mwPlayerContainer .watermark a{background:#FFD100; color: #000;}
+.icon-dv:after,.icon-cc:after {background:#FFD100;}

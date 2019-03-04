@@ -1,0 +1,72 @@
+
+.relatedContainer{width:100%;height:100%;margin-top:1.5em}
+.fullscreen .related-plugin .screen-content{width:960px;height:570px;margin:auto;position:absolute;top:0;bottom:0;left:0;right:0}
+.related-plugin .related-close{width:100%;text-align:right;cursor:pointer;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+.fullscreen .related-close{padding-top:3px}
+.screen.related-plugin{padding-top:0px}
+.hover .screen.related-plugin{padding-bottom:10px}
+.related-plugin .icon-close{padding-top:0 !important;right:0.5em !important}
+.mobileSkin .related-plugin .icon-close{margin-right:-0.3em}
+.mobileSkin.fullscreen .related-plugin .icon-close{margin-top:0.2em;position:fixed}
+.related-plugin .screen-content{padding:10px 5px;overflow:hidden;height:100%}
+.mobileSkin .related-plugin .screen-content{padding:0px 5px;padding-bottom:15px}
+.fullscreen.mobileSkin .related-plugin .screen-content{padding:10px 5px}
+.related-plugin .item{position:relative;float:left;width:25%;height:50%;box-sizing:border-box;cursor:pointer}
+.fullscreen .related-plugin .item{height:33.3%}
+.related-plugin .item:hover .title{display:block}
+.related-plugin .item-inner{position:absolute;left:5px;right:5px;top:5px;bottom:5px;overflow:hidden}
+.related-plugin .item img{position:absolute;top:0;left:0}
+.related-plugin .item img.wide{width:100%}
+.related-plugin .item img.square{height:100%}
+.related-plugin .item .title{display:none;position:absolute;top:0;left:0;z-index:1;font-family:helvetica;font-size:11px;word-break:break-all;background-color:rgba(0,0,0,0.4);width:100%;height:100%;color:#fff;padding:4px;box-sizing:border-box}
+.related-plugin .featured .time{display:none}
+.end-state .related-plugin .featured .time{display:inline-block}
+.related-plugin .item.featured{width:50%;height:65.9%}
+.related-plugin .item.featured .title{display:block;top:auto;bottom:0;height:40px;padding-top:9px}
+.fullscreen .related-plugin .wide{margin-top:0px !important;margin-left:0px !important;width:100% !important;height:100% !important}
+.fullscreen .related-plugin .square{margin-top:0px !important;margin-left:0px !important;width:100% !important;height:100% !important}
+@media only screen and (max-width:480px){
+    .related-plugin .item{width:25% !important;height:33.1% !important}
+    .related-plugin .featured{width:50% !important;height:65.9% !important}
+}
+ @media only screen and (max-width:650px) and (min-width:481px){
+    .related-plugin .item{width:25%!important;height:33.1%!important}
+    .fullscreen .related-plugin .item{width:25% !important;height:33.1% !important}
+    .related-plugin .featured{width:50% !important;height:65.9% !important}
+}
+ @media screen and (max-device-width :321px) and (orientation:portrait){
+    .fullscreen .related-plugin .item{width:50% !important;height:25% !important}
+    .fullscreen .related-plugin .featured{width:100% !important;height:50% !important}
+}
+@media screen and (max-device-width:480px) and (orientation:landscape){
+    .related-plugin .item{width:25% !important;height:33.1% !important}
+    .related-plugin .featured{width:50% !important;height:65.9% !important}
+}
+ @media screen and (max-device-width:480px) and (orientation:portrait){
+    .fullscreen .related-plugin .item{width:50% !important;height:25% !important}
+    .fullscreen .related-plugin .featured{width:100% !important;height:50% !important}
+}
+ @media only screen and (max-device-width :321px){
+    .fullscreen .related-plugin .item{width:25% !important;height:33.1% !important}
+    .fullscreen .related-plugin .featured{width:50% !important;height:65.9% !important}
+}
+ @media only screen and (max-device-width:640px) and (orientation:landscape){
+    .fullscreen .related-plugin .item{width:25% !important;height:33.1% !important}
+    .fullscreen .related-plugin .featured{width:50% !important;height:65.9% !important}
+}
+@media only screen and (max-width:1050px) and (min-width:651px){
+    .related-plugin .item{width:25%;height:33.1%}
+    .fullscreen .related-plugin .item{width:25%;height:33.1%}
+    .fullscreen .related-plugin .featured{width:50%;height:65.9%}
+    .related-plugin .screen-content{width:100% !important}
+}
+@media only screen and (max-width:1050px) and (min-width:651px) and (orientation:portrait){
+    .related-plugin .screen-content{height:50% !important}
+}
+@media only screen and (max-width:1290px) and (min-width:1051px){
+    .related-plugin .item{width:25%;height:25%}
+    .related-plugin .featured{width:75%;height:74.8% }
+}
+@media only screen and (max-width:1280px) and (-webkit-min-device-pixel-ratio:2){
+    .fullscreen .related-plugin .screen-content{width:100%;height:100%}
+}

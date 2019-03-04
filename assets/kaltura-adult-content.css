@@ -1,0 +1,8 @@
+.mwPlayerContainer .icon-warning:before { content: "\e61e"; font-family: 'icomoonNFB' !important; }
+.mwPlayerContainer .ratingMsg{ padding: 8px 70px 10px 35px; }
+.mwPlayerContainer .ratingMsg .icon-warning{ font-size: 18px; position: absolute; top: 5.4px; left:10px; }
+
+@media (min-width: 600px){
+    .mwPlayerContainer .ratingMsg{ padding: 10px 90px 10px 45px; }
+    .mwPlayerContainer .ratingMsg .icon-warning{ left:20px; top:7px; }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 886 297" enable-background="new 0 0 886 297" xml:space="preserve">
+<g>
+	<g id="bg">
+		<g>
+			<path d="M0,268c0,16,13,29,29,29h828.8c16,0,29-13,29-29V29c0-16-13-29-29-29H29C13,0,0,13,0,29V268z"/>
+		</g>
+	</g>
+	<g id="iPhone">
+		<g>
+			<g>
+				<path fill="#FFFFFF" d="M155.7,49.4H83.3c-9.9,0-18,8.1-18,18v162.3c0,9.9,8.1,18,18,18h72.3c9.9,0,18-8.1,18-18V67.4
+					C173.7,57.5,165.6,49.4,155.7,49.4z M110.5,66.5h17.9c1,0,1.8,0.9,1.8,2s-0.8,2-1.8,2h-17.9c-1,0-1.8-0.9-1.8-2
+					S109.6,66.5,110.5,66.5z M119.5,240c-5.8,0-10.5-4.7-10.5-10.5c0-5.8,4.7-10.5,10.5-10.5s10.5,4.7,10.5,10.5
+					C130,235.3,125.3,240,119.5,240z M164.8,214.4H74.2V81.7h90.7L164.8,214.4L164.8,214.4z"/>
+			</g>
+		</g>
+	</g>
+	<g id="text">
+		<rect x="218" y="124.2" fill="none" width="722" height="188.5"/>
+
+			<text transform="matrix(1 0 0 1 218.042 235.0088)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="156" letter-spacing="-2">App</text>
+
+			<text transform="matrix(1 0 0 1 480.741 235.0088)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="156" letter-spacing="-9"> </text>
+
+			<text transform="matrix(1 0 0 1 503.203 235.0088)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="156" letter-spacing="-2">Store</text>
+		<rect x="219.5" y="49.8" fill="none" width="618" height="84"/>
+
+			<text transform="matrix(1 0 0 1 219.5 106.5493)" display="none" fill="#FFFFFF" enable-background="new    " font-family="'MyriadPro-Semibold'" font-size="80" letter-spacing="2">Available on the</text>
+		<rect x="219.8" y="49" fill="none" width="712.5" height="111"/>
+
+			<text transform="matrix(1 0 0 1 219.8501 105.8188)" fill="#FFFFFF" font-family="'MyriadPro-Regular'" font-size="80" letter-spacing="4">Available on the</text>
+	</g>
+</g>
+</svg>
