@@ -1,3 +1,4 @@
 # Balmoral Style Guide
-WIP
+(WIP)
+
 Style documentation for NFB Platforms
