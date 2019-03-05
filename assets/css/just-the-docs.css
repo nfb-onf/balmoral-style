@@ -19978,6 +19978,9 @@ html body .balmoral-demo .table {
   box-shadow: none; }
 html body .balmoral-demo a {
   background-image: none; }
+html body .balmoral-demo a:not([class]):hover {
+  background-image: none;
+  background-size: 0 0; }
 
 /* personalisation*/
 .site-title {
