@@ -20047,7 +20047,7 @@ code {
 /*Page Couleur*/
 .paint-chip {
   display: inline-block;
-  greenical-align: middle !important;
+  vertical-align: middle !important;
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 1em;
