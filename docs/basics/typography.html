@@ -10,6 +10,9 @@
   
   <script type="text/javascript" src="https://nfb-onf.github.io/balmoral-style/assets/js/vendor/lunr.min.js"></script>
   
+  <script type="text/javascript" src="https://nfb-onf.github.io/balmoral-style/assets/js/concat/standaloneAndFull.js"></script>
+  <script type="text/javascript" src="https://nfb-onf.github.io/balmoral-style/assets/js/concat/fullOnly.js"></script>
+  <script type="text/javascript" src="https://nfb-onf.github.io/balmoral-style/assets/js/concat/overlay.js"></script>
   <script type="text/javascript" src="https://nfb-onf.github.io/balmoral-style/assets/js/just-the-docs.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -289,73 +292,6 @@
         
           <li class="navigation-list-item">
             
-            <a href="https://nfb-onf.github.io/balmoral-style/docs/templates" class="navigation-list-link">Templates</a>
-            
-              
-              <ul class="navigation-list-child-list ">
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-                  
-                
-              </ul>
-            
-          </li>
-        
-      
-    
-      
-        
-      
-    
-      
-        
-      
-    
-      
-        
-          <li class="navigation-list-item">
-            
             <a href="https://nfb-onf.github.io/balmoral-style/docs/utilities" class="navigation-list-link">Utilities</a>
             
               
@@ -399,6 +335,73 @@
                       <a href="https://nfb-onf.github.io/balmoral-style/docs/utilities/colour-switcher.html" class="navigation-list-link">Colour Switcher</a>
                       
                     </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="https://nfb-onf.github.io/balmoral-style/docs/templates" class="navigation-list-link">Templates</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
                   
                 
                   
@@ -570,7 +573,7 @@ aàâbcdeéèêëfghiîïjklmnoôpqrstuûvwxyz<br />
 
 <p>The base font is 16px except for the x-wide screen size or it is 19px. The spacing and size of the elements is based on the traditional rule of typographic rhythm.</p>
 
-<p>Le base font est de 16px sauf pour la taille d’écran x-large ou il est à 19px. L’espacement et la taille des éléments est basé sur la règle traditionnelle du rythme typographique.</p>
+<p><em class="label label-lang">fr ::</em> Le base font est de 16px sauf pour la taille d’écran x-large ou il est à 19px. L’espacement et la taille des éléments est basé sur la règle traditionnelle du rythme typographique.</p>
 
 <h2 id="usage">Usage</h2>
 
@@ -586,7 +589,7 @@ aàâbcdeéèêëfghiîïjklmnoôpqrstuûvwxyz<br />
 
 <p>All styles related to text layout are protected by using the <code class="highlighter-rouge">.copy</code> class. Add the <code class="highlighter-rouge">.copy</code> class to a parent element to eliminate conflicts with styles that govern the look and feel of the interface.</p>
 
-<p>Tous les styles relatif a la mise en page de texte sont securises grace a l utilisation de la classe <code class="highlighter-rouge">.copy</code>.  Ajouter la classe <code class="highlighter-rouge">.copy</code> sur un élément parent afin d eliminer les conflicts avec les styles qui regisse le look and feel de l interface.</p>
+<p><em class="label label-lang">fr ::</em> Tous les styles relatif a la mise en page de texte sont securises grace a l utilisation de la classe <code class="highlighter-rouge">.copy</code>.  Ajouter la classe <code class="highlighter-rouge">.copy</code> sur un élément parent afin d eliminer les conflicts avec les styles qui regisse le look and feel de l interface.</p>
 
 <div class="balmoral-demo code-example">
 <div class="copy">
@@ -677,18 +680,18 @@ aàâbcdeéèêëfghiîïjklmnoôpqrstuûvwxyz<br />
   </tbody>
 </table>
 
-<p>Il est possible de garder la sémantique d’un élément de titre (ex: un h1) et de lui associer le style d’un autre élément (ex: un h4). Ceci peut être fait de 2 façons :</p>
-
-<ol>
-  <li>En appliquant la classe <code class="highlighter-rouge">.h4</code> au <code class="highlighter-rouge">&lt;h1&gt;</code> dans le code html <code class="highlighter-rouge">&lt;h1 class="h4"&gt;</code>. Cette façon serait préférable si le style que l’on veut donner au <code class="highlighter-rouge">&lt;h1&gt;</code> est exactement le style du<code class="highlighter-rouge">&lt;h4&gt;</code> (même espacement, font, couleur, taille…)</li>
-  <li>En ajoutant la classe <code class="highlighter-rouge">.h4</code> à notre élément dans le css. Cette façon est préférable si on veut partir du style du h4 et ensuite le personnaliser encore plus (changer la couleur, la font, etc.)</li>
-</ol>
-
 <p>It is possible to keep the semantics of heading element (like <code class="highlighter-rouge">&lt;h1&gt;</code>) and to associate the style of another heading type (like a <code class="highlighter-rouge">&lt;h4&gt;</code>). This can be done in 2 ways:</p>
 
 <ol>
   <li>By applying the <code class="highlighter-rouge">.h4</code> class to the &lt;h1&gt;  <code class="highlighter-rouge">&lt;h1 class="h4"&gt;</code>. This way would be preferable if the style that one wants to give to the <code class="highlighter-rouge">&lt;h1&gt;</code> is exactly the style of <code class="highlighter-rouge">&lt;h4&gt;</code> (same spacing, font, color, size …).</li>
   <li>By adding the class<code class="highlighter-rouge"> .h4</code> to our element in the css/less file. This way is better if you want to start from the style of h4 and then customize it even more (change the color, make it, etc.)</li>
+</ol>
+
+<p><em class="label label-lang">fr ::</em> Il est possible de garder la sémantique d’un élément de titre (ex: un h1) et de lui associer le style d’un autre élément (ex: un h4). Ceci peut être fait de 2 façons :</p>
+
+<ol>
+  <li>En appliquant la classe <code class="highlighter-rouge">.h4</code> au <code class="highlighter-rouge">&lt;h1&gt;</code> dans le code html <code class="highlighter-rouge">&lt;h1 class="h4"&gt;</code>. Cette façon serait préférable si le style que l’on veut donner au <code class="highlighter-rouge">&lt;h1&gt;</code> est exactement le style du<code class="highlighter-rouge">&lt;h4&gt;</code> (même espacement, font, couleur, taille…)</li>
+  <li>En ajoutant la classe <code class="highlighter-rouge">.h4</code> à notre élément dans le css. Cette façon est préférable si on veut partir du style du h4 et ensuite le personnaliser encore plus (changer la couleur, la font, etc.)</li>
 </ol>
 
 <h3 id="table">Table</h3>
@@ -738,7 +741,7 @@ aàâbcdeéèêëfghiîïjklmnoôpqrstuûvwxyz<br />
 
 <p>The following colors are based on official colors but have been adjusted to ensure optimal readability (WCAG 2.0 accessibility AAA).</p>
 
-<p>Utilisation de texte de couleur sur l’amorce d’un article. Couleur disponibles : <code class="highlighter-rouge">.rose</code>, <code class="highlighter-rouge">.bleu</code>, <code class="highlighter-rouge">.orange</code>, <code class="highlighter-rouge">.rouge</code>, <code class="highlighter-rouge">.violet</code>, <code class="highlighter-rouge">.vert</code> &amp; <code class="highlighter-rouge">.turquoise</code>.</p>
+<p><em class="label label-lang">fr ::</em> Utilisation de texte de couleur sur l’amorce d’un article. Couleur disponibles : <code class="highlighter-rouge">.rose</code>, <code class="highlighter-rouge">.bleu</code>, <code class="highlighter-rouge">.orange</code>, <code class="highlighter-rouge">.rouge</code>, <code class="highlighter-rouge">.violet</code>, <code class="highlighter-rouge">.vert</code> &amp; <code class="highlighter-rouge">.turquoise</code>.</p>
 
 <p>Les couleurs suivantes sont basees sur les couleurs officielles mais ont ete ajustees pour assurer une lisibilite optimal (WCAG 2.0 accessibility AAA).</p>
 
@@ -754,8 +757,8 @@ aàâbcdeéèêëfghiîïjklmnoôpqrstuûvwxyz<br />
 
 <p><strong>Note:</strong></p>
 <ol>
-  <li>Pour utiliser ces couleur sur du texte, la taille de charactere doit etre au minimum de 24px.</li>
-  <li>L utilisation du jaune est deconseille, La teinte de couleur necessaire pour est conforme au norme est trop eloigne du jaune original.</li>
+  <li>To use these colors on text, the character size <strong>must be at least 24px</strong>.
+ 2. The use of yellow is deprecated. The color tint required to conform to the standard is too far from the original yellow.</li>
   <li><a href="https://abc.useallfive.com/?colors[]=AC8D00,8B9700,F64166,00A197,DB3934,FF5430,0085CA,87319A,FFFFFF,000000" target="_blank">Accessibility of adjusted NFB pallette</a></li>
   <li><a href="https://abc.useallfive.com/?colors[]=0085CA,FFD100,00BFB3,C4D600,FFFFFF,000000,F64166,87319A,FF5C39,E03C31" target="_blank">Accessibility of real NFB pallette</a></li>
 </ol>
