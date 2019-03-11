@@ -51,7 +51,7 @@
   "7": {
     "id": "7",
     "title": "Components",
-    "content": "Components",
+    "content": "ComponentsStyles for most of the NFB Platforms components are build on top of Bootstrap 3.4",
     "url": "https://nfb-onf.github.io/balmoral-style/docs/components",
     "relUrl": "/docs/components"
   },
