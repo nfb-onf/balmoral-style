@@ -22232,7 +22232,7 @@ html body .balmoral-demo {
   src: url("../fonts/icomoon.eot?#iefix-qsgjbg") format("embedded-opentype"), url("../fonts/icomoon.svg?-qsgjbg#icomoon") format("svg"), url("../fonts/icomoon.woff?-qsgjbg") format("woff"), url("../fonts/icomoon.ttf?-qsgjbg") format("truetype");
   font-weight: normal;
   font-style: normal; }
-/* theme conflics*/
+/* balmoral vs just-the-doc theme conflics*/
 /* theme conflics*/
 /* theme conflics*/
 .balmoral-demo {
@@ -22308,7 +22308,7 @@ code {
   align-content: flex-start; }
 
 .ico-block {
-  margin: 10px;
+  flex-basis: 150px;
   padding: 10px;
   text-align: center;
   line-height: 2; }
@@ -22671,6 +22671,11 @@ code {
     background-size: 60%; }
   .hero.hero--eyecon-blue:before {
     background-image: url('data:image/svg+xml;utf8,<svg width="800" height="473" viewBox="0 0 800 473" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.40002 472.1C5.30005 472.1 5.19995 472.1 5.09998 472.1C5 472.1 5 472.1 4.90002 472.1C3.30005 472.1 1.59998 472 0 472V0H229.9C229.9 0.3 229.9 0.7 229.9 1C229.9 95.9 170.9 177 87.5 209.7C230.7 190.4 369.2 120.9 475.8 0.900002C475.5 0.600002 475.2 0.3 474.9 0H799.4C799.6 0.3 799.8 0.600002 800 0.900002C618.8 315.6 312.2 471.3 5.40002 472.1Z" opacity="0.8" fill="%230085CA" /></svg>'); }
+
+html body .balmoral-demo .watchLater, html body .balmoral-demo .deleteLink {
+  font-size: 1.75rem;
+  line-height: 1;
+  color: #63666A; }
 
 html body .balmoral-demo .btn-inactive.btn-jaune {
   background-color: #E6DAAA;
