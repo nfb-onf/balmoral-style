@@ -79,7 +79,7 @@
   "11": {
     "id": "11",
     "title": "Images",
-    "content": "Images FiguresFiguresNance Ackerman, Ariella Pahlke and Teresa McInnes (Photo: Kent Nason)&amp;lt;figure&amp;gt; &amp;lt;img src=&quot;img.jpg&quot;&amp;gt; &amp;lt;figcaption&amp;gt;Nance Ackerman, Ariella Pahlke and Teresa McInnes (Photo: Kent Nason)&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;",
+    "content": "Images Figures Image galleryFigureslive exampleNance Ackerman, Ariella Pahlke and Teresa McInnes (Photo: Kent Nason)&amp;lt;figure&amp;gt; &amp;lt;img src=&quot;img.jpg&quot;&amp;gt; &amp;lt;figcaption&amp;gt;Nance Ackerman, Ariella Pahlke and Teresa McInnes (Photo: Kent Nason)&amp;lt;/figcaption&amp;gt;&amp;lt;/figure&amp;gt;Image gallerycoming soonlive example",
     "url": "https://nfb-onf.github.io/balmoral-style/docs/components/images.html",
     "relUrl": "/docs/components/images.html"
   },
