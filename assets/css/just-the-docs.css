@@ -22677,6 +22677,17 @@ html body .balmoral-demo .watchLater, html body .balmoral-demo .deleteLink {
   line-height: 1;
   color: #63666A; }
 
+html body .balmoral-demo figure {
+  line-height: 27px;
+  margin: 32px 0; }
+  html body .balmoral-demo figure figcaption {
+    line-height: 18px;
+    font-family: "Ciutadella-Regular";
+    font-size: 14px;
+    color: #63666A;
+    border-bottom: 2px solid #d8d9db;
+    padding: 8px 0; }
+
 html body .balmoral-demo .btn-inactive.btn-jaune {
   background-color: #E6DAAA;
   color: #AFAA90;
