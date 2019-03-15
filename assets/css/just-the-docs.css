@@ -22688,6 +22688,17 @@ html body .balmoral-demo figure {
     border-bottom: 2px solid #d8d9db;
     padding: 8px 0; }
 
+html body .balmoral-demo .standalone .bodyEtape h2 {
+  font-size: 32px !important;
+  -webkit-font-smoothing: antialiased; }
+html body .balmoral-demo .standalone header h4 {
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  text-transform: none;
+  letter-spacing: normal;
+  font-family: Ciutadella-Regular,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  -webkit-font-smoothing: antialiased; }
+
 html body .balmoral-demo .btn-inactive.btn-jaune {
   background-color: #E6DAAA;
   color: #AFAA90;
