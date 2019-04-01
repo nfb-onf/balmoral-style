@@ -531,6 +531,7 @@
       <li><a href="#other-modifiers" id="markdown-toc-other-modifiers">Other modifiers</a></li>
     </ol>
   </li>
+  <li><a href="#usage" id="markdown-toc-usage">Usage</a></li>
   <li><a href="#brand-colours" id="markdown-toc-brand-colours">Brand colours</a>    <ol>
       <li><a href="#deactivated" id="markdown-toc-deactivated">Deactivated</a></li>
     </ol>
@@ -550,9 +551,6 @@
 
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
-
-<p>The default rendering is a white button with a solid 2 pixel wide border.
-The full colour version of the buttons are generally use as primary CTA. There should only be one CTA per page.</p>
 
 <h3 id="button-modifiers">Button modifiers</h3>
 
@@ -623,6 +621,33 @@ The full colour version of the buttons are generally use as primary CTA. There s
  <button type="button" class="btn btn-primary plein md-padding">md-padding</button>
   <button type="button" class="btn btn-primary plein lg-padding">lg-padding</button>
 </div>
+
+<h2 id="usage">Usage</h2>
+
+<p>Ground rules in choosing the type of button to use.</p>
+
+<p>The default style for buttons is outlined. It renders as a white button with a solid 2 pixel wide border.</p>
+
+<div class="balmoral-demo code-example">
+<a href="#" class="btn btn-default">Default</a>
+</div>
+
+<p>There should not be multiple buttons of different (brand) colours on a given screen (or at lease on a section of a page). One of the brand colour should be chosen as accent and used in combination with de default grey button.</p>
+
+<p>When a choice is presented to the user, a full-colour button can be used on the button that represent the action suggested by the system.</p>
+
+<div class="balmoral-demo code-example">
+<a href="#" class="btn btn-turquoise plein">Do this</a> <a href="#" class="btn btn-default">or not</a>
+</div>
+
+<p>In the same way, we can use a <link /> button to reduce the importance of one of the option.</p>
+<div class="balmoral-demo code-example">
+<a href="#" class="btn btn-vert">Do this</a> <a href="#" class="btn btn-link">or not</a>
+</div>
+
+<p>The colour of a button using the brand color does not carry any meaning.</p>
+
+<p>The full colour version of the buttons are generally use as primary CTA. Good practice dictates that there should only be one CTA per page.</p>
 
 <h2 id="brand-colours">Brand colours</h2>
 
