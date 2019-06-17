@@ -15,7 +15,6 @@ var public_layout = (function() {
         watchLater();
         rollOverJaquette();
         shareBar();
-        masonry();
         fitImageInContainer();
         openPopUp();
         initTabs();
@@ -51,8 +50,6 @@ var public_layout = (function() {
     function resizeWindow() {
         $(window).on("resize", function() {
             $("#l-generalContainer").removeClass("is-activated");
-            resizecarousel();
-            resizeThumbnails();
             resizeInfiniteCarousel();
             $('#l-mainPageContent').addClass('is-loaded');
 
@@ -63,53 +60,6 @@ var public_layout = (function() {
                 $(this).trigger('resizeEnd');
             }, 500);
         }).trigger('resize');
-    }
-
-
-
-    //fait en sorte que les vignettes sont des carrés
-    function resizecarousel() {
-        var $vignettes = $('.containercarousel .vignette, .containercarousel .vignetteIntro, .containercarousel .vignetteSeeAll');
-        var $vignetteSeeAll = $('.containercarousel .vignetteSeeAll, .containercarousel .vignetteIntro');
-        var imgVignette = imagesLoaded($vignetteSeeAll);
-        imgVignette.on('always', function() {
-            $vignettes.css('height', '');
-            $vignetteSeeAll.each(function() {
-                var vignettesHeight = $(this).closest('.containercarousel').find('.vignette:visible:last-child').outerHeight() + 'px';
-                $(this).css('height', vignettesHeight);
-            });
-        });
-    }
-
-    function resizeThumbnails() {
-        //largeur de la colonne de droite des vignettes payante
-        var $containerThumbnails = $('.thumbnailsList,.bookmarksList');
-        var $payantThumbailsList = $containerThumbnails.find('.payant');
-        var $imgpayantThumbailsList = $('.containerScreenshot img:first-child', $payantThumbailsList);
-        var imgPayantLoaded = imagesLoaded($imgpayantThumbailsList.eq(0));
-        imgPayantLoaded.on('always', function() {
-            var largeurVignette = $payantThumbailsList.eq(0).width();
-            var hauteurVignette = $payantThumbailsList.eq(0).height();
-            var hauteurVignetteAvecPadding = $payantThumbailsList.eq(0).outerHeight() - 22;
-            /*On ajoute la largeur pour firefox qui a un a trop large si on ne l'ajoute pas. Donc le play au hover se retrouve mal aligné*/
-            var largeurVignetteAvecPadding = hauteurVignetteAvecPadding * 800 / 1200;
-            $imgpayantThumbailsList.css({'height':hauteurVignetteAvecPadding + 'px','width':largeurVignetteAvecPadding + 'px'});
-            $('.containerScreenshot', $payantThumbailsList).css('visibility', 'visible');
-            var largeurImg = $imgpayantThumbailsList.eq(0).width();
-            var largeurInfosDroite = largeurVignette - largeurImg;
-            $containerThumbnails.find(' .payant .infosDroite').css({
-                'width': largeurInfosDroite + 'px'
-            });
-            $containerThumbnails.find('.thumbnailsList .payant .infosDroiteTop').css({
-                'height': hauteurVignette + 'px'
-            });
-
-            //pour les bookmarks
-            if ($('html').attr('first-load-done') !== "true") {
-                masonry();
-                $('html').attr('first-load-done', "true");
-            }
-        });
     }
 
     function resizeInfiniteCarousel(){
@@ -235,57 +185,17 @@ var public_layout = (function() {
                 $watchLaterTooltipContainer.removeClass('featured-tooltip');
             }
         });
-
-        //hover
-        $('html').on("mouseenter", ".watchLater", function() {
-            //ajoute un id pour firefox qui ne fonctionne pas avec une classe
-            $('.aiguille', $(this)).attr('id', 'aiguille1MouseEnter');
-            $('.aiguille2', $(this)).attr('id', 'aiguille2MouseEnter');
-
-            TweenMax.to("#aiguille1MouseEnter", 0.5, {
-                rotation: "360_cw",
-                transformOrigin: "50% 87.5%"
-            });
-            TweenMax.to("#aiguille2MouseEnter", 0.5, {
-                rotation: "30_cw",
-                transformOrigin: "13.5% 50%"
-            });
-        });
-
-        $('html').on("mouseleave", ".watchLater", function() {
-            var $aiguille1 = $('.aiguille', $(this));
-            var $aiguille2 = $('.aiguille2', $(this));
-            TweenMax.to("#aiguille1MouseEnter", 0.5, {
-                rotation: "0_ccw"
-            });
-            TweenMax.to("#aiguille2MouseEnter", 0.5, {
-                rotation: "0_ccw"
-            });
-            $aiguille1.attr('id', '');
-            $aiguille2.attr('id', '');
-        });
     }
 
     function rollOverJaquette() {
-        //roll-over sur les jaquettes
-
-        $('html').on("mouseover",'.containerPochette,.containerScreenshot,.titre,.priceTag', function(){
+        $('.containerPochette, .containerScreenshot, .titre, .priceTag').on('mouseenter', function() {
             var $container = $(this).closest('.vignette,article');
             $container.addClass('is-hoverPlay');
-            TweenLite.to($container.find('.containerScreenshot img'), 0.3, {
-                autoAlpha: 0.25
-            });
         });
-        $('html').on("mouseleave",'.containerPochette,.containerScreenshot,.titre,.priceTag', function(){
+
+        $('.containerPochette, .containerScreenshot, .titre, .priceTag').on('mouseleave', function() {
             var $container = $(this).closest('.vignette,article');
             $container.removeClass('is-hoverPlay');
-            setTimeout(function() {
-                if (!$container.hasClass('is-hoverPlay')) {
-                    TweenLite.to($container.find('.containerScreenshot img'), 0.3, {
-                        autoAlpha: 1
-                    });
-                }
-            }, 5);
         });
     }
 
@@ -307,18 +217,6 @@ var public_layout = (function() {
                 $(this).removeClass('is-active');
             });
         }
-    }
-
-    function masonry() {
-        $('.masonryContainer').each(function() {
-            var $containerMasonry = $(this);
-            $containerMasonry.masonry({
-                resize: true,
-                transitionDuration: 0,
-                itemSelector: '.masonry-block',
-                gutter: 0
-            });
-        });
     }
 
     function fitImageInContainer(){
@@ -494,7 +392,6 @@ var public_layout = (function() {
                 $('.titreDotDotDot').dotdotdot({
                     watch: 'window'
                 });
-                resizecarousel();
                 $lastGroup = $newGroup;
             }
         }

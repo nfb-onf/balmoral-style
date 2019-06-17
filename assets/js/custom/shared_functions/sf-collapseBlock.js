@@ -9,17 +9,13 @@ var sf_collapseBlock = (function () {
             if ($title.attr('data-block')){
                 $containerCollapse = $("#"+$title.attr('data-block'));
             }
-            var isMasonry = $containerCollapse.attr('data-isMasonry');
+            
             if (!$allTitleInBlock.hasClass('is-animated')) {
                 $allTitleInBlock.addClass('is-animated');
                 if (!$title.hasClass('is-collapseBlock-open')) {
                     $title.addClass('is-collapseBlock-open');
                     if ($title.closest('.collapseBlockContainer').length > 0){
                         $title.closest('.collapseBlockContainer').find('.collapseBlock').addClass('is-collapseBlock-open');
-                    }
-
-                    if (isMasonry) {
-                        $containerCollapse.removeClass('is-masonry').hide();
                     }
                     $containerCollapse.slideDown(function() {
                         $allTitleInBlock.removeClass('is-animated');
@@ -30,9 +26,6 @@ var sf_collapseBlock = (function () {
                         $title.closest('.collapseBlockContainer').find('.is-collapseBlock-open').removeClass('is-collapseBlock-open');
                     }
                     $containerCollapse.slideUp(function() {
-                        if (isMasonry) {
-                            $containerCollapse.addClass('is-masonry').show();
-                        }
                         $allTitleInBlock.removeClass('is-animated');
                     });
                 }

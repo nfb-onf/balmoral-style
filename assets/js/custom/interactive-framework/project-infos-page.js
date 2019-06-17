@@ -215,66 +215,6 @@ var project_infos_page = (function () {
         });
     }
 
-    function animateScroll(){
-        var $elements = $('.reveal-y, .reveal-x-left, .reveal-x-right, .reveal-opacity'),
-            lastScrollY     = 0,
-            ticking         = false;
-
-        var onScroll = function() {
-            lastScrollY = window.scrollY;
-            requestTick();
-        }
-
-        var requestTick = function() {
-            if(!ticking) {
-                requestAnimationFrame(update);
-                ticking = true;
-            }
-        }
-
-        var update = function() {
-            var newScroll = window.scrollY;
-            $elements.not('.loaded').each(function() {
-                var $object = $(this);
-                var $delay = 0;
-                var transformCommand;
-                var offsetHeight = 0;
-                var objectHeight = $object.height();
-                if ($object.hasClass('reveal-y')){
-                    transformCommand = 'translateY(0px)';
-                }
-                else if ($object.hasClass('reveal-x-left') || $object.hasClass('reveal-x-right')){
-                    transformCommand = 'translateX(0px)';
-                }
-
-                if ($object.attr('data-delay')){
-                    $delay = $object.attr('data-delay');
-                }
-
-                if ($object.attr('data-offset-height')){
-                    offsetHeight = objectHeight * $object.attr('data-offset-height');
-                }
-
-                //Detect if the element is inview
-                if(newScroll + $(window).height() > ($object.offset().top + offsetHeight)){
-                    if (transformCommand){
-                        TweenMax.to($object, .5, { css: { opacity: 1, transform: transformCommand }, ease: Power2.easeOut, delay: $delay });
-                    } else {
-                        TweenMax.to($object, .5, { css: { opacity: 1 }, ease: Power2.easeOut, delay: $delay });
-                    }
-                    $object.addClass('loaded');
-                }
-            });
-
-            // allow further rAFs to be called
-            ticking = false;
-        }
-
-        // only listen for scroll events
-        window.addEventListener('scroll', onScroll, false);
-    }
-
-
     return {
         init: init,
         activateScrollProgress: activateScrollProgress

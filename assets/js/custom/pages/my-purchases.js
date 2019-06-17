@@ -12,10 +12,10 @@ var my_purchases_page = (function () {
             var $overlay=$this.closest('.vignette').find('.overlayResolution');
             $this.toggleClass('active');
             if ($this.attr('overlay-open')==='true'){
-                TweenMax.to($overlay, 0.3, {autoAlpha:0});
+                $overlay.removeClass('show-force');
                 $this.attr('overlay-open','false');
             }else{
-                TweenMax.to($overlay, 0.3, {autoAlpha:1});
+                $overlay.addClass('show-force');
                 $this.attr('overlay-open','true');
             }
 
@@ -53,7 +53,7 @@ var my_purchases_page = (function () {
         //si on est sur mobile
         if ($('html').hasClass('touch')){
             $('.containerImg').click(function(){
-                TweenMax.to($(this).find('.overlayResolution'), 0.3, {autoAlpha:1});
+                $(this).find('.overlayResolution').addClass('show');
                 return false;
             });
 
@@ -63,17 +63,17 @@ var my_purchases_page = (function () {
 
             $('body').click(function(e){
                 if (e.target!==$('.containerImg')){
-                    TweenMax.to($('.overlayResolution:visible'), 0.3, {autoAlpha:0});
+                    $('.overlayResolution:visible').removeClass('show');
                 }
             });
         }
         //si on est sur desktop
         else{
             $('.containerImg').hover(function(){
-                TweenMax.to($(this).find('.overlayResolution'), 0.3, {autoAlpha:1});
+                $(this).find('.overlayResolution').addClass('show');
                 return false;
             },function(){
-                TweenMax.to($(this).find('.overlayResolution:visible'), 0.3, {autoAlpha:0});
+                $('.overlayResolution:visible').removeClass('show');
             });
         }
     }

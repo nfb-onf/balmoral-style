@@ -5918,6 +5918,7 @@ html body .balmoral-demo {
   /*BLOC DE COMMENTAIRE*/
   /*Film en feature*/
   /*@import "modules/m-filter-bar.less";*/
+  /* Menu push transitions */
   /*THE FILE*/
   /*Bande qui explique la location des films*/
   /*Ne pas remplacer cette partie*/
@@ -5934,6 +5935,12 @@ html body .balmoral-demo {
   /*Barre de partage*/
   /*Page sans menu*/
   /*Tabs exemple dans la page film*/
+  /**
+   * Standalone styles for vignette/card used in carousel.
+   * Does not assume any sizing, containers, DOM hierarchy, etc.
+   * Currently only being used in front page blog-carousel.
+   * TODO: make common carousel/vignette-card components to share between blog and film previews
+   */
   /*
    * CSS Styles that are needed by jScrollPane for it to operate correctly.
    *
@@ -6013,7 +6020,7 @@ html body .balmoral-demo {
   			.dash{color: @orange;}
   			.centerHeightInContainer{position: absolute;}
   			.watchLater{position: absolute; top:0px; right: 0px; float: none;}
-  			.creator{display: inline-block; 
+  			.creator{display: inline-block;
   				a{color: @grisPale;}
   			}
   			.tagType{ font-style: italic; color: @jaune; font-size: 16px; }
@@ -11876,7 +11883,29 @@ html body .balmoral-demo {
   html body .balmoral-demo .p {
     font-size: 1rem;
     margin-bottom: 0.75em;
-    margin-top: 0.75em; }
+    margin-top: 0.75em;
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-limit-before: 3;
+    -webkit-hyphenate-limit-after: 3;
+    -webkit-hyphenate-limit-chars: 6 3 3;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-last: always;
+    -webkit-hyphenate-limit-zone: 8%;
+    -moz-hyphens: auto;
+    -moz-hyphenate-limit-chars: 6 3 3;
+    -moz-hyphenate-limit-lines: 2;
+    -moz-hyphenate-limit-last: always;
+    -moz-hyphenate-limit-zone: 8%;
+    -ms-hyphens: auto;
+    -ms-hyphenate-limit-chars: 6 3 3;
+    -ms-hyphenate-limit-lines: 2;
+    -ms-hyphenate-limit-last: always;
+    -ms-hyphenate-limit-zone: 8%;
+    hyphens: auto;
+    hyphenate-limit-chars: 6 3 3;
+    hyphenate-limit-lines: 2;
+    hyphenate-limit-last: always;
+    hyphenate-limit-zone: 8%; }
   html body .balmoral-demo .uppercase {
     text-transform: uppercase; }
   html body .balmoral-demo .copy ol li:first-child,
@@ -15753,6 +15782,10 @@ html body .balmoral-demo {
       padding: 0px 10px;
       width: auto;
       height: 100%; } }
+  html body .balmoral-demo .m-carousel-blog .carousel-inner > .item.active,
+  html body .balmoral-demo .m-carousel-blog .carousel-inner > .item.next,
+  html body .balmoral-demo .m-carousel-blog .carousel-inner > .item.prev {
+    display: flex; }
   html body .balmoral-demo .m-explore-list {
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     /*Avec un contour et ke titre dans le bas*/ }
@@ -16272,8 +16305,10 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-featured.filmFeature .featureBottomContainer {
     z-index: 2; }
   html body .balmoral-demo .m-featured.filmFeature .featureBottomContainer .bottomContainer {
-    padding-bottom: 1.125em;
+    padding-bottom: 3em;
     position: relative; }
+  html body .balmoral-demo .m-featured.filmFeature .featureBottomContainer .bottomContainer .border-bottom {
+    bottom: 1.5em; }
   html body .balmoral-demo .m-featured.filmFeature .featureBottomContainer h1 {
     font-size: 1.75rem;
     margin-bottom: 0.5em;
@@ -16692,6 +16727,66 @@ html body .balmoral-demo {
     color: #32b17c; }
   html body .balmoral-demo .m-form-line .form-group.has-error .control-label {
     color: #E03C31; }
+  html body .balmoral-demo #hero {
+    position: relative;
+    height: 34vw;
+    max-height: 800px; }
+  html body .balmoral-demo #hero #hero-content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%; }
+  html body .balmoral-demo #hero #hero-content {
+    position: absolute;
+    width: 50%;
+    max-width: 772px; }
+  html body .balmoral-demo #hero h1 {
+    position: relative;
+    margin-top: 0.8em;
+    padding: 0 11.5%;
+    z-index: 2;
+    color: #fff;
+    font-family: Ciutadella-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+    text-transform: uppercase;
+    line-height: 1em;
+    font-size: 4.5vw; }
+  @media (min-width: 990px) {
+    html body .balmoral-demo #hero h1 {
+      padding: 0 5% 0 11.5%; } }
+  @media (min-width: 1800px) {
+    html body .balmoral-demo #hero h1 {
+      font-size: 74px; } }
+  html body .balmoral-demo #hero .brand-dash:after {
+    content: "_";
+    display: block;
+    margin-top: -0.55em;
+    margin-left: -3px;
+    font-size: 1.4em; }
+  html body .balmoral-demo #hero .eyecon-corner {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  html body .balmoral-demo #hero #img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-position: center;
+    background-size: cover; }
+  html body .balmoral-demo #hero #hero-content-container,
+  html body .balmoral-demo #hero #img-container {
+    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+  @media (min-width: 768px) {
+    html body .balmoral-demo .is-nav-open #hero #hero-content-container {
+      transform: translateX(236px);
+      transition-delay: 0.2s; } }
+  @media (min-width: 1440px) {
+    html body .balmoral-demo .is-nav-open #hero #hero-content-container {
+      transform: translateX(16.38888889%); } }
+  html body .balmoral-demo .is-nav-open #hero #img-container {
+    transform: translateX(11%);
+    transition-delay: 0.2s; }
   html body .balmoral-demo .m-horizontal-thumbnails {
     padding-top: 2.75rem;
     padding-bottom: 1.375rem; }
@@ -16838,6 +16933,28 @@ html body .balmoral-demo {
     font-size: 1rem;
     margin-bottom: 0.75em;
     margin-top: 0.75em;
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-limit-before: 3;
+    -webkit-hyphenate-limit-after: 3;
+    -webkit-hyphenate-limit-chars: 6 3 3;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-last: always;
+    -webkit-hyphenate-limit-zone: 8%;
+    -moz-hyphens: auto;
+    -moz-hyphenate-limit-chars: 6 3 3;
+    -moz-hyphenate-limit-lines: 2;
+    -moz-hyphenate-limit-last: always;
+    -moz-hyphenate-limit-zone: 8%;
+    -ms-hyphens: auto;
+    -ms-hyphenate-limit-chars: 6 3 3;
+    -ms-hyphenate-limit-lines: 2;
+    -ms-hyphenate-limit-last: always;
+    -ms-hyphenate-limit-zone: 8%;
+    hyphens: auto;
+    hyphenate-limit-chars: 6 3 3;
+    hyphenate-limit-lines: 2;
+    hyphenate-limit-last: always;
+    hyphenate-limit-zone: 8%;
     line-height: 1.5em;
     color: #4b4a4a;
     padding: 0 0.6em 0 0; }
@@ -17163,12 +17280,6 @@ html body .balmoral-demo {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; }
-  html body .balmoral-demo .icon-cc-amex:before {
-    content: "\e962"; }
-  html body .balmoral-demo .icon-cc-mastercard:before {
-    content: "\e960"; }
-  html body .balmoral-demo .icon-cc-visa:before {
-    content: "\e961"; }
   html body .balmoral-demo .icon-48h-rental:before {
     content: "\e60b"; }
   html body .balmoral-demo .icon-add-circle:before {
@@ -17226,8 +17337,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .icon-circle-fat:before {
     content: "\e923"; }
   html body .balmoral-demo .icon-ciseaux:before {
-    content: "\e620";
-    color: #000; }
+    content: "\e620"; }
   html body .balmoral-demo .icon-clock:before {
     content: "\e60d"; }
   html body .balmoral-demo .icon-closeNav:before {
@@ -17314,12 +17424,16 @@ html body .balmoral-demo {
     content: "\e917"; }
   html body .balmoral-demo .icon-instagram:before {
     content: "\ea92"; }
+  html body .balmoral-demo .icon-interactif-hand-o:before {
+    content: "\e963"; }
   html body .balmoral-demo .icon-interactif:before {
     content: "\e618"; }
   html body .balmoral-demo .icon-interactif-hand:before {
     content: "\e90f"; }
   html body .balmoral-demo .icon-interactive-app:before {
     content: "\e909"; }
+  html body .balmoral-demo .icon-interactive-code:before {
+    content: "\e960"; }
   html body .balmoral-demo .icon-ip-access:before {
     content: "\e908"; }
   html body .balmoral-demo .icon-learning-bundles:before {
@@ -17368,6 +17482,8 @@ html body .balmoral-demo {
     content: "\e901"; }
   html body .balmoral-demo .icon-nfb-sq:before {
     content: "\e948"; }
+  html body .balmoral-demo .icon-notification:before {
+    content: "\e961"; }
   html body .balmoral-demo .icon-ocean_school:before {
     content: "\e93d"; }
   html body .balmoral-demo .icon-oculus:before {
@@ -17378,6 +17494,12 @@ html body .balmoral-demo {
     content: "\e607"; }
   html body .balmoral-demo .icon-picture:before {
     content: "\e91a"; }
+  html body .balmoral-demo .icon-pinterest:before {
+    content: "\e962"; }
+  html body .balmoral-demo .icon-brand:before {
+    content: "\e962"; }
+  html body .balmoral-demo .icon-social:before {
+    content: "\e962"; }
   html body .balmoral-demo .icon-play:before {
     content: "\e613"; }
   html body .balmoral-demo .icon-play-o:before {
@@ -17416,6 +17538,8 @@ html body .balmoral-demo {
     content: "\eaac"; }
   html body .balmoral-demo .icon-study-guides:before {
     content: "\e90b"; }
+  html body .balmoral-demo .icon-study-guides-o:before {
+    content: "\e964"; }
   html body .balmoral-demo .icon-switch:before {
     content: "\e900"; }
   html body .balmoral-demo .icon-top:before {
@@ -18906,6 +19030,53 @@ html body .balmoral-demo {
     html body .balmoral-demo .m-tabs > ul li,
     html body .balmoral-demo .m-tabs > ul a {
       width: auto; } }
+  html body .balmoral-demo .m-vignette-card {
+    position: relative;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #f2f3f3; }
+  html body .balmoral-demo .m-vignette-card .titre {
+    display: block;
+    height: 3.4em;
+    overflow: hidden; }
+  html body .balmoral-demo .m-vignette-card .info-secondaire {
+    display: flex;
+    align-items: center;
+    margin-top: 37px;
+    font-size: .83333rem; }
+  html body .balmoral-demo .m-vignette-card .info-secondaire .action {
+    margin-left: auto; }
+  html body .balmoral-demo .blog-card {
+    font-family: "Suisse", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  html body .balmoral-demo .blog-card .thumbnail {
+    display: block;
+    height: 188px;
+    background-size: cover;
+    background-position: center; }
+  html body .balmoral-demo .blog-card .titre {
+    font-family: "Suisse", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+    height: 5em;
+    white-space: normal;
+    background: #fff; }
+  html body .balmoral-demo .blog-card .info-secondaire .author-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-size: cover;
+    background-position: center; }
+  html body .balmoral-demo .blog-card .info-secondaire .author-name {
+    margin-left: 10px;
+    font-style: italic; }
+  html body .balmoral-demo .blog-card .info-secondaire .read-more {
+    text-transform: uppercase;
+    font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  html body .balmoral-demo .blog-card.read-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-transform: uppercase; }
   html body .balmoral-demo .jspContainer {
     overflow: hidden;
     position: relative; }
@@ -20808,7 +20979,29 @@ html body .balmoral-demo {
   html body .balmoral-demo .film-page #l-mainPageContent .relatedTo h1 {
     font-size: 1rem;
     margin-bottom: 0.75em;
-    margin-top: 0.75em; }
+    margin-top: 0.75em;
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-limit-before: 3;
+    -webkit-hyphenate-limit-after: 3;
+    -webkit-hyphenate-limit-chars: 6 3 3;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphenate-limit-last: always;
+    -webkit-hyphenate-limit-zone: 8%;
+    -moz-hyphens: auto;
+    -moz-hyphenate-limit-chars: 6 3 3;
+    -moz-hyphenate-limit-lines: 2;
+    -moz-hyphenate-limit-last: always;
+    -moz-hyphenate-limit-zone: 8%;
+    -ms-hyphens: auto;
+    -ms-hyphenate-limit-chars: 6 3 3;
+    -ms-hyphenate-limit-lines: 2;
+    -ms-hyphenate-limit-last: always;
+    -ms-hyphenate-limit-zone: 8%;
+    hyphens: auto;
+    hyphenate-limit-chars: 6 3 3;
+    hyphenate-limit-lines: 2;
+    hyphenate-limit-last: always;
+    hyphenate-limit-zone: 8%; }
   html body .balmoral-demo .film-page #l-mainPageContent .relatedTo .l-largeur80p {
     padding: 1.5rem 0 1.5rem 0; }
   html body .balmoral-demo .film-page #l-mainPageContent .relatedTo .relatedToContent dl {
@@ -22319,13 +22512,17 @@ code {
 .paint-chip {
   display: inline-block;
   vertical-align: middle !important;
-  width: 1.5rem;
+  width: 3rem;
   height: 1.5rem;
   margin-right: 1em;
   background-color: #999;
   border: 1px solid transparent; }
   .paint-chip.brd {
     border-color: #eee; }
+  .paint-chip.base {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2px; }
 
 .bg-noir-500 {
   background-color: #000; }
@@ -22392,6 +22589,201 @@ code {
 
 .bg-gris-70 {
   background-color: #434243; }
+
+.bg-grey-700 {
+  background-color: #313030; }
+
+.bg-grey-600 {
+  background-color: #464545; }
+
+.bg-grey-500 {
+  background-color: #6b6a69; }
+
+.bg-grey-300 {
+  background-color: #8f8e8d; }
+
+.bg-grey-200 {
+  background-color: #AAA9A7; }
+
+.bg-grey-100 {
+  background-color: #c0bfbe; }
+
+.bg-grey-80 {
+  background-color: #d2d1d0; }
+
+.bg-grey-50 {
+  background-color: #e3e3e2; }
+
+.bg-grey-20 {
+  background-color: #f5f4f4; }
+
+.bg-nfb-yellow-700 {
+  background-color: #413500; }
+
+.bg-nfb-yellow-600 {
+  background-color: #5c4b00; }
+
+.bg-nfb-yellow-400 {
+  background-color: #957a00; }
+
+.bg-nfb-yellow-200 {
+  background-color: #d4ad00; }
+
+.bg-nfb-yellow-80 {
+  background-color: #FFD100; }
+
+.bg-nfb-yellow-50 {
+  background-color: #ffe46d; }
+
+.bg-nfb-yellow-20 {
+  background-color: #fff8da; }
+
+.bg-nfb-blue-800 {
+  background-color: #002438; }
+
+.bg-nfb-blue-700 {
+  background-color: #003a58; }
+
+.bg-nfb-blue-600 {
+  background-color: #006499; }
+
+.bg-nfb-blue-400 {
+  background-color: #0085CA; }
+
+.bg-nfb-blue-200 {
+  background-color: #4aaadb; }
+
+.bg-nfb-blue-100 {
+  background-color: #86c7e9; }
+
+.bg-nfb-blue-50 {
+  background-color: #c9e8f9; }
+
+.bg-nfb-green-700 {
+  background-color: #333700; }
+
+.bg-nfb-green-600 {
+  background-color: #474d00; }
+
+.bg-nfb-green-400 {
+  background-color: #737d00; }
+
+.bg-nfb-green-200 {
+  background-color: #a3b200; }
+
+.bg-nfb-green-80 {
+  background-color: #C4D600; }
+
+.bg-nfb-green-50 {
+  background-color: #dde76d; }
+
+.bg-nfb-green-20 {
+  background-color: #f6f9da; }
+
+.bg-nfb-pink-900 {
+  background-color: #460005; }
+
+.bg-nfb-pink-800 {
+  background-color: #700817; }
+
+.bg-nfb-pink-600 {
+  background-color: #bd2545; }
+
+.bg-nfb-pink-400 {
+  background-color: #F6416C; }
+
+.bg-nfb-pink-200 {
+  background-color: #f9788f; }
+
+.bg-nfb-pink-100 {
+  background-color: #fda7aa; }
+
+.bg-nfb-pink-50 {
+  background-color: #fedad9; }
+
+.bg-nfb-violet-900 {
+  background-color: #1a051f; }
+
+.bg-nfb-violet-800 {
+  background-color: #3f114a; }
+
+.bg-nfb-violet-700 {
+  background-color: #672276; }
+
+.bg-nfb-violet-600 {
+  background-color: #87319A; }
+
+.bg-nfb-violet-400 {
+  background-color: #ac6abb; }
+
+.bg-nfb-violet-200 {
+  background-color: #cb97d7; }
+
+.bg-nfb-violet-50 {
+  background-color: #ead0f1; }
+
+.bg-nfb-turquoise-800 {
+  background-color: #003531; }
+
+.bg-nfb-turquoise-600 {
+  background-color: #00534d; }
+
+.bg-nfb-turquoise-400 {
+  background-color: #009187; }
+
+.bg-nfb-turquoise-200 {
+  background-color: #00BFB3; }
+
+.bg-nfb-turquoise-100 {
+  background-color: #4ad4ca; }
+
+.bg-nfb-turquoise-80 {
+  background-color: #85e5de; }
+
+.bg-nfb-turquoise-20 {
+  background-color: #c8f8f4; }
+
+.bg-nfb-red-800 {
+  background-color: #5c0b06; }
+
+.bg-nfb-red-700 {
+  background-color: #79160f; }
+
+.bg-nfb-red-600 {
+  background-color: #b42b22; }
+
+.bg-nfb-red-500 {
+  background-color: #E03C31; }
+
+.bg-nfb-red-300 {
+  background-color: #eb736b; }
+
+.bg-nfb-red-100 {
+  background-color: #f69f99; }
+
+.bg-nfb-red-50 {
+  background-color: #fbd6d3; }
+
+.bg-nfb-orange-800 {
+  background-color: #511305; }
+
+.bg-nfb-orange-700 {
+  background-color: #772310; }
+
+.bg-nfb-orange-500 {
+  background-color: #c54327; }
+
+.bg-nfb-orange-400 {
+  background-color: #FF5C39; }
+
+.bg-nfb-orange-200 {
+  background-color: #ff8c73; }
+
+.bg-nfb-orange-80 {
+  background-color: #ffb3a3; }
+
+.bg-nfb-orange-50 {
+  background-color: #ffdfd9; }
 
 .bg-yellow-10 {
   background-color: #FFEC73; }
@@ -22488,6 +22880,30 @@ code {
 
 .bg-orange-off-10 {
   background-color: #A58C87; }
+
+.bg-texte-jaune {
+  background-color: #AC8D00; }
+
+.bg-texte-bleu {
+  background-color: #0085CA; }
+
+.bg-texte-vert {
+  background-color: #8B9700; }
+
+.bg-texte-rose {
+  background-color: #F64166; }
+
+.bg-texte-violet {
+  background-color: #87319A; }
+
+.bg-texte-turquoise {
+  background-color: #00A197; }
+
+.bg-texte-rouge {
+  background-color: #DB3934; }
+
+.bg-texte-orange {
+  background-color: #FF5430; }
 
 .fg-yellow-10 {
   color: #FFEC73; }
@@ -22685,7 +23101,7 @@ html body .balmoral-demo figure {
     font-family: "Ciutadella-Regular";
     font-size: 14px;
     color: #63666A;
-    border-bottom: 2px solid #d8d9db;
+    border-bottom: 2px solid #f5f4f4;
     padding: 8px 0; }
 
 html body .balmoral-demo .standalone .bodyEtape h2 {

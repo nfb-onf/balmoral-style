@@ -97,7 +97,7 @@ var left_nav = (function() {
                 outerheightLogo = $('#l-leftNav .l-logoOnf').outerHeight(true) + 'px';
                 heightLogo = $('#l-leftNav .l-logoOnf').height() + 'px';
             }
-            $(".bandeOuterHeightLogo").css('height', outerheightLogo);
+        //    $(".bandeOuterHeightLogo").css('height', outerheightLogo);
             $(".m-breadcrumb-bar li,#spacerTop,.m-breadcrumb-bar li h1.alignBottom").css('height', heightLogo);
             if ($(".bandeTop").length >= 1) {
                 $(".bandeTop h1").show();
