@@ -5814,6 +5814,11 @@ pre.highlight {
 html body .balmoral-demo {
   /*Nouvelle couleur branding*/
   /*Ces couleurs doivent aussi être modifié dans le fichier film.js*/
+  /*
+  @warmGrey:			#63666A;
+  @grisIntermediaire:	lighten(@warmGrey,45%);
+  @grisPale:			#f6f4f0;
+  */
   /*ajustement pour (large) texte de couleur*/
   /*EASING*/
   /* legacy and custom assignation */
@@ -5852,6 +5857,11 @@ html body .balmoral-demo {
   @import url(../fonts/suisse/stylesheet.css);
   /*Nouvelle couleur branding*/
   /*Ces couleurs doivent aussi être modifié dans le fichier film.js*/
+  /*
+  @warmGrey:			#63666A;
+  @grisIntermediaire:	lighten(@warmGrey,45%);
+  @grisPale:			#f6f4f0;
+  */
   /*ajustement pour (large) texte de couleur*/
   /*EASING*/
   /* legacy and custom assignation */
@@ -6020,7 +6030,7 @@ html body .balmoral-demo {
   			.dash{color: @orange;}
   			.centerHeightInContainer{position: absolute;}
   			.watchLater{position: absolute; top:0px; right: 0px; float: none;}
-  			.creator{display: inline-block;
+  			.creator{display: inline-block; 
   				a{color: @grisPale;}
   			}
   			.tagType{ font-style: italic; color: @jaune; font-size: 16px; }
@@ -6823,7 +6833,7 @@ html body .balmoral-demo {
     /*font-size: @font-size-base; FALCON*/
     line-height: 1.5;
     color: #000;
-    background-color: #f6f4f0; }
+    background-color: #f5f4f4; }
   html body .balmoral-demo input,
   html body .balmoral-demo button,
   html body .balmoral-demo select,
@@ -6856,7 +6866,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .img-thumbnail {
     padding: 4px;
     line-height: 1.5;
-    background-color: #f6f4f0;
+    background-color: #f5f4f4;
     border: 1px solid #ddd;
     border-radius: 4px;
     -webkit-transition: all 0.2s ease-in-out;
@@ -7764,7 +7774,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .table > tbody + tbody {
     border-top: 2px solid #ddd; }
   html body .balmoral-demo .table .table {
-    background-color: #f6f4f0; }
+    background-color: #f5f4f4; }
   html body .balmoral-demo .table-condensed > thead > tr > th,
   html body .balmoral-demo .table-condensed > tbody > tr > th,
   html body .balmoral-demo .table-condensed > tfoot > tr > th,
@@ -8434,7 +8444,7 @@ html body .balmoral-demo {
     transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
     color: #000;
     background-color: #fff;
-    border-color: #cbccce;
+    border-color: #b3b2b1;
     /*&.disabled,
     &[disabled],
     fieldset[disabled] & {
@@ -8448,22 +8458,22 @@ html body .balmoral-demo {
       }
     }*/ }
   html body .balmoral-demo .btn-default.plein {
-    background-color: #d8d9db;
-    border-color: #d8d9db;
+    background-color: #c0bfbe;
+    border-color: #c0bfbe;
     color: #000; }
   html body .balmoral-demo .btn-default.plein:hover {
     background-color: #fff;
     color: #000;
-    border-color: #cbccce; }
+    border-color: #b3b2b1; }
   html body .balmoral-demo .btn-default:hover {
     color: #000;
-    background-color: #d8d9db;
-    border-color: #abaeb1; }
+    background-color: #c0bfbe;
+    border-color: #959492; }
   html body .balmoral-demo .btn-default:active,
   html body .balmoral-demo .btn-default.active,
   html body .balmoral-demo .open .dropdown-toggle.btn-default {
     color: #000;
-    background-color: #d8d9db;
+    background-color: #c0bfbe;
     /*border-color: darken(@activeColor, 12%);*/ }
   html body .balmoral-demo .btn-default:active,
   html body .balmoral-demo .btn-default.active,
@@ -8474,8 +8484,8 @@ html body .balmoral-demo {
   html body .balmoral-demo .btn-group .btn-default:focus,
   html body .balmoral-demo .btn-group .btn-default:hover {
     color: #000;
-    background-color: #d8d9db;
-    border-color: #abaeb1; }
+    background-color: #c0bfbe;
+    border-color: #959492; }
   html body .balmoral-demo .btn-primary {
     /*.button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);*/
     -webkit-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
@@ -8727,7 +8737,7 @@ html body .balmoral-demo {
     transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
     color: #523d00;
     background-color: #fff;
-    border-color: #e3ddd0;
+    border-color: #ddd9d9;
     /*&.disabled,
     &[disabled],
     fieldset[disabled] & {
@@ -8741,22 +8751,22 @@ html body .balmoral-demo {
       }
     }*/ }
   html body .balmoral-demo .btn-options.plein {
-    background-color: #ece8e0;
-    border-color: #ece8e0;
+    background-color: #e9e7e7;
+    border-color: #e9e7e7;
     color: #523d00; }
   html body .balmoral-demo .btn-options.plein:hover {
     background-color: #fff;
     color: #523d00;
-    border-color: #e3ddd0; }
+    border-color: #ddd9d9; }
   html body .balmoral-demo .btn-options:hover {
     color: #523d00;
-    background-color: #ece8e0;
-    border-color: #ccc1aa; }
+    background-color: #e9e7e7;
+    border-color: #c0b9b9; }
   html body .balmoral-demo .btn-options:active,
   html body .balmoral-demo .btn-options.active,
   html body .balmoral-demo .open .dropdown-toggle.btn-options {
     color: #523d00;
-    background-color: #ece8e0;
+    background-color: #e9e7e7;
     /*border-color: darken(@activeColor, 12%);*/ }
   html body .balmoral-demo .btn-options:active,
   html body .balmoral-demo .btn-options.active,
@@ -8765,8 +8775,8 @@ html body .balmoral-demo {
   html body .balmoral-demo .btn-group .btn-options:focus,
   html body .balmoral-demo .btn-group .btn-options:hover {
     color: #000;
-    background-color: #ece8e0;
-    border-color: #ccc1aa; }
+    background-color: #e9e7e7;
+    border-color: #c0b9b9; }
   html body .balmoral-demo .btn-options.no-background {
     background: transparent; }
   html body .balmoral-demo .btn-transparent {
@@ -8870,6 +8880,11 @@ html body .balmoral-demo {
     font-size: 14px;
     line-height: 1.5;
     border-radius: 3px; }
+  html body .balmoral-demo .btn-xl {
+    padding: 16px 20px;
+    font-size: 28px;
+    line-height: 1.3333333;
+    border-radius: 8px; }
   html body .balmoral-demo .btn-block {
     display: block;
     width: 100%; }
@@ -9212,7 +9227,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .nav-tabs > li.active > a:hover,
   html body .balmoral-demo .nav-tabs > li.active > a:focus {
     color: #555555;
-    background-color: #f6f4f0;
+    background-color: #f5f4f4;
     border: 1px solid #ddd;
     border-bottom-color: transparent;
     cursor: default; }
@@ -9247,7 +9262,7 @@ html body .balmoral-demo {
     html body .balmoral-demo .nav-tabs.nav-justified > .active > a,
     html body .balmoral-demo .nav-tabs.nav-justified > .active > a:hover,
     html body .balmoral-demo .nav-tabs.nav-justified > .active > a:focus {
-      border-bottom-color: #f6f4f0; } }
+      border-bottom-color: #f5f4f4; } }
   html body .balmoral-demo .nav-pills > li {
     float: left; }
   html body .balmoral-demo .nav-pills > li > a {
@@ -9296,7 +9311,7 @@ html body .balmoral-demo {
     html body .balmoral-demo .nav-tabs-justified > .active > a,
     html body .balmoral-demo .nav-tabs-justified > .active > a:hover,
     html body .balmoral-demo .nav-tabs-justified > .active > a:focus {
-      border-bottom-color: #f6f4f0; } }
+      border-bottom-color: #f5f4f4; } }
   html body .balmoral-demo .tab-content > .tab-pane {
     display: none; }
   html body .balmoral-demo .tab-content > .active {
@@ -9721,7 +9736,7 @@ html body .balmoral-demo {
     text-decoration: none;
     /*color: @pagination-color; FALCON*/
     background-color: transparent;
-    border: 1px solid #63666A;
+    border: 1px solid #6b6a69;
     margin-left: -1px; }
   html body .balmoral-demo .pagination > li:first-child > a,
   html body .balmoral-demo .pagination > li:first-child > span {
@@ -9738,7 +9753,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .pagination > li > span:focus {
     z-index: 2;
     color: #fff;
-    background-color: #63666A;
+    background-color: #6b6a69;
     /*border-color: @pagination-hover-border; FALCON*/ }
   html body .balmoral-demo .pagination > .active > a,
   html body .balmoral-demo .pagination > .active > span,
@@ -9748,7 +9763,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .pagination > .active > span:focus {
     z-index: 3;
     color: #fff;
-    background-color: #63666A;
+    background-color: #6b6a69;
     /*border-color: @pagination-active-border; FALCON*/
     cursor: default; }
   html body .balmoral-demo .pagination > .disabled > span,
@@ -10521,7 +10536,7 @@ html body .balmoral-demo {
     /*font-size: @font-size-base; FALCON*/
     line-height: 1.5;
     color: #000;
-    background-color: #f6f4f0; }
+    background-color: #f5f4f4; }
   html body .balmoral-demo input,
   html body .balmoral-demo button,
   html body .balmoral-demo select,
@@ -10552,7 +10567,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .img-thumbnail {
     padding: 4px;
     line-height: 1.5;
-    background-color: #f6f4f0;
+    background-color: #f5f4f4;
     border: 1px solid #ddd;
     border-radius: 4px;
     -webkit-transition: all 0.2s ease-in-out;
@@ -10872,7 +10887,7 @@ html body .balmoral-demo {
     border-radius: 5px;
     background-clip: padding-box;
     font-size: 1rem;
-    border-color: #d8d9db;
+    border-color: #c0bfbe;
     color: #000; }
   html body .balmoral-demo .dropdown-menu > li > a:focus {
     outline: none; }
@@ -10991,7 +11006,7 @@ html body .balmoral-demo {
     html body .balmoral-demo .l-footerLastLineOnly #l-rightContentSide {
       padding-bottom: 172.5px; } }
   html body .balmoral-demo html {
-    background: #f6f4f0; }
+    background: #f5f4f4; }
   html body .balmoral-demo html.forceScrollY {
     overflow-y: scroll;
     /*on affiche toujours la scroll bar pour corriger le probleme de positionnement des tooltip quand il n'y a pas de scrollbar*/ }
@@ -11045,9 +11060,9 @@ html body .balmoral-demo {
     margin-right: auto;
     width: 86%; }
   html body .balmoral-demo .l-blocGrisPale {
-    background: #f6f4f0; }
+    background: #f5f4f4; }
   html body .balmoral-demo .l-blocGrisFonce {
-    background: #f0ede6; }
+    background: #eeecec; }
   html body .balmoral-demo .l-blocBlanc {
     background: #fff;
     color: #000; }
@@ -11286,7 +11301,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .l-searchItem {
     display: block;
     float: right;
-    margin-right: 16px; }
+    margin-right: 12px; }
   html body .balmoral-demo .l-searchItem.icon-loupe {
     display: block;
     font-size: 20px;
@@ -11328,7 +11343,7 @@ html body .balmoral-demo {
     -ms-transform: rotate(410deg);
     -o-transform: rotate(410deg);
     transform: rotate(410deg);
-    background: #63666A; }
+    background: #6b6a69; }
   html body .balmoral-demo .is-nav-open #l-leftNav-collapsed .l-toggleItem .menuHam:before {
     backface-visibility: hidden;
     top: 0px;
@@ -11337,7 +11352,7 @@ html body .balmoral-demo {
     -ms-transform: rotate(-410deg);
     -o-transform: rotate(-410deg);
     transform: rotate(-410deg);
-    background: #63666A; }
+    background: #6b6a69; }
   html body .balmoral-demo .is-nav-open .l-contentContainer {
     -webkit-transform: translateX(236px);
     -moz-transform: translateX(236px);
@@ -11347,7 +11362,7 @@ html body .balmoral-demo {
   html body .balmoral-demo #l-leftNav {
     top: 45px;
     height: calc(100% - 45px);
-    border-right: 1px solid #d8d9db;
+    border-right: 1px solid #c0bfbe;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
@@ -11427,7 +11442,7 @@ html body .balmoral-demo {
     -o-transform: scaleY(-1);
     transform: scaleY(-1); }
   html body .balmoral-demo #l-leftNav #eyecon-nav-bottom path {
-    fill: #00BFB3; }
+    fill: #C4D600; }
   html body .balmoral-demo #l-leftNav #paddingBottomFragment {
     margin-bottom: 118px; }
   html body .balmoral-demo #l-leftNav .jspPane {
@@ -11453,7 +11468,8 @@ html body .balmoral-demo {
     width: 100%;
     display: block;
     position: relative;
-    color: #000; }
+    color: #464545;
+    font-family: "Ciutadella-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   html body .balmoral-demo #l-leftNav li a:hover,
   html body .balmoral-demo #l-leftNav li a.active {
     color: #0085CA; }
@@ -11475,7 +11491,7 @@ html body .balmoral-demo {
     color: #0085CA; }
   html body .balmoral-demo #l-leftNav li a.searchIcon {
     width: 120%;
-    color: #000;
+    color: #464545;
     margin-left: -10%;
     margin-bottom: 2em;
     padding: 0 10%;
@@ -11491,7 +11507,7 @@ html body .balmoral-demo {
     position: absolute;
     display: block;
     top: 50%;
-    margin-top: -9px;
+    margin-top: -10px;
     right: 10%;
     font-size: 18px;
     width: 18px;
@@ -11586,7 +11602,7 @@ html body .balmoral-demo {
     display: none; }
   html body .balmoral-demo #l-leftNav ul#connectedMenu li.connexionLi.not-verify a,
   html body .balmoral-demo #l-leftNav ul#connectedMenu li.connexionLi.not-verify .icon {
-    color: #E03C31; }
+    color: #b42b22; }
   html body .balmoral-demo #l-leftNav ul#connectedMenu li.connexionLi.not-verify a.warning {
     display: block;
     width: auto;
@@ -11594,7 +11610,7 @@ html body .balmoral-demo {
     padding: 0 0;
     position: absolute;
     right: 0px;
-    color: #FFD100;
+    color: #AC8D00;
     margin: 0 0;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -11605,7 +11621,7 @@ html body .balmoral-demo {
   html body .balmoral-demo #l-leftNav ul#connectedMenu li.connexionLi.not-verify a.warning:before {
     display: none; }
   html body .balmoral-demo #l-leftNav ul#connectedMenu li.connexionLi.not-verify a.warning:hover {
-    color: #E03C31; }
+    color: #b42b22; }
   html body .balmoral-demo #l-leftNav ul#connectedMenu li.connexionLi.not-verify a.warning.active {
     color: #FF5C39; }
   html body .balmoral-demo #l-leftNav ul#connectedMenu li.connexionLi.not-verify a.warning .icon {
@@ -11627,7 +11643,8 @@ html body .balmoral-demo {
   html body .balmoral-demo #l-leftNav ul#socialNav {
     padding: 0px 19%;
     overflow: hidden;
-    margin-top: 7px; }
+    margin-top: 7px;
+    margin-bottom: 48px; }
   html body .balmoral-demo #l-leftNav ul#socialNav li {
     float: left;
     width: auto;
@@ -11638,9 +11655,33 @@ html body .balmoral-demo {
     margin-left: 0px; }
   html body .balmoral-demo #l-leftNav ul#socialNav li a {
     font-size: 24px;
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo #l-leftNav ul#socialNav li a:hover {
     color: #0085CA; }
+  html body .balmoral-demo #l-leftNav ul#languageSwitch_alt {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+  html body .balmoral-demo #l-leftNav ul#languageSwitch_alt li {
+    position: relative; }
+  html body .balmoral-demo #l-leftNav ul#languageSwitch_alt li:before {
+    width: 50px;
+    position: absolute;
+    top: -11px;
+    height: 4px;
+    background: #000;
+    content: ""; }
+  html body .balmoral-demo #l-leftNav ul#languageSwitch_alt li a {
+    font-family: "Ciutadella-Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  html body .balmoral-demo #l-leftNav ul#languageSwitch li {
+    position: relative; }
+  html body .balmoral-demo #l-leftNav ul#languageSwitch li:before {
+    width: 50px;
+    position: absolute;
+    top: -15px;
+    height: 4px;
+    background: #464545;
+    content: ""; }
   html body .balmoral-demo #l-leftNav .l-toggleItem {
     right: 0px;
     position: absolute;
@@ -11659,7 +11700,7 @@ html body .balmoral-demo {
     -ms-transform: rotate(410deg);
     -o-transform: rotate(410deg);
     transform: rotate(410deg);
-    background: #63666A; }
+    background: #6b6a69; }
   html body .balmoral-demo #l-leftNav .l-toggleItem .menuHam:before {
     backface-visibility: hidden;
     top: 0px;
@@ -11668,11 +11709,11 @@ html body .balmoral-demo {
     -ms-transform: rotate(-410deg);
     -o-transform: rotate(-410deg);
     transform: rotate(-410deg);
-    background: #63666A; }
+    background: #6b6a69; }
   html body .balmoral-demo #l-leftNav-collapsed {
     background: #fff;
-    border-right: 1px solid #d8d9db;
-    border-bottom: 1px solid #d8d9db;
+    border-right: 1px solid #c0bfbe;
+    border-bottom: 1px solid #c0bfbe;
     height: 45px;
     z-index: 100;
     width: 100%;
@@ -11686,6 +11727,7 @@ html body .balmoral-demo {
     left: 0px; }
   html body .balmoral-demo #l-leftNav-collapsed .l-logoOnf.vert {
     margin-top: 14px;
+    margin-bottom: 13px;
     float: left;
     width: 100%;
     display: none; }
@@ -11939,7 +11981,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .dash {
     position: relative;
     top: -0.05em;
-    color: #63666A;
+    color: #6b6a69;
     display: inline-block;
     padding: 0 0.2em; }
   html body .balmoral-demo label {
@@ -11992,19 +12034,19 @@ html body .balmoral-demo {
     margin-bottom: 0px; }
   html body .balmoral-demo .rating {
     font-weight: normal;
-    color: #63666A;
+    color: #6b6a69;
     font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: inline-block; }
   html body .balmoral-demo .creator {
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   html body .balmoral-demo .shortInfos {
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .shortInfos .creator {
     color: #000; }
   html body .balmoral-demo .smallprint,
   html body .balmoral-demo img {
     font-size: 14px;
-    color: #63666A;
+    color: #6b6a69;
     font-style: italic; }
   html body .balmoral-demo img {
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
@@ -12054,8 +12096,8 @@ html body .balmoral-demo {
     color: #000;
     text-decoration: none;
     padding: 20px 0px 20px 30px;
-    background: #d8d9db;
-    border-left-color: #d8d9db;
+    background: #c0bfbe;
+    border-left-color: #c0bfbe;
     position: relative;
     display: block;
     float: left; }
@@ -12071,7 +12113,7 @@ html body .balmoral-demo {
     height: 0;
     border-top: 35px solid transparent;
     border-bottom: 35px solid transparent;
-    border-left: 20px solid #d8d9db;
+    border-left: 20px solid #c0bfbe;
     position: absolute;
     top: 50%;
     margin-top: -35px;
@@ -12105,18 +12147,18 @@ html body .balmoral-demo {
     z-index: 5; }
   html body .balmoral-demo .transac-page-layout .breadcrumb li:nth-child(2) a,
   html body .balmoral-demo .transac-page-layout .breadcrumb li:nth-child(2) span {
-    background: #e5e6e7; }
+    background: #cdcccb; }
   html body .balmoral-demo .transac-page-layout .breadcrumb li:nth-child(2) a:after,
   html body .balmoral-demo .transac-page-layout .breadcrumb li:nth-child(2) span:after {
-    border-left-color: #e5e6e7; }
+    border-left-color: #cdcccb; }
   html body .balmoral-demo .transac-page-layout .breadcrumb li:nth-child(3) {
     z-index: 4; }
   html body .balmoral-demo .transac-page-layout .breadcrumb li:nth-child(3) a,
   html body .balmoral-demo .transac-page-layout .breadcrumb li:nth-child(3) span {
-    background: #f2f3f3; }
+    background: #d9d9d8; }
   html body .balmoral-demo .transac-page-layout .breadcrumb li:nth-child(3) a:after,
   html body .balmoral-demo .transac-page-layout .breadcrumb li:nth-child(3) span:after {
-    border-left-color: #f2f3f3; }
+    border-left-color: #d9d9d8; }
   html body .balmoral-demo .transac-page-layout .breadcrumb li a:hover,
   html body .balmoral-demo .transac-page-layout .breadcrumb li span.active {
     background: #0085CA;
@@ -12231,10 +12273,6 @@ html body .balmoral-demo {
     transition: -webkit-transform 0.2s linear,-moz-transform 0.2s linear,-o-transform 0.2s linear,transform 0.2s linear; }
   html body .balmoral-demo .collapseBlock + div {
     display: none; }
-  html body .balmoral-demo .collapseBlock + div.is-masonry {
-    height: 0px;
-    visibility: hidden;
-    display: block; }
   html body .balmoral-demo .collapseBlock.is-collapseBlock-open i {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -12496,7 +12534,7 @@ html body .balmoral-demo {
     display: none; }
   html body .balmoral-demo .m-alphabetical-index h3 {
     font-family: "Suisse", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .m-alphabetical-index li {
     display: inline-block;
     list-style-type: none; }
@@ -12513,7 +12551,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-alphabetical-index a.selected {
     color: #0085CA; }
   html body .balmoral-demo .m-alphabetical-index a.disabled {
-    color: #d8d9db; }
+    color: #c0bfbe; }
   html body .balmoral-demo .m-alphabetical-index a em {
     font-style: normal; }
   @media (min-width: 768px) {
@@ -12531,7 +12569,7 @@ html body .balmoral-demo {
     min-height: calc(10vw + 1.5rem); }
   html body .balmoral-demo .m-article-top .signatureAndMore .border-top {
     height: 4px;
-    background: #d8d9db;
+    background: #c0bfbe;
     width: 109px;
     display: block;
     position: absolute;
@@ -12616,7 +12654,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-article-lead {
     font-size: 2rem;
     line-height: 1.25;
-    font-family: "Ciutadella-Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+    font-family: "Ciutadella-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   html body .balmoral-demo .m-article-lead.jaune {
     color: #AC8D00; }
   html body .balmoral-demo .m-article-lead.bleu {
@@ -12634,8 +12672,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-article-lead.orange {
     color: #FF5430; }
   html body .balmoral-demo .m-bin-grid {
-    /*INDIGENOUS CINEMA*/
-    /*Promobox*/ }
+    /*INDIGENOUS CINEMA*/ }
   html body .balmoral-demo .m-bin-grid .l-largeur90p > .row {
     margin: 0px -5px 50px -5px;
     margin-top: 2.125rem;
@@ -12729,8 +12766,6 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-bin-grid .newsletter .btn {
     width: 100%;
     margin-top: 1.4rem; }
-  html body .balmoral-demo .m-bin-grid .eduPromoSep {
-    display: none; }
   html body .balmoral-demo .m-bin-grid .horizontalBanner {
     background: #000;
     position: relative;
@@ -12771,43 +12806,6 @@ html body .balmoral-demo {
     text-decoration: none; }
   html body .balmoral-demo .m-bin-grid #indigenousCinemaBanner.horizontalBanner p {
     font-weight: 700; }
-  html body .balmoral-demo .m-bin-grid .campusNewUser {
-    background: #00BFB3;
-    font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-  html body .balmoral-demo .m-bin-grid .campusNewUser .txtContentPromobox {
-    padding: 20px;
-    color: #fff;
-    -webkit-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
-    -moz-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
-    -o-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
-    transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear; }
-  html body .balmoral-demo .m-bin-grid .campusNewUser .txtContentPromobox h2 {
-    margin-top: 0px;
-    font-size: 1.75rem;
-    margin-bottom: 0.3em;
-    font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-  html body .balmoral-demo .m-bin-grid .campusNewUser .txtContentPromobox .intro {
-    font-size: 18px;
-    font-weight: bold; }
-  html body .balmoral-demo .m-bin-grid .campusNewUser .txtContentPromobox h4 {
-    font-size: 1.3333333rem;
-    margin-bottom: 0.5em;
-    margin-top: 1em;
-    font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    text-transform: uppercase;
-    margin: 0.75em 0 0 0px; }
-  html body .balmoral-demo .m-bin-grid .campusNewUser .txtContentPromobox hr {
-    content: "";
-    width: 80px;
-    height: 4px;
-    background: #FFD100;
-    display: block;
-    margin-top: 25px;
-    margin-left: 0px; }
-  html body .balmoral-demo .m-bin-grid .campusNewUser .txtContentPromobox .btn {
-    min-width: 160px; }
-  html body .balmoral-demo .m-bin-grid .campusNewUser a.txtContentPromobox:hover {
-    background: #008c83; }
   html body .balmoral-demo .m-bin-grid .eduSocial {
     background: #0085CA;
     padding: 20px; }
@@ -12832,13 +12830,6 @@ html body .balmoral-demo {
     top: 35px;
     left: 20px;
     padding-right: 20px; }
-  html body .balmoral-demo .m-bin-grid .txtContentPromobox {
-    z-index: 3;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; }
-  html body .balmoral-demo .m-bin-grid .l-boxRatio .txtContentPromobox {
-    position: absolute; }
   html body .balmoral-demo .m-bin-grid .film-banner .txtContent {
     bottom: 15px;
     top: inherit;
@@ -12918,11 +12909,6 @@ html body .balmoral-demo {
       /*Round pixel problem dans safari*/ }
     html body .balmoral-demo .Safari .m-bin-grid .pull-right .colDoubleGauche:before {
       margin-top: calc(200%); }
-    html body .balmoral-demo .m-bin-grid .eduPromoSep {
-      margin-top: 40px;
-      display: block;
-      width: 100%;
-      border-top: 0px; }
     html body .balmoral-demo .m-bin-grid .socialIconEdu {
       position: absolute;
       top: 50%;
@@ -13002,7 +12988,7 @@ html body .balmoral-demo {
     position: relative;
     z-index: 2; }
   html body .balmoral-demo #bg-breadcrump-absulute {
-    background: #f6f4f0;
+    background: #f5f4f4;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -13310,7 +13296,8 @@ html body .balmoral-demo {
     opacity: 1; }
   html body .balmoral-demo .btn strong {
     font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-  html body .balmoral-demo .btn.plein {
+  html body .balmoral-demo .btn.plein,
+  html body .balmoral-demo .btn.btn-xl {
     font-family: "Ciutadella-Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   html body .balmoral-demo .m-exploreMoreFilm {
     text-align: center;
@@ -13319,7 +13306,7 @@ html body .balmoral-demo {
     display: inline-block;
     position: relative;
     font-size: 1.75rem;
-    color: #63666A;
+    color: #6b6a69;
     text-transform: uppercase;
     font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   html body .balmoral-demo .m-exploreMoreFilm .plusLink svg {
@@ -13336,7 +13323,7 @@ html body .balmoral-demo {
     margin-top: 1rem;
     line-height: 1em; }
   html body .balmoral-demo .m-exploreMoreFilm .plusLink path {
-    fill: #63666A;
+    fill: #6b6a69;
     -webkit-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
     -moz-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
     -o-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
@@ -13345,6 +13332,13 @@ html body .balmoral-demo {
     color: #0085CA; }
   html body .balmoral-demo .m-exploreMoreFilm .plusLink:hover path {
     fill: #0085CA; }
+  html body .balmoral-demo .m-exploreMoreFilm .btn {
+    color: #6b6a69;
+    border-width: 4px; }
+  html body .balmoral-demo .m-exploreMoreFilm .btn:hover {
+    color: #0085CA;
+    border-color: #0085CA;
+    background-color: transparent; }
   html body .balmoral-demo .m-load-more {
     position: relative; }
   html body .balmoral-demo .m-load-more .plusLink {
@@ -13360,7 +13354,7 @@ html body .balmoral-demo {
     left: 50%;
     position: absolute; }
   html body .balmoral-demo .m-load-more .plusLink path {
-    fill: #63666A; }
+    fill: #6b6a69; }
   html body .balmoral-demo .m-load-more .plusLink:hover path {
     fill: #0085CA; }
   html body .balmoral-demo .m-load-more .m-svgLoading {
@@ -13491,7 +13485,7 @@ html body .balmoral-demo {
     /*font-size: 14px; line-height: 24px;*/
     font-size: 28px;
     line-height: 24px;
-    color: #63666A;
+    color: #6b6a69;
     /*padding: 0px 5px;*/
     z-index: 2; }
   html body .balmoral-demo .priceTag:hover {
@@ -13523,7 +13517,7 @@ html body .balmoral-demo {
     font-family: inherit;
     text-transform: inherit; }
   html body .balmoral-demo .bootstrap-select.btn-group .btn.formSelect {
-    border: 1px solid #d8d9db;
+    border: 1px solid #c0bfbe;
     background: #fff; }
   html body .balmoral-demo .bootstrap-select.btn-group .btn.max-width {
     max-width: 200px; }
@@ -14377,7 +14371,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .label-danger[href]:focus {
     background-color: #c1271d; }
   html body .balmoral-demo .m-callout {
-    background-color: #f6f4f0;
+    background-color: #f5f4f4;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px; }
@@ -14437,7 +14431,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-callout.beige {
     background-color: #FFFAEB; }
   html body .balmoral-demo .m-callout.gris {
-    background-color: #d8d9db; }
+    background-color: #c0bfbe; }
   html body .balmoral-demo .m-callout.blanc {
     background-color: #fff; }
   html body .balmoral-demo .containerScreenshot {
@@ -14446,13 +14440,15 @@ html body .balmoral-demo {
     overflow: hidden;
     text-align: center;
     background: #fff;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -webkit-backface-visibility: visible;
   /*&::after{ opacity: 0;  content:"Bande-annonce"; .hoverTransition;  width: 100%; color:@noir; .small;  margin-top:28px; position: absolute; top:50%; left:0;     z-index: 2;
 		[lang="en"] &{content:"View trailer";}
 		.loue &{display:none;}
 	}*/ }
+  html body .balmoral-demo .containerScreenshot img {
+    -webkit-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
+    -moz-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
+    -o-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
+    transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear; }
   html body .balmoral-demo .containerScreenshot::before {
     background: url(../img/layout/icon/play.svg) no-repeat center center;
     -webkit-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
@@ -14482,6 +14478,8 @@ html body .balmoral-demo {
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   html body .balmoral-demo .is-modal-open #greyTooltipContainer {
     z-index: 9999999; }
+  html body .balmoral-demo .is-hoverPlay .containerScreenshot img {
+    opacity: 0.25; }
   html body .balmoral-demo .is-hoverPlay .containerScreenshot::before {
     opacity: 1; }
   html body .balmoral-demo .is-hoverPlay.payant .containerScreenshot::after {
@@ -14493,7 +14491,7 @@ html body .balmoral-demo {
     width: 100%;
     margin-top: 5px;
     height: 11px;
-    background: #63666A;
+    background: #6b6a69;
     margin-bottom: 4px; }
   html body .balmoral-demo .timeBar .minutesEcoules {
     background: #00BFB3;
@@ -14501,7 +14499,7 @@ html body .balmoral-demo {
     height: 100%;
     font-size: 13px; }
   html body .balmoral-demo .filmRestriction {
-    color: #63666A;
+    color: #6b6a69;
     font-size: 0.75rem;
     text-transform: uppercase;
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -14515,7 +14513,7 @@ html body .balmoral-demo {
     display: inline-block;
     vertical-align: middle;
     padding: 1px 4px 0 4px;
-    border: 1px solid #63666A;
+    border: 1px solid #6b6a69;
     font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     border-radius: 3px; }
   html body .balmoral-demo .filmRestriction .campus-label.label-on {
@@ -14535,9 +14533,9 @@ html body .balmoral-demo {
     vertical-align: middle;
     padding-right: 5px; }
   html body .balmoral-demo .filmRestriction a {
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .rentalSatus {
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .grandient-cut-off {
     position: relative; }
   html body .balmoral-demo .grandient-cut-off:after {
@@ -14582,7 +14580,7 @@ html body .balmoral-demo {
     padding: 10px;
     position: relative;
     display: block;
-    border: 1px solid #f2f3f3; }
+    border: 1px solid #d9d9d8; }
   html body .balmoral-demo .m-carousel-thumbnails div.vignette.not-available {
     opacity: 0.5; }
   html body .balmoral-demo .m-carousel-thumbnails div.vignette.no-play .containerScreenshot::before {
@@ -14592,7 +14590,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-carousel-thumbnails div.vignette.no-hover-text.is-hoverPlay .titre {
     color: #000; }
   html body .balmoral-demo .m-carousel-thumbnails div.vignette.no-hover-text.is-hoverPlay.payant .priceTag {
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .m-carousel-thumbnails div.vignette.no-click .containerScreenshot::before {
     display: none; }
   html body .balmoral-demo .m-carousel-thumbnails div.vignette.no-click .containerScreenshot img {
@@ -14600,7 +14598,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-carousel-thumbnails div.vignette.no-click.is-hoverPlay .titre {
     color: #000; }
   html body .balmoral-demo .m-carousel-thumbnails div.vignette.no-click.is-hoverPlay.payant .priceTag {
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .m-carousel-thumbnails div.vignette.no-click .titre,
   html body .balmoral-demo .m-carousel-thumbnails div.vignette.no-click .containerScreenshot,
   html body .balmoral-demo .m-carousel-thumbnails div.vignette.no-click .containerScreenshotPochette,
@@ -14624,7 +14622,7 @@ html body .balmoral-demo {
     overflow: hidden;
     padding: 0px;
     margin-top: 10px;
-    color: #63666A;
+    color: #6b6a69;
     height: 2.1875rem;
     line-height: 16px;
     display: block; }
@@ -14656,7 +14654,7 @@ html body .balmoral-demo {
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: inline; }
   html body .balmoral-demo .m-carousel-thumbnails .longueDescription {
-    color: #63666A;
+    color: #6b6a69;
     display: block;
     position: relative;
     overflow: hidden; }
@@ -14665,7 +14663,7 @@ html body .balmoral-demo {
     line-height: 1.2;
     font-size: 1.1667rem; }
   html body .balmoral-demo .m-carousel-thumbnails .longueDescription .titre .punchline {
-    color: #63666A;
+    color: #6b6a69;
     font-size: 1rem; }
   html body .balmoral-demo .m-carousel-thumbnails .longueDescription .description {
     font-size: 0.83333rem;
@@ -14676,7 +14674,8 @@ html body .balmoral-demo {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    height: 28px; }
+    height: 28px;
+    color: #8f8e8d; }
   html body .balmoral-demo .m-carousel-thumbnails .priceTag {
     bottom: 10px;
     left: 10px;
@@ -14686,7 +14685,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-carousel-thumbnails .loue .priceTag {
     display: none; }
   html body .balmoral-demo .m-carousel-thumbnails blockquotes.recommendedBy {
-    background: #63666A;
+    background: #6b6a69;
     padding: 10px;
     display: block;
     position: relative;
@@ -14727,7 +14726,7 @@ html body .balmoral-demo {
     padding-right: 20%; }
   html body .balmoral-demo .m-carousel-thumbnails div.vignetteIntro > a > span {
     display: block;
-    color: #63666A;
+    color: #6b6a69;
     margin-top: 2em;
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   html body .balmoral-demo .m-carousel-thumbnails div.vignetteIntro > a:hover > span {
@@ -14849,7 +14848,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-carousel-thumbnails .containercarousel .nextcarousel,
   html body .balmoral-demo .thumbnail-horizontal .prevcarousel,
   html body .balmoral-demo .thumbnail-horizontal .nextcarousel {
-    color: #63666A;
+    color: #6b6a69;
     text-align: center;
     position: absolute;
     -webkit-border-radius: 3px;
@@ -14884,10 +14883,13 @@ html body .balmoral-demo {
     line-height: 64px; }
   html body .balmoral-demo .m-carousel-thumbnails .containercarousel div.vignetteSeeAll,
   html body .balmoral-demo .thumbnail-horizontal div.vignetteSeeAll {
-    display: table;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #fff;
+    height: 100%;
     width: 100%;
-    border: 1px solid #f2f3f3; }
+    border: 1px solid #d9d9d8; }
   html body .balmoral-demo .m-carousel-thumbnails .containercarousel div.vignetteSeeAll > a,
   html body .balmoral-demo .thumbnail-horizontal div.vignetteSeeAll > a {
     font-size: 1.1667rem;
@@ -14965,9 +14967,13 @@ html body .balmoral-demo {
   html body .balmoral-demo .thumbnail-horizontal .m-explore-list li {
     margin-bottom: 0px; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     margin-left: -5px;
     margin-right: -5px; }
+  html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList::before {
+    display: none; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList .infosSecondaires {
     font-size: 12px;
     margin: 22px 0px 0px 0;
@@ -14986,9 +14992,14 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList .filmRestriction .campus-label {
     font-size: 10px; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList > li {
+    display: flex;
     padding: 0px 5px 10px 5px; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     padding: 10px;
+    max-width: 100%;
     /* New User Media */ }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette .tools {
     margin-top: 1rem;
@@ -15017,7 +15028,7 @@ html body .balmoral-demo {
     min-width: 50px; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette .more-menu .dropdown-menu .btn {
     text-align: left;
-    color: #63666A;
+    color: #6b6a69;
     padding: 6px 12px;
     text-transform: uppercase; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette .more-menu .dropdown-menu .btn:hover,
@@ -15061,7 +15072,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette .toolBar:after {
     clear: both; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette .toolBar .tool {
-    color: #63666A;
+    color: #6b6a69;
     font-size: 28px;
     margin-right: 10px; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette .toolBar .tool:hover {
@@ -15129,16 +15140,20 @@ html body .balmoral-demo {
     display: table; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.vignetteChapitre .chapterTools:after {
     clear: both; }
-  html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.vignetteChapitre .cutLink {
-    color: #63666A;
-    font-size: 28px; }
+  html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.vignetteChapitre .icon {
+    font-size: 28px;
+    color: #8f8e8d; }
+  html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.vignetteChapitre .icon:hover {
+    color: #0085CA; }
+  html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.vignetteChapitre .icon.icon-delete-o:hover {
+    color: #E03C31; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.vignetteChapitre .watchLater {
     float: left;
     position: relative;
     margin-right: 10px; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.vignetteChapitre a.containerScreenshot {
     padding: 9px;
-    border: 1px dashed #63666A; }
+    border: 1px dashed #6b6a69; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.vignetteLesson a.containerScreenshot:before {
     content: "\e932";
     font-family: icomoon;
@@ -15186,7 +15201,7 @@ html body .balmoral-demo {
     width: 100%;
     height: 100%;
     left: 0px;
-    border: 1px dashed #63666A; }
+    border: 1px dashed #6b6a69; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.newUserMedia a > div > div {
     position: absolute;
     left: 0px;
@@ -15261,7 +15276,7 @@ html body .balmoral-demo {
     width: 100%;
     height: 100%;
     left: 0px;
-    border: 1px dashed #63666A; }
+    border: 1px dashed #6b6a69; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.newPlaylist a > div > div {
     position: absolute;
     left: 0px;
@@ -15298,31 +15313,21 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.newPlaylist a:hover > div:before {
     border-color: #0085CA; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.payant {
-    padding-bottom: 99px; }
-  html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.payant .watchLater,
+    display: flex;
+    flex-direction: row; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.payant .deleteLink {
     bottom: 10px; }
-  html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.payant .spacer {
-    opacity: 0; }
-  html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.payant .containerScreenshot {
-    position: absolute;
-    top: 0px;
-    margin: 10px 0px;
-    visibility: hidden; }
-  html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.payant .containerScreenshot img:first-child {
-    position: relative;
-    top: 0px; }
+  html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.payant .containerScreenshot img {
+    max-width: 100%; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.payant .titre {
     margin: 0px;
     padding: 0 10px;
     white-space: normal; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.payant .infosDroite {
-    position: absolute;
-    right: 10px;
+    position: relative;
+    flex-grow: 1;
     height: 100%;
-    top: 0px;
-    width: 42%;
-    padding-top: 10px; }
+    width: 48%; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.payant .infosDroite .titre {
     max-height: 109px;
     padding-top: 0px; }
@@ -15359,7 +15364,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.readLater .source {
     display: block;
     font-size: 14px;
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.readLater .source .icon-external-link {
     margin-left: 5px; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.readLater p {
@@ -15368,7 +15373,7 @@ html body .balmoral-demo {
     right: 10px;
     bottom: 10px; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette + .relatedTo {
-    background: #63666A;
+    background: #6b6a69;
     padding: 10px;
     display: block;
     position: relative;
@@ -15394,7 +15399,7 @@ html body .balmoral-demo {
     width: 28px;
     height: 28px; }
   html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette .deleteLink svg path {
-    fill: #63666A;
+    fill: #6b6a69;
     -webkit-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
     -moz-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
     -o-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
@@ -15498,7 +15503,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .paginationContainer {
     text-align: center; }
   html body .balmoral-demo .paginationContainer .pagination > li {
-    color: #f6f4f0; }
+    color: #f5f4f4; }
   html body .balmoral-demo .paginationContainer .pagination > li > a {
     cursor: pointer; }
   html body .balmoral-demo .thumbnail-horizontal div.vignette {
@@ -15508,6 +15513,10 @@ html body .balmoral-demo {
     overflow: hidden; }
   html body .balmoral-demo .thumbnail-horizontal a {
     text-decoration: none; }
+  html body .balmoral-demo .carousel-inner > .item.active,
+  html body .balmoral-demo .carousel-inner > .item.next,
+  html body .balmoral-demo .carousel-inner > .item.prev {
+    display: flex; }
   @media (min-width: 768px) {
     html body .balmoral-demo .m-carousel-thumbnails {
       /*Carousel*/ }
@@ -15760,7 +15769,6 @@ html body .balmoral-demo {
     html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette .infosSecondaires {
       height: 35px; }
     html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.newPlaylist,
-    html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.payant,
     html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.vignetteLoadMore {
       padding-bottom: 106px; }
     html body .balmoral-demo .m-carousel-thumbnails .thumbnailsList div.vignette.payant .infosDroite .filmRestriction {
@@ -15782,10 +15790,6 @@ html body .balmoral-demo {
       padding: 0px 10px;
       width: auto;
       height: 100%; } }
-  html body .balmoral-demo .m-carousel-blog .carousel-inner > .item.active,
-  html body .balmoral-demo .m-carousel-blog .carousel-inner > .item.next,
-  html body .balmoral-demo .m-carousel-blog .carousel-inner > .item.prev {
-    display: flex; }
   html body .balmoral-demo .m-explore-list {
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     /*Avec un contour et ke titre dans le bas*/ }
@@ -15941,9 +15945,9 @@ html body .balmoral-demo {
   html body .balmoral-demo .darkSlide .m-explore-list a:hover > span {
     color: #005f8f !important; }
   html body .balmoral-demo .darkSlide .m-explore-list a span.background-image {
-    background-color: #63666A !important; }
+    background-color: #6b6a69 !important; }
   html body .balmoral-demo .lightSlide .m-explore-list a > span {
-    color: #63666A !important; }
+    color: #6b6a69 !important; }
   html body .balmoral-demo .lightSlide .m-explore-list a:hover > span {
     color: #0085CA !important; }
   html body .balmoral-demo .lightSlide .m-explore-list a span.background-image {
@@ -15993,7 +15997,7 @@ html body .balmoral-demo {
     color: #a9a9a9; }
   html body .balmoral-demo .m-comments header .bubble {
     padding: 5px 20px;
-    background: #f6f4f0;
+    background: #f5f4f4;
     color: #000;
     margin-left: 18%;
     -webkit-border-radius: 5px;
@@ -16031,7 +16035,7 @@ html body .balmoral-demo {
     top: 50%;
     left: 1px;
     bottom: auto;
-    border-color: transparent #f6f4f0;
+    border-color: transparent #f5f4f4;
     transform: translate(-100%, -50%); }
   html body .balmoral-demo .m-comments header .display-name-infos {
     padding-left: 0px;
@@ -16048,7 +16052,7 @@ html body .balmoral-demo {
     text-align: right;
     margin-bottom: 10px; }
   html body .balmoral-demo .m-comments header.notConnected .ico-avatar-container .ico-avatar {
-    border: 2px solid #d0c5b0; }
+    border: 2px solid #c4bfbf; }
   html body .balmoral-demo .m-comments header.notConnected .bubble {
     background: #FFD100;
     display: inline-block;
@@ -16081,16 +16085,16 @@ html body .balmoral-demo {
     -o-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
     transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear; }
   html body .balmoral-demo .m-comments header.connected .bubble a {
-    color: #907d57;
+    color: #7b6f6f;
     font-style: italic;
     font-size: 1.1667rem; }
   html body .balmoral-demo .m-comments header.connected .bubble:hover {
-    background: #e3ddd0;
-    color: #514630; }
+    background: #ddd9d9;
+    color: #453f3f; }
   html body .balmoral-demo .m-comments header.connected .bubble:hover a {
-    color: #907d57; }
+    color: #7b6f6f; }
   html body .balmoral-demo .m-comments header.connected .bubble:hover:after {
-    border-color: transparent #e3ddd0; }
+    border-color: transparent #ddd9d9; }
   html body .balmoral-demo .m-comments header.connected .bubble:after {
     -webkit-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
     -moz-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
@@ -16124,11 +16128,11 @@ html body .balmoral-demo {
     top: 50%;
     margin-top: -10px; }
   html body .balmoral-demo .m-comments .x-delete-comment-link svg {
-    fill: #d8d9db;
+    fill: #c0bfbe;
     width: 100%;
     height: 100%; }
   html body .balmoral-demo .m-comments .x-delete-comment-link svg:hover {
-    fill: #63666A; }
+    fill: #6b6a69; }
   html body .balmoral-demo .m-comments .showMoreComments {
     padding-left: 18%;
     margin-top: 2rem;
@@ -16529,7 +16533,7 @@ html body .balmoral-demo {
       padding: 10px 20px;
       max-width: 244px; } }
   html body .balmoral-demo .m-field-panel {
-    background: #63666A;
+    background: #6b6a69;
     color: #fff;
     position: relative;
     padding: 10px;
@@ -16640,7 +16644,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-form-line .form-horizontal .control-label {
     text-align: left;
     padding-left: 0px;
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .m-form-line .form-horizontal .control-label.text-right {
     text-align: right; }
   html body .balmoral-demo .m-form-line .form-control {
@@ -16678,7 +16682,7 @@ html body .balmoral-demo {
     line-height: 38px; }
   html body .balmoral-demo .m-form-line .clickModifyContainer .clickModify {
     position: absolute;
-    color: #63666A;
+    color: #6b6a69;
     opacity: 0;
     pointer-events: none;
     right: 0px;
@@ -16833,10 +16837,10 @@ html body .balmoral-demo {
     margin-bottom: 0.5em; }
   html body .balmoral-demo .m-horizontal-thumbnails h3 + article:first-of-type,
   html body .balmoral-demo .m-horizontal-thumbnails h3 + li:first-of-type {
-    border-top: 1px solid #d8d9db; }
+    border-top: 1px solid #c0bfbe; }
   html body .balmoral-demo .m-horizontal-thumbnails article,
   html body .balmoral-demo .m-horizontal-thumbnails li {
-    border-top: 1px solid #d8d9db;
+    border-top: 1px solid #c0bfbe;
     position: relative;
     padding-top: 0.9375rem;
     padding-bottom: 1.5625rem; }
@@ -16846,7 +16850,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-horizontal-thumbnails article.vignetteChapitre a.containerScreenshot,
   html body .balmoral-demo .m-horizontal-thumbnails li.vignetteChapitre a.containerScreenshot {
     padding: 9px;
-    border: 1px dashed #63666A; }
+    border: 1px dashed #6b6a69; }
   html body .balmoral-demo .m-horizontal-thumbnails article .externalLink .containerScreenshot::before,
   html body .balmoral-demo .m-horizontal-thumbnails li .externalLink .containerScreenshot::before {
     background: url(../img/layout/icon/ico-external-link.svg) no-repeat center center;
@@ -16978,7 +16982,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-horizontal-thumbnails li.is-hoverPlay .headerAndText .source {
     color: #000; }
   html body .balmoral-demo .m-horizontal-thumbnails footer {
-    border-top: 1px solid #d8d9db;
+    border-top: 1px solid #c0bfbe;
     text-align: right; }
   html body .balmoral-demo .m-horizontal-thumbnails footer a {
     color: #000;
@@ -17027,7 +17031,7 @@ html body .balmoral-demo {
     html body .balmoral-demo .m-horizontal-thumbnails header #theFileTitle h2 span.h6 {
       font-size: 1.1667rem; }
     html body .balmoral-demo .m-horizontal-thumbnails article {
-      border-top: 1px solid #d8d9db; }
+      border-top: 1px solid #c0bfbe; }
     html body .balmoral-demo .m-horizontal-thumbnails article .watchLaterContainer {
       position: relative;
       right: inherit;
@@ -17051,7 +17055,7 @@ html body .balmoral-demo {
     html body .balmoral-demo .theFile article .watchLaterContainer {
       float: right; } }
   html body .balmoral-demo .m-how-to {
-    background: #4a4d50;
+    background: #515150;
     color: #fff;
     position: relative;
     padding-top: 24px;
@@ -17170,11 +17174,36 @@ html body .balmoral-demo {
     height: 28px;
     display: inline-block;
     position: relative; }
+  html body .balmoral-demo .watchLater .ico-clock .aiguille,
+  html body .balmoral-demo .watchLater .ico-clock .aiguille2 {
+    transform-origin: 50% 50%;
+    transition: transform 0.5s;
+    transition-timing-function: linear; }
   html body .balmoral-demo .watchLater .ico-clock path {
-    -webkit-transform: translateZ(0px);
-    fill: #63666A; }
+    fill: #6b6a69; }
+  html body .balmoral-demo .watchLater:hover .ico-clock {
+    /*
+        Directly transforming SVG bits is wonky on Firefox
+        Best to disable for now, revisit when icon is updated.
+        The clock is no longer broken but will not animate on hover.
+      */ }
+  html body .balmoral-demo .watchLater:hover .ico-clock .aiguille {
+    transform: rotate(-360deg); }
+  html body .balmoral-demo .watchLater:hover .ico-clock .aiguille2 {
+    transform: rotate(-30deg); }
+@-moz-document url-prefix() {
+  html body .balmoral-demo .watchLater:hover .ico-clock .aiguille,
+  html body .balmoral-demo .watchLater:hover .ico-clock .aiguille2 {
+    transform: none; } }
   html body .balmoral-demo .watchLater:hover .ico-clock path {
     fill: #0085CA; }
+  html body .balmoral-demo .watchLater .icon-add-o {
+    position: relative;
+    display: inline-block;
+    font-size: 28px;
+    transition: color .2s linear; }
+  html body .balmoral-demo .watchLater:hover .icon-add-o {
+    color: #0085CA; }
   html body .balmoral-demo .watchLater .ico-clock-check {
     width: 28px;
     height: 28px;
@@ -17184,10 +17213,10 @@ html body .balmoral-demo {
     display: none; }
   html body .balmoral-demo .watchLater .ico-clock-check .rond {
     transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
-    fill: #d8d9db; }
+    fill: #c0bfbe; }
   html body .balmoral-demo .watchLater .ico-clock-check .check {
     transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
-    fill: #63666A; }
+    fill: #6b6a69; }
   html body .balmoral-demo .watchLater:hover .ico-clock-check .rond {
     fill: #0085CA; }
   html body .balmoral-demo .watchLater:hover .ico-clock-check .check {
@@ -17196,10 +17225,16 @@ html body .balmoral-demo {
     display: block; }
   html body .balmoral-demo .watchLater.is-checked .ico-clock {
     opacity: 0; }
-  html body .balmoral-demo .watchLater.blanc .ico-clock path {
+  html body .balmoral-demo .watchLater.is-checked .icon-add-o {
+    opacity: 0; }
+  html body .balmoral-demo .watchLater.blanc .icon-clock path {
     fill: #fff; }
   html body .balmoral-demo .watchLater.blanc:hover .ico-clock path {
     fill: #0085CA; }
+  html body .balmoral-demo .watchLater.blanc .icon-add-o {
+    color: #fff; }
+  html body .balmoral-demo .watchLater.blanc:hover .icon-add-o {
+    color: #0085CA; }
   html body .balmoral-demo [class^="icon-"].status-badge,
   html body .balmoral-demo [class*=" icon-"].status-badge {
     position: relative; }
@@ -17216,7 +17251,7 @@ html body .balmoral-demo {
     text-align: center;
     line-height: 1;
     border-radius: 50%;
-    box-shadow: 0 0 1px #63666A;
+    box-shadow: 0 0 1px #6b6a69;
     content: ""; }
   html body .balmoral-demo [class^="icon-"].warning:after,
   html body .balmoral-demo [class*=" icon-"].warning:after {
@@ -17537,7 +17572,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .icon-steam:before {
     content: "\eaac"; }
   html body .balmoral-demo .icon-study-guides:before {
-    content: "\e90b"; }
+    content: "\e964"; }
   html body .balmoral-demo .icon-study-guides-o:before {
     content: "\e964"; }
   html body .balmoral-demo .icon-switch:before {
@@ -17704,7 +17739,7 @@ html body .balmoral-demo {
     padding-bottom: 1.5625rem;
     padding-top: 0.625rem; }
   html body .balmoral-demo .m-image-banner .title-xs {
-    background: #f6f4f0;
+    background: #f5f4f4;
     color: #000; }
   html body .balmoral-demo .m-image-banner .title-xs h1 {
     margin-top: .75em; }
@@ -18008,11 +18043,11 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-listing li a {
     display: block;
     width: 100%;
-    border-top: 1px solid #d8d9db;
+    border-top: 1px solid #c0bfbe;
     padding-top: 0.8125rem;
     padding-bottom: 0.8125rem; }
   html body .balmoral-demo .m-listing li a span {
-    color: #d8d9db;
+    color: #c0bfbe;
     -webkit-transition: all 0s;
     -moz-transition: all 0s;
     -o-transition: all 0s;
@@ -18271,7 +18306,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-pager-mobile .icon-prev {
     font-size: 43px; }
   html body .balmoral-demo .m-pager-mobile a {
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .m-pager-mobile a:hover {
     color: #0085CA; }
   html body .balmoral-demo .m-pager-mobile li {
@@ -18284,7 +18319,7 @@ html body .balmoral-demo {
       html body .balmoral-demo .pagination.hidden-xs {
         display: inline-block !important; } }
   html body .balmoral-demo .m-partner-list {
-    background: #f0ede6; }
+    background: #eeecec; }
   html body .balmoral-demo .m-partner-list h2 {
     text-transform: uppercase;
     font-size: 1.75rem;
@@ -18344,7 +18379,7 @@ html body .balmoral-demo {
     html body .balmoral-demo .m-partner-list .thumbnail-horizontal .item > li:nth-child(4n) {
       padding: 0 0 0 60px; } }
   html body .balmoral-demo .m-popup {
-    background: #f6f4f0;
+    background: #f5f4f4;
     padding: 0px;
     max-width: 625px;
     margin: 0 auto;
@@ -18388,7 +18423,8 @@ html body .balmoral-demo {
     transition: fill 0.2s linear;
     -webkit-transform: translateZ(0px);
     -moz-transform: translateZ(0px);
-    -webkit-backface-visibility: hidden; }
+    -webkit-backface-visibility: hidden;
+    pointer-events: none; }
   html body .balmoral-demo .m-popup header .x-icon-link:hover .x-icon path {
     fill: #FFD100; }
   html body .balmoral-demo .m-popup header .x-icon-link:hover i {
@@ -18446,7 +18482,7 @@ html body .balmoral-demo {
     html body .balmoral-demo .form-inline .form-group {
       width: 100%; } }
   html body .balmoral-demo .m-profile-card {
-    background-color: #f6f4f0;
+    background-color: #f5f4f4;
     position: relative;
     padding: 20px 0 30px;
     border-radius: 20px; }
@@ -18464,7 +18500,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-profile-card dt {
     font-weight: normal;
     font-size: 0.75rem;
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .m-profile-card dd {
     font-size: 1rem;
     margin-bottom: 5px; }
@@ -18583,7 +18619,7 @@ html body .balmoral-demo {
     position: absolute;
     top: 0px; }
   html body .balmoral-demo .m-ribbon .x-icon-link .x-icon path {
-    fill: #63666A;
+    fill: #6b6a69;
     -webkit-transition: fill 0.2s linear;
     -moz-transition: fill 0.2s linear;
     -o-transition: fill 0.2s linear;
@@ -18684,7 +18720,7 @@ html body .balmoral-demo {
     -o-transform: translate(-10.125rem, 0);
     transform: translate(-10.125rem, 0); }
   html body .balmoral-demo .m-shareBar a {
-    border: 2px solid #d8d9db;
+    border: 2px solid #c0bfbe;
     font-size: 1.1rem;
     margin-left: 0.4375rem;
     margin-right: 0.4375rem;
@@ -18692,7 +18728,7 @@ html body .balmoral-demo {
     height: 2.5rem;
     line-height: 2.375rem;
     width: 2.5rem;
-    background-color: #d8d9db;
+    background-color: #c0bfbe;
     text-align: center;
     border-radius: 50%; }
   html body .balmoral-demo .m-shareBar a:before {
@@ -18747,7 +18783,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-shareBar.small li a:before {
     line-height: 2rem; }
   html body .balmoral-demo .m-shareBar.small li a:hover {
-    background: #63666A;
+    background: #6b6a69;
     color: #fff; }
   html body .balmoral-demo .m-shareBar.small .shareLink {
     -webkit-transition: opacity 200ms linear, fill 200ms linear, color 300ms linear;
@@ -19014,7 +19050,7 @@ html body .balmoral-demo {
     width: 100%; }
   html body .balmoral-demo .m-tabs > ul li.active a {
     color: #000 !important;
-    border-color: #63666A;
+    border-color: #6b6a69;
     font-family: "Ciutadella-Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   html body .balmoral-demo .m-tabs > ul a {
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -19027,14 +19063,124 @@ html body .balmoral-demo {
     color: #0085CA !important;
     border-color: #0085CA; }
   @media (min-width: 768px) {
+    html body .balmoral-demo .m-tabs > ul {
+      display: flex; }
+    html body .balmoral-demo .m-tabs > ul li {
+      display: flex;
+      text-align: center; }
     html body .balmoral-demo .m-tabs > ul li,
     html body .balmoral-demo .m-tabs > ul a {
       width: auto; } }
+  html body .balmoral-demo .m-tiles-container {
+    display: flex;
+    flex-wrap: wrap; }
+  html body .balmoral-demo .m-tiles-container > li {
+    display: flex;
+    margin-bottom: 10px; }
+  html body .balmoral-demo .m-tiles-container > li[class*="col-"] {
+    padding-left: 5px;
+    padding-right: 5px; }
+  html body .balmoral-demo .m-tile {
+    --bg-color: #c0bfbe;
+    --bg-color-faded: #e3e3e2;
+    -webkit-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
+    -moz-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
+    -o-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
+    transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 40px 40px 30px 40px;
+    background-color: var(--bg-color);
+    border-radius: 6px;
+    overflow-wrap: anywhere; }
+  html body .balmoral-demo .m-tile.yellow {
+    --bg-color: #FFD100;
+    --bg-color-faded: #d4ad00; }
+  html body .balmoral-demo .m-tile.blue {
+    --bg-color: #0085CA;
+    --bg-color-faded: #006499; }
+  html body .balmoral-demo .m-tile.green {
+    --bg-color: #C4D600;
+    --bg-color-faded: #a3b200; }
+  html body .balmoral-demo .m-tile.pink {
+    --bg-color: #F6416C;
+    --bg-color-faded: #bd2545; }
+  html body .balmoral-demo .m-tile.violet {
+    --bg-color: #87319A;
+    --bg-color-faded: #672276; }
+  html body .balmoral-demo .m-tile.turquoise {
+    --bg-color: #00BFB3;
+    --bg-color-faded: #009187; }
+  html body .balmoral-demo .m-tile.red {
+    --bg-color: #E03C31;
+    --bg-color-faded: #b42b22; }
+  html body .balmoral-demo .m-tile.orange {
+    --bg-color: #FF5C39;
+    --bg-color-faded: #c54327; }
+  html body .balmoral-demo .m-tile .text {
+    font-size: 4vw;
+    font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    text-transform: uppercase;
+    line-height: 1em;
+    text-align: center;
+    color: #000; }
+  @media (min-width: 768px) {
+    html body .balmoral-demo .m-tile .text {
+      font-size: 3vw; } }
+  @media (min-width: 990px) {
+    html body .balmoral-demo .m-tile .text {
+      font-size: 2.3vw; } }
+  @media (min-width: 1200px) {
+    html body .balmoral-demo .m-tile .text {
+      font-size: 1.8vw; } }
+  @media (min-width: 1440px) {
+    html body .balmoral-demo .m-tile .text {
+      font-size: 1.5em; } }
+  html body .balmoral-demo .m-tile .icon {
+    font-size: 4vw;
+    margin-top: 10px;
+    color: #000; }
+  @media (min-width: 768px) {
+    html body .balmoral-demo .m-tile .icon {
+      font-size: 3vw; } }
+  @media (min-width: 990px) {
+    html body .balmoral-demo .m-tile .icon {
+      font-size: 2.3vw; } }
+  @media (min-width: 1200px) {
+    html body .balmoral-demo .m-tile .icon {
+      font-size: 1.8vw; } }
+  @media (min-width: 1440px) {
+    html body .balmoral-demo .m-tile .icon {
+      font-size: 1.5em; } }
+  html body .balmoral-demo .m-tile .campus-badge {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    background-color: var(--bg-color);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Ciutadella-Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 0 5px; }
+  html body .balmoral-demo .m-tile:hover {
+    opacity: 0.6; }
+  html body .balmoral-demo .m-tile.not-subscribed {
+    background-color: var(--bg-color-faded); }
+  html body .balmoral-demo .m-tile.not-subscribed .text,
+  html body .balmoral-demo .m-tile.not-subscribed .icon {
+    opacity: 0.6; }
   html body .balmoral-demo .m-vignette-card {
     position: relative;
     background-color: #fff;
     padding: 10px;
-    border: 1px solid #f2f3f3; }
+    border: 1px solid #d9d9d8; }
   html body .balmoral-demo .m-vignette-card .titre {
     display: block;
     height: 3.4em;
@@ -19049,10 +19195,9 @@ html body .balmoral-demo {
   html body .balmoral-demo .blog-card {
     font-family: "Suisse", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   html body .balmoral-demo .blog-card .thumbnail {
-    display: block;
-    height: 188px;
-    background-size: cover;
-    background-position: center; }
+    display: block; }
+  html body .balmoral-demo .blog-card .thumbnail img {
+    max-width: 100%; }
   html body .balmoral-demo .blog-card .titre {
     font-family: "Suisse", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
     height: 5em;
@@ -19070,6 +19215,9 @@ html body .balmoral-demo {
   html body .balmoral-demo .blog-card .info-secondaire .read-more {
     text-transform: uppercase;
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  @media (max-width: 767px) {
+    html body .balmoral-demo .blog-card .info-secondaire .read-more {
+      display: none; } }
   html body .balmoral-demo .blog-card.read-more {
     display: flex;
     align-items: center;
@@ -19101,10 +19249,10 @@ html body .balmoral-demo {
   html body .balmoral-demo .jspHorizontalBar .jspCap {
     float: left; }
   html body .balmoral-demo .jspTrack {
-    background: #f6f4f0;
+    background: #f5f4f4;
     position: relative; }
   html body .balmoral-demo .jspDrag {
-    background: #d8d9db;
+    background: #c0bfbe;
     position: relative;
     top: 0;
     left: 0;
@@ -19157,7 +19305,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .bootstrap-select > .dropdown-toggle.bs-placeholder:hover,
   html body .balmoral-demo .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
   html body .balmoral-demo .bootstrap-select > .dropdown-toggle.bs-placeholder:active {
-    color: #7c7f84; }
+    color: #858482; }
   html body .balmoral-demo .bootstrap-select > select {
     position: absolute !important;
     bottom: 0;
@@ -20002,12 +20150,111 @@ html body .balmoral-demo {
       clear: none; }
     html body .balmoral-demo #director_list_page #l-mainPageContent ul.m-director-list li:nth-child(4n+1) {
       clear: both; } }
-  html body .balmoral-demo #home_edu_page #exploreTeacherResourcesCarousel .background-image {
-    background: #87319A; }
-  html body .balmoral-demo #home_edu_page #exploreTeacherResourcesCarousel .vwResize {
-    color: #fff; }
-  html body .balmoral-demo #home_edu_page #exploreTeacherResourcesCarousel .disabled .background-image {
-    background: #523459; }
+  html body .balmoral-demo #home_edu_page #teacher-resources {
+    margin-bottom: 20px; }
+  html body .balmoral-demo #home_edu_page #teacher-resources h2 {
+    font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.75rem;
+    text-transform: uppercase; }
+  html body .balmoral-demo #home_edu_page #teacher-resources .m-tiles-container {
+    margin-bottom: 20px; }
+  html body .balmoral-demo #home_edu_page #library-resources {
+    margin-bottom: 20px; }
+  html body .balmoral-demo #home_edu_page #library-resources h3 {
+    position: relative;
+    display: inline;
+    font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-bottom: 10px; }
+  html body .balmoral-demo #home_edu_page #library-resources h3:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #00BFB3; }
+  html body .balmoral-demo #home_edu_page #library-resources a {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 12px; }
+  html body .balmoral-demo #home_edu_page #library-resources a span {
+    font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #007CBD;
+    text-decoration: underline;
+    margin-left: 5px; }
+  html body .balmoral-demo #home_edu_page .campus-promo-box {
+    display: flex; }
+  html body .balmoral-demo #home_edu_page .campus-promo-box .campus-promo-text {
+    background-color: #fff;
+    padding: 20px;
+    width: 33%; }
+  html body .balmoral-demo #home_edu_page .campus-promo-box .campus-promo-text h2 {
+    margin: 0;
+    color: #00A197;
+    font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 41px;
+    text-transform: uppercase; }
+  html body .balmoral-demo #home_edu_page .campus-promo-box .campus-promo-text h4 {
+    margin-top: 24px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-family: "Ciutadella-Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 20px; }
+  html body .balmoral-demo #home_edu_page .campus-promo-box .campus-promo-text p {
+    margin-top: 0;
+    font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  html body .balmoral-demo #home_edu_page .campus-promo-box .campus-promo-image {
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center; }
+  @media (max-width: 990px) {
+    html body .balmoral-demo #home_edu_page .campus-promo-box .campus-promo-text {
+      width: 100%; }
+    html body .balmoral-demo #home_edu_page .campus-promo-box .campus-promo-image {
+      display: none; } }
+  html body .balmoral-demo #home_edu_page .education-newsletter-promo .l-largeur90p {
+    padding: 24px 0;
+    max-width: 990px; }
+  html body .balmoral-demo #home_edu_page .education-newsletter-promo h2 {
+    display: flex;
+    align-items: bottom;
+    margin: 0;
+    color: #FF5430;
+    text-transform: uppercase; }
+  html body .balmoral-demo #home_edu_page .education-newsletter-promo h2 i {
+    margin-right: 12px; }
+  html body .balmoral-demo #home_edu_page .education-newsletter-promo .content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  html body .balmoral-demo #home_edu_page .education-newsletter-promo .content-container p {
+    margin: 0;
+    margin-right: 12px;
+    font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  html body .balmoral-demo #home_edu_page .education-newsletter-promo .content-container .buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 0; }
+  html body .balmoral-demo #home_edu_page .education-newsletter-promo .content-container .buttons .btn {
+    margin-right: 16px; }
+  html body .balmoral-demo #home_edu_page .education-newsletter-promo .content-container .buttons .social-icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-shrink: 0; }
+  html body .balmoral-demo #home_edu_page .education-newsletter-promo .content-container .buttons .social-icons i {
+    font-size: 32px;
+    margin-left: 16px; }
+  @media (max-width: 768px) {
+    html body .balmoral-demo #home_edu_page .education-newsletter-promo .content-container {
+      display: block; }
+    html body .balmoral-demo #home_edu_page .education-newsletter-promo .content-container p {
+      margin-right: 0; }
+    html body .balmoral-demo #home_edu_page .education-newsletter-promo .content-container .buttons {
+      margin-top: 6px; } }
   html body .balmoral-demo #campus_page .iconText {
     position: relative; }
   html body .balmoral-demo #campus_page .iconText .iconText-icon {
@@ -20200,7 +20447,7 @@ html body .balmoral-demo {
   html body .balmoral-demo #new_offer_page .newOfferProduct .productDescription .textStats {
     display: inline;
     padding-left: 20px;
-    font-family: "Ciutadella-Semibold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Ciutadella-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     text-transform: uppercase; }
   html body .balmoral-demo #new_offer_page .newOfferProduct .productDescription.turquoise .numberStats {
     border-color: #00BFB3; }
@@ -20418,10 +20665,12 @@ html body .balmoral-demo {
   html body .balmoral-demo .edu-content h2.h3 {
     text-transform: uppercase;
     font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  html body .balmoral-demo body#edu-playlists #m-footer-edu {
+    margin-top: 4.5rem; }
   html body .balmoral-demo #explore_by_educational_subjects_page .maxWidth {
     max-width: 600px; }
   html body .balmoral-demo #explore_by_educational_subjects_page #listing-edu > li {
-    border-top: 1px solid #d8d9db;
+    border-top: 1px solid #c0bfbe;
     overflow: hidden;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem; }
@@ -20471,7 +20720,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .film-page #l-mainPageContent #filmTop {
     padding-bottom: 18px; }
   html body .balmoral-demo .film-page #l-mainPageContent .bandeOuterHeightLogo {
-    height: 36px;
+    height: 45px;
     display: none; }
   html body .balmoral-demo .film-page #l-mainPageContent .playerContainer {
     position: relative;
@@ -20520,7 +20769,7 @@ html body .balmoral-demo {
     top: 50%; }
   html body .balmoral-demo .film-page #l-mainPageContent .playerContainer #nextFilm svg path,
   html body .balmoral-demo .film-page #l-mainPageContent .playerContainer #prevFilm svg path {
-    fill: #63666A; }
+    fill: #6b6a69; }
   html body .balmoral-demo .film-page #l-mainPageContent .playerContainer #nextFilm:hover svg path,
   html body .balmoral-demo .film-page #l-mainPageContent .playerContainer #prevFilm:hover svg path {
     fill: #0085CA; }
@@ -20593,11 +20842,11 @@ html body .balmoral-demo {
     text-decoration: underline; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent .playlist-insert span {
     text-transform: initial;
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent h1 {
     margin-top: 0px; }
   @media (max-width: 767px) {
-    html body .balmoral-demo .film-page #l-mainPageContent #filmContent h1 #filmContent h1 {
+    html body .balmoral-demo .film-page #l-mainPageContent #filmContent h1 {
       font-size: 2em; } }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent #filmDescription > p {
     font-size: 1.1667rem;
@@ -20824,7 +21073,7 @@ html body .balmoral-demo {
     padding-left: 3.7rem;
     padding-right: 0.7rem;
     color: #fff;
-    background: #63666A;
+    background: #6b6a69;
     line-height: 2.6em; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .btn .icon {
     position: absolute;
@@ -20841,7 +21090,7 @@ html body .balmoral-demo {
     color: #000;
     background: #fff; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent .permanentTransactionConfirmation {
-    border: 2px solid #63666A;
+    border: 2px solid #6b6a69;
     margin-bottom: 1.25rem;
     border-radius: 5px;
     padding: 10px 18px;
@@ -20871,26 +21120,24 @@ html body .balmoral-demo {
     margin-top: -0.22em; }
   html body .balmoral-demo .film-page #l-mainPageContent #shareFilm a.embed-icon.is-collapseBlock-open {
     color: #00BFB3; }
-  html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .chapter-link-container a {
+  html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .chapter-link-container a,
+  html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .watchLater-link-container a {
     font-size: 1em;
     text-transform: uppercase;
     position: relative;
     display: block;
     line-height: 1.75rem;
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-  html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .chapter-link-container a i {
+  html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .chapter-link-container a i,
+  html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .watchLater-link-container a i {
     font-size: 2rem; }
-  html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .watchLater-link-container a {
-    font-size: 1.75rem; }
-  html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .watchLater-link-container path {
-    fill: #000; }
-  html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .watchLater-link-container .watchLater:hover .ico-clock path {
-    fill: #0085CA; }
+  html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .watchLater-link-container .icon-add-o {
+    color: #000; }
+  html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .watchLater-link-container .watchLater:hover .icon-add-o {
+    color: #0085CA; }
   html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox {
     padding: 1rem 0;
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
-  html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox .masonry-block {
-    margin-bottom: 20px; }
   html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox > div {
     width: 100%; }
   html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox #containerCredits {
@@ -20898,9 +21145,34 @@ html body .balmoral-demo {
   html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox #containerCredits .row {
     padding: 40px 0 0px 0; }
   html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox #containerCredits .typePoste {
-    color: #63666A;
+    color: #6b6a69;
     font-weight: bold;
     text-transform: uppercase; }
+  html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox #containerCredits .credits-list {
+    column-count: 6;
+    -webkit-column-count: 6;
+    -moz-column-count: 6; }
+  @media (max-width: 1440px) {
+    html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox #containerCredits .credits-list {
+      column-count: 4;
+      -webkit-column-count: 4;
+      -moz-column-count: 4; } }
+  @media (max-width: 990px) {
+    html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox #containerCredits .credits-list {
+      column-count: 3;
+      -webkit-column-count: 3;
+      -moz-column-count: 3; } }
+  @media (max-width: 768px) {
+    html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox #containerCredits .credits-list {
+      column-count: 2;
+      -webkit-column-count: 2;
+      -moz-column-count: 2; } }
+  html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox #containerCredits .credits-list li {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    break-inside: avoid-column;
+    -webkit-break-inside: avoid-column; }
   html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox dt,
   html body .balmoral-demo .film-page #l-mainPageContent .creditsCommentsBox dd {
     text-align: left; }
@@ -21013,7 +21285,7 @@ html body .balmoral-demo {
     display: inline; }
   html body .balmoral-demo .film-page #l-mainPageContent .relatedTo .relatedToContent dd:after {
     content: "|";
-    color: #d8d9db;
+    color: #c0bfbe;
     position: relative;
     font-size: 1.2em;
     padding-left: 0.375rem; }
@@ -21023,15 +21295,15 @@ html body .balmoral-demo {
     font-style: italic;
     font-weight: normal; }
   html body .balmoral-demo .film-page #l-mainPageContent .relatedTo .relatedToContent dt a {
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .film-page #l-mainPageContent .relatedTo .relatedToContent dt a:hover {
-    color: #a3a6a9; }
+    color: #8e8c8a; }
   html body .balmoral-demo .film-page #l-mainPageContent .relatedTo .relatedToContent dt:after {
     content: "\A";
     white-space: pre; }
   html body .balmoral-demo .film-page #l-mainPageContent .relatedTo .relatedToOneLine {
     text-transform: uppercase;
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo .film-page #l-mainPageContent .relatedTo .relatedToOneLine ul {
     display: inline; }
   html body .balmoral-demo .film-page #l-mainPageContent .relatedTo .relatedToOneLine li {
@@ -21113,9 +21385,6 @@ html body .balmoral-demo {
       width: calc(58.333333333333336% + 25px); }
     html body .balmoral-demo .film-page #l-mainPageContent .installation .gallery-link {
       margin-bottom: 1.8rem; } }
-  @media (min-width: 990px) {
-    html body .balmoral-demo .film-page #l-mainPageContent .bandeOuterHeightLogo {
-      margin-bottom: -19px; } }
   @media (min-width: 1200px) {
     html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat li {
       margin-right: 1.5625rem; }
@@ -21343,7 +21612,7 @@ html body .balmoral-demo {
     border-top: 10px solid #fff; }
   html body .balmoral-demo #page-review_page #prixCanadien {
     text-align: right;
-    color: #63666A;
+    color: #6b6a69;
     padding: 10px 20px; }
   html body .balmoral-demo #page-review_page #creditCardReview {
     margin-top: 2rem;
@@ -21647,7 +21916,7 @@ html body .balmoral-demo {
     display: none; }
   html body .balmoral-demo #page-recherche_page #l-mainPageContent .vignette {
     background: #fff;
-    border: 1px solid #f2f3f3;
+    border: 1px solid #d9d9d8;
     padding: 10px 10px 10px 0;
     margin-bottom: 10px;
     position: relative;
@@ -21687,7 +21956,7 @@ html body .balmoral-demo {
   html body .balmoral-demo #page-recherche_page #l-mainPageContent .vignette.vignetteGratuite .col-sm-9 {
     padding-left: 20px; }
   html body .balmoral-demo #page-recherche_page #l-mainPageContent .vignette .infosSecondaires {
-    color: #63666A;
+    color: #6b6a69;
     font-size: 0.83333rem;
     display: block; }
   html body .balmoral-demo #page-recherche_page #l-mainPageContent .vignette .infosSecondaires .filmRestriction > * {
@@ -21782,7 +22051,7 @@ html body .balmoral-demo {
     html body .balmoral-demo #premiere-visite_page .m-image-banner #degradeFeaturedSimple {
       height: 70%; }
     html body .balmoral-demo #premiere-visite_page #l-mainPageContent {
-      background: #f6f4f0; }
+      background: #f5f4f4; }
     html body .balmoral-demo #premiere-visite_page #topPremiereVisite {
       margin-top: -11%; }
     html body .balmoral-demo #premiere-visite_page #subscribeNewsletter {
@@ -21821,9 +22090,9 @@ html body .balmoral-demo {
   html body .balmoral-demo .user-profile-page #l-mainPageContent #following h2 {
     margin-top: 0px; }
   html body .balmoral-demo .user-profile-page #l-mainPageContent #following > ul {
-    border-top: 1px solid #d8d9db; }
+    border-top: 1px solid #c0bfbe; }
   html body .balmoral-demo .user-profile-page #l-mainPageContent #following > ul > li {
-    border-bottom: 1px solid #d8d9db;
+    border-bottom: 1px solid #c0bfbe;
     position: relative; }
   html body .balmoral-demo .user-profile-page #l-mainPageContent #following > ul > li > a {
     display: table;
@@ -21860,9 +22129,9 @@ html body .balmoral-demo {
     margin-top: 0px;
     margin-bottom: 0px; }
   html body .balmoral-demo .user-profile-page #l-mainPageContent #newsletterSubscription ul {
-    border-top: 1px solid #d8d9db; }
+    border-top: 1px solid #c0bfbe; }
   html body .balmoral-demo .user-profile-page #l-mainPageContent #newsletterSubscription ul > li {
-    border-bottom: 1px solid #d8d9db;
+    border-bottom: 1px solid #c0bfbe;
     padding-bottom: 60px;
     position: relative;
     padding-top: 0.75rem; }
@@ -21903,8 +22172,8 @@ html body .balmoral-demo {
   html body .balmoral-demo .user-profile-page #l-mainPageContent #manageOtherItems {
     margin-bottom: 2.625rem; }
   html body .balmoral-demo .user-profile-page #l-mainPageContent #manageOtherItems div.border {
-    border-top: 1px solid #d8d9db;
-    border-bottom: 1px solid #d8d9db;
+    border-top: 1px solid #c0bfbe;
+    border-bottom: 1px solid #c0bfbe;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem; }
   html body .balmoral-demo .user-profile-page #l-mainPageContent #manageOtherItems h4 {
@@ -21936,7 +22205,7 @@ html body .balmoral-demo {
       margin-top: -20px;
       bottom: auto; }
     html body .balmoral-demo .user-profile-page #l-mainPageContent #newsletterSubscription ul > li {
-      border-bottom: 1px solid #d8d9db;
+      border-bottom: 1px solid #c0bfbe;
       padding-right: 10.3125rem;
       padding-bottom: 0.75rem; }
     html body .balmoral-demo .user-profile-page #l-mainPageContent #newsletterSubscription ul > li button,
@@ -22044,15 +22313,15 @@ html body .balmoral-demo {
   html body .balmoral-demo #my_purchases_page #l-generalContainer #listPurchases > div.vignette .date {
     text-transform: uppercase;
     line-height: 1.8em;
-    color: #63666A;
+    color: #6b6a69;
     font-size: 0.75em;
     display: block; }
   html body .balmoral-demo #my_purchases_page #l-generalContainer #listPurchases > div.vignette .liscence {
-    color: #63666A;
+    color: #6b6a69;
     font-size: 0.75em;
     display: block; }
   html body .balmoral-demo #my_purchases_page #l-generalContainer #listPurchases > div.vignette .expiration {
-    color: #63666A;
+    color: #6b6a69;
     font-weight: bold;
     font-size: 0.75rem;
     display: block; }
@@ -22077,13 +22346,15 @@ html body .balmoral-demo {
     -moz-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
     -o-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
     transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
-    visibility: hidden;
     opacity: 0;
     z-index: 3;
     width: 100%;
     padding: 10px;
     height: 100%;
     background: rgba(0, 0, 0, 0.75); }
+  html body .balmoral-demo #my_purchases_page #l-generalContainer #listPurchases > div.vignette .containerImg .overlayResolution.show,
+  html body .balmoral-demo #my_purchases_page #l-generalContainer #listPurchases > div.vignette .containerImg .overlayResolution.show-force {
+    opacity: 1; }
   html body .balmoral-demo #my_purchases_page #l-generalContainer #listPurchases > div.vignette .containerImg .overlayResolution .containerBtReso {
     position: relative; }
   html body .balmoral-demo #my_purchases_page #l-generalContainer #listPurchases > div.vignette .containerImg .overlayResolution .containerBtReso p {
@@ -22124,7 +22395,7 @@ html body .balmoral-demo {
     margin-bottom: 0.75rem; }
   html body .balmoral-demo #my_purchases_page #l-generalContainer #listPurchases > div.vignette .infosSecondaires {
     font-size: 0.75rem;
-    color: #63666A;
+    color: #6b6a69;
     /*Pas encore utilisé*/ }
   html body .balmoral-demo #my_purchases_page #l-generalContainer #listPurchases > div.vignette .infosSecondaires .timebar {
     margin-bottom: 0px; }
@@ -22177,12 +22448,12 @@ html body .balmoral-demo {
   html body .balmoral-demo #transaction_history_page #l-mainPageContent .bandeTop {
     margin-bottom: 36px; }
   html body .balmoral-demo #transaction_history_page #l-mainPageContent table {
-    background: #f2f3f3;
+    background: #f6f6f6;
     margin-bottom: 30px;
     width: 100%;
-    border-left: 1px solid #63666A;
-    border-right: 1px solid #63666A;
-    border-bottom: 1px solid #63666A; }
+    border-left: 1px solid #6b6a69;
+    border-right: 1px solid #6b6a69;
+    border-bottom: 1px solid #6b6a69; }
   html body .balmoral-demo #transaction_history_page #l-mainPageContent table td,
   html body .balmoral-demo #transaction_history_page #l-mainPageContent table th {
     padding: 15px;
@@ -22190,12 +22461,12 @@ html body .balmoral-demo {
     font-size: 1rem; }
   html body .balmoral-demo #transaction_history_page #l-mainPageContent table th {
     text-transform: uppercase;
-    background: #63666A;
+    background: #6b6a69;
     color: #fff;
     font-weight: normal;
     white-space: nowrap; }
   html body .balmoral-demo #transaction_history_page #l-mainPageContent table tr {
-    border-bottom: 1px solid #63666A; }
+    border-bottom: 1px solid #6b6a69; }
   html body .balmoral-demo #transaction_history_page #l-mainPageContent table tr:nth-child(2n) {
     background: #ffffff; }
   html body .balmoral-demo #transaction_history_page #l-mainPageContent table a {
@@ -22203,7 +22474,7 @@ html body .balmoral-demo {
   html body .balmoral-demo #transaction_history_page #l-mainPageContent #prixCanadien {
     margin-bottom: 30px;
     text-align: right;
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo #invoice_page #l-mainPageContent h1 {
     padding-right: 70px; }
   html body .balmoral-demo #invoice_page #l-mainPageContent #printLink {
@@ -22224,7 +22495,7 @@ html body .balmoral-demo {
   html body .balmoral-demo #invoice_page #l-mainPageContent #blocAdressePaiement .col-sm-6:last-child {
     margin-top: 50px; }
   html body .balmoral-demo #invoice_page #l-mainPageContent #blocItem {
-    background: #f6f4f0;
+    background: #f5f4f4;
     margin: 1.875rem -24px 1.875rem -24px;
     padding: 30px 24px; }
   html body .balmoral-demo #invoice_page #l-mainPageContent #blocItem h5 {
@@ -22244,10 +22515,10 @@ html body .balmoral-demo {
     padding: 0.5em 0;
     vertical-align: top; }
   html body .balmoral-demo #invoice_page #l-mainPageContent table tr {
-    border-bottom: 1px dotted #63666A; }
+    border-bottom: 1px dotted #6b6a69; }
   html body .balmoral-demo #invoice_page #l-mainPageContent #bottomInvoice {
     margin-bottom: 1.875rem;
-    color: #63666A; }
+    color: #6b6a69; }
   html body .balmoral-demo #invoice_page #l-mainPageContent #bottomInvoice #prixCanadien {
     margin-top: 1.875rem; }
   @media (min-width: 768px) {
@@ -22286,7 +22557,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .s-auth .maxWidthText {
     max-width: 360px; }
   html body .balmoral-demo .s-auth #signUpLink {
-    background: #d8d9db;
+    background: #c0bfbe;
     padding: 25px 20px;
     font-size: 2rem;
     display: block;
@@ -22321,7 +22592,7 @@ html body .balmoral-demo {
     top: 0px;
     font-size: 40px; }
   html body .balmoral-demo .s-auth #signUpLink:hover {
-    background: #63666A; }
+    background: #6b6a69; }
   html body .balmoral-demo .s-auth #signUpLink:hover h2,
   html body .balmoral-demo .s-auth #signUpLink:hover h3 {
     color: #fff; }
@@ -22979,6 +23250,12 @@ code {
 
 .fg-jauneWarning {
   background-color: #FFEC20; }
+
+.fg-success {
+  background-color: #1c9249; }
+
+.bg-success {
+  background-color: #6cdc97; }
 
 #styleGuide_icones_page #svgIconList {
   width: 100%; }
