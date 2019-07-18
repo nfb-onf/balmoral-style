@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>Voice & Tone - NFB Balmoral</title>
+  <title>Lists - NFB Balmoral</title>
   <link rel="stylesheet" href="https://nfb-onf.github.io/balmoral-style/assets/css/just-the-docs.css">
   
   <script type="text/javascript" src="https://nfb-onf.github.io/balmoral-style/assets/js/vendor/lunr.min.js"></script>
@@ -199,7 +199,7 @@
     
       
         
-          <li class="navigation-list-item">
+          <li class="navigation-list-item active">
             
             <a href="https://nfb-onf.github.io/balmoral-style/docs/components" class="navigation-list-link">Components</a>
             
@@ -337,9 +337,9 @@
                   
                 
                   
-                    <li class="navigation-list-item ">
+                    <li class="navigation-list-item  active">
                       
-                      <a href="https://nfb-onf.github.io/balmoral-style/docs/components/lists.html" class="navigation-list-link">Lists</a>
+                      <a href="https://nfb-onf.github.io/balmoral-style/docs/components/lists.html" class="navigation-list-link active">Lists</a>
                       
                     </li>
                   
@@ -524,7 +524,7 @@
     
       
         
-          <li class="navigation-list-item active">
+          <li class="navigation-list-item">
             
             <a href="https://nfb-onf.github.io/balmoral-style/docs/content" class="navigation-list-link">Content</a>
             
@@ -576,9 +576,9 @@
                   
                 
                   
-                    <li class="navigation-list-item  active">
+                    <li class="navigation-list-item ">
                       
-                      <a href="https://nfb-onf.github.io/balmoral-style/docs/content/voice-tone.html" class="navigation-list-link active">Voice & Tone</a>
+                      <a href="https://nfb-onf.github.io/balmoral-style/docs/content/voice-tone.html" class="navigation-list-link">Voice & Tone</a>
                       
                     </li>
                   
@@ -688,46 +688,152 @@
             <nav class="breadcrumb-nav">
               <ol class="breadcrumb-nav-list">
                 
-                  <li class="breadcrumb-nav-list-item"><a href="https://nfb-onf.github.io/balmoral-style/docs/content">Content</a></li>
+                  <li class="breadcrumb-nav-list-item"><a href="https://nfb-onf.github.io/balmoral-style/docs/components">Components</a></li>
                 
-                <li class="breadcrumb-nav-list-item"><span>Voice & Tone</span></li>
+                <li class="breadcrumb-nav-list-item"><span>Lists</span></li>
               </ol>
             </nav>
           
         
         <div class="page-content">
-          <h1 class="no_toc" id="voice--tone">Voice &amp; Tone</h1>
+          <h1 class="no_toc" id="listing">Listing</h1>
 
+<ol id="markdown-toc">
+  <li><a href="#standard-object-list" id="markdown-toc-standard-object-list">Standard object list</a>    <ol>
+      <li><a href="#secondary-list--sans-serif" id="markdown-toc-secondary-list--sans-serif">Secondary list : sans-serif</a></li>
+    </ol>
+  </li>
+  <li><a href="#taglist" id="markdown-toc-taglist">Taglist</a></li>
+</ol>
 
-<p><em>What we say and how we say it</em></p>
+<h2 id="standard-object-list">Standard object list</h2>
 
-<p>example from 2012:</p>
+<p>Used when the listing is the mains focus on a page</p>
 
-<blockquote>
-  <p><strong>Intelligent</strong>, <em>but not snobbish</em></p>
-</blockquote>
+<div class="balmoral-demo code-example">
 
-<blockquote>
-  <p><strong>Cool</strong>, <em>but not trendy</em></p>
-</blockquote>
+<div class=" m-listing">
+<ul>
+      <li>
+          <a title="Ianzelo, Tony" href="/directors/tony-ianzelo/">
+              Ianzelo, Tony
+          </a>
+      </li>
 
-<blockquote>
-  <p><strong>Accessible</strong>, <em>but not for dummies</em></p>
-</blockquote>
+      <li>
+          <a title="Ibanez, Manuel" href="/directors/manuel-ibanez/">
+              Ibanez, Manuel
+          </a>
+      </li>
 
-<p>fr</p>
+      <li>
+          <a title="Idlout, Sarah" href="/directors/sarah-idlout/">
+              Idlout, Sarah
+          </a>
+      </li>
 
-<blockquote>
-  <p><strong>Intelligent</strong>, <em>sans être snob</em></p>
-</blockquote>
+      <li>
+          <a title="Ille, Monika" href="/directors/monika-ille/">
+              Ille, Monika
+          </a>
+      </li>
+</ul>
+</div>
 
-<blockquote>
-  <p><strong>Cool</strong>, <em>sans être tendance</em></p>
-</blockquote>
+</div>
 
-<blockquote>
-  <p><strong>Accessible</strong>, <em>sans être “pour les nuls”</em></p>
-</blockquote>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"m-listing"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>  
+</code></pre></div></div>
+
+<h3 id="secondary-list--sans-serif">Secondary list : sans-serif</h3>
+
+<p>Use when the list is secondary (aside) to separate it visually when it is next to a primary sans serif text block</p>
+
+<div class="balmoral-demo code-example">
+
+<div class=" m-listing listing--sans-serif">
+    <ul>
+            <li>
+                <a title="Ianzelo, Tony" href="/directors/tony-ianzelo/">
+                    Ianzelo, Tony
+                </a>
+            </li>
+            <li>
+                <a title="Ibanez, Manuel" href="/directors/manuel-ibanez/">
+                    Ibanez, Manuel
+                </a>
+            </li>
+            <li>
+                <a title="Idlout, Sarah" href="/directors/sarah-idlout/">
+                    Idlout, Sarah
+                </a>
+            </li>
+            <li>
+                <a title="Ille, Monika" href="/directors/monika-ille/">
+                    Ille, Monika
+                </a>
+            </li>
+    </ul>
+</div>
+
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"m-listing listing--sans-serif"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>  
+</code></pre></div></div>
+
+<h2 id="taglist">Taglist</h2>
+
+<p>To be used on <code class="highlighter-rouge">ul</code> (and special <code class="highlighter-rouge">dl</code> )</p>
+
+<div class="balmoral-demo code-example">
+
+    <ul class="m-taglist">
+            <li>
+                <a title="Ianzelo, Tony" href="/directors/tony-ianzelo/">
+                    Ianzelo, Tony
+                </a>
+            </li>
+            <li>
+                <a title="Ibanez, Manuel" href="/directors/manuel-ibanez/">
+                    Ibanez, Manuel
+                </a>
+            </li>
+            <li>
+                <a title="Idlout, Sarah" href="/directors/sarah-idlout/">
+                    Idlout, Sarah
+                </a>
+            </li>
+            <li>
+                <a title="Ille, Monika" href="/directors/monika-ille/">
+                    Ille, Monika
+                </a>
+            </li>
+    </ul>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"m-taglist"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+
+<span class="nt">&lt;dl</span> <span class="na">class=</span><span class="s">"m-taglist"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;dt&gt;</span>...<span class="nt">&lt;/dt&gt;</span>
+  <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>  
+  <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>  
+  <span class="nt">&lt;dd&gt;</span>...<span class="nt">&lt;/dd&gt;</span>  
+<span class="nt">&lt;/dl&gt;</span>
+
+</code></pre></div></div>
 
 
           
