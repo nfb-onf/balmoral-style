@@ -5819,6 +5819,7 @@ html body .balmoral-demo {
   @grisIntermediaire:	lighten(@warmGrey,45%);
   @grisPale:			#f6f4f0;
   */
+  /*legacy*/
   /*ajustement pour (large) texte de couleur*/
   /*EASING*/
   /* legacy and custom assignation */
@@ -5862,6 +5863,7 @@ html body .balmoral-demo {
   @grisIntermediaire:	lighten(@warmGrey,45%);
   @grisPale:			#f6f4f0;
   */
+  /*legacy*/
   /*ajustement pour (large) texte de couleur*/
   /*EASING*/
   /* legacy and custom assignation */
@@ -7046,10 +7048,10 @@ html body .balmoral-demo {
   html body .balmoral-demo a.text-primary:focus {
     color: #000000; }
   html body .balmoral-demo .text-success {
-    color: #32b17c; }
+    color: #1c9249; }
   html body .balmoral-demo a.text-success:hover,
   html body .balmoral-demo a.text-success:focus {
-    color: #278960; }
+    color: #146734; }
   html body .balmoral-demo .text-info {
     color: #31708f; }
   html body .balmoral-demo a.text-info:hover,
@@ -8220,21 +8222,21 @@ html body .balmoral-demo {
   html body .balmoral-demo .has-success.checkbox label,
   html body .balmoral-demo .has-success.radio-inline label,
   html body .balmoral-demo .has-success.checkbox-inline label {
-    color: #32b17c; }
+    color: #1c9249; }
   html body .balmoral-demo .has-success .form-control {
-    border-color: #32b17c;
+    border-color: #1c9249;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   html body .balmoral-demo .has-success .form-control:focus {
-    border-color: #278960;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #72d7ad;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #72d7ad; }
+    border-color: #146734;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #3bd977;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #3bd977; }
   html body .balmoral-demo .has-success .input-group-addon {
-    color: #32b17c;
-    border-color: #32b17c;
+    color: #1c9249;
+    border-color: #1c9249;
     background-color: #dff0d8; }
   html body .balmoral-demo .has-success .form-control-feedback {
-    color: #32b17c; }
+    color: #1c9249; }
   html body .balmoral-demo .has-warning .help-block,
   html body .balmoral-demo .has-warning .control-label,
   html body .balmoral-demo .has-warning .radio,
@@ -8543,23 +8545,23 @@ html body .balmoral-demo {
     color: #000; }
   html body .balmoral-demo .btn-success {
     color: #fff;
-    background-color: #B9FF2B;
-    border-color: #b1ff12; }
+    background-color: #6cdc97;
+    border-color: #57d788; }
   html body .balmoral-demo .btn-success:focus,
   html body .balmoral-demo .btn-success.focus {
     color: #fff;
-    background-color: #a5f700;
-    border-color: #619100; }
+    background-color: #43d27a;
+    border-color: #228d4b; }
   html body .balmoral-demo .btn-success:hover {
     color: #fff;
-    background-color: #a5f700;
-    border-color: #8ed300; }
+    background-color: #43d27a;
+    border-color: #2ec367; }
   html body .balmoral-demo .btn-success:active,
   html body .balmoral-demo .btn-success.active,
   html body .balmoral-demo .open > .dropdown-toggle.btn-success {
     color: #fff;
-    background-color: #a5f700;
-    border-color: #8ed300; }
+    background-color: #43d27a;
+    border-color: #2ec367; }
   html body .balmoral-demo .btn-success:active:hover,
   html body .balmoral-demo .btn-success.active:hover,
   html body .balmoral-demo .open > .dropdown-toggle.btn-success:hover,
@@ -8570,8 +8572,8 @@ html body .balmoral-demo {
   html body .balmoral-demo .btn-success.active.focus,
   html body .balmoral-demo .open > .dropdown-toggle.btn-success.focus {
     color: #fff;
-    background-color: #8ed300;
-    border-color: #619100; }
+    background-color: #2ec367;
+    border-color: #228d4b; }
   html body .balmoral-demo .btn-success:active,
   html body .balmoral-demo .btn-success.active,
   html body .balmoral-demo .open > .dropdown-toggle.btn-success {
@@ -8585,10 +8587,10 @@ html body .balmoral-demo {
   html body .balmoral-demo .btn-success.disabled.focus,
   html body .balmoral-demo .btn-success[disabled].focus,
   html body .balmoral-demo fieldset[disabled] .btn-success.focus {
-    background-color: #B9FF2B;
-    border-color: #b1ff12; }
+    background-color: #6cdc97;
+    border-color: #57d788; }
   html body .balmoral-demo .btn-success .badge {
-    color: #B9FF2B;
+    color: #6cdc97;
     background-color: #fff; }
   html body .balmoral-demo .btn-info {
     /*.button-variant(@btn-info-color; @btn-info-bg; @btn-info-border);*/
@@ -8645,7 +8647,7 @@ html body .balmoral-demo {
     transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
     color: #000;
     background-color: #fff;
-    border-color: #ecd800;
+    border-color: #ffdb3a;
     /*&.disabled,
     &[disabled],
     fieldset[disabled] & {
@@ -8660,22 +8662,22 @@ html body .balmoral-demo {
     }*/
     /*Falcon*/ }
   html body .balmoral-demo .btn-warning.plein {
-    background-color: #FFEC20;
-    border-color: #FFEC20;
+    background-color: #ffe46d;
+    border-color: #ffe46d;
     color: #000; }
   html body .balmoral-demo .btn-warning.plein:hover {
     background-color: #fff;
     color: #000;
-    border-color: #ecd800; }
+    border-color: #ffdb3a; }
   html body .balmoral-demo .btn-warning:hover {
     color: #000;
-    background-color: #FFEC20;
-    border-color: #afa000; }
+    background-color: #ffe46d;
+    border-color: #fccd00; }
   html body .balmoral-demo .btn-warning:active,
   html body .balmoral-demo .btn-warning.active,
   html body .balmoral-demo .open .dropdown-toggle.btn-warning {
     color: #000;
-    background-color: #FFEC20;
+    background-color: #ffe46d;
     /*border-color: darken(@activeColor, 12%);*/ }
   html body .balmoral-demo .btn-warning:active,
   html body .balmoral-demo .btn-warning.active,
@@ -8686,8 +8688,8 @@ html body .balmoral-demo {
   html body .balmoral-demo .btn-group .btn-warning:focus,
   html body .balmoral-demo .btn-group .btn-warning:hover {
     color: #000;
-    background-color: #FFEC20;
-    border-color: #afa000; }
+    background-color: #ffe46d;
+    border-color: #fccd00; }
   html body .balmoral-demo .btn-danger {
     /*.button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);*/
     -webkit-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
@@ -9847,7 +9849,7 @@ html body .balmoral-demo {
     -o-animation: progress-bar-stripes 2s linear infinite;
     animation: progress-bar-stripes 2s linear infinite; }
   html body .balmoral-demo .progress-bar-success {
-    background-color: #B9FF2B; }
+    background-color: #6cdc97; }
   html body .balmoral-demo .progress-striped .progress-bar-success {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -9859,7 +9861,7 @@ html body .balmoral-demo {
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
   html body .balmoral-demo .progress-bar-warning {
-    background-color: #FFEC20; }
+    background-color: #ffe46d; }
   html body .balmoral-demo .progress-striped .progress-bar-warning {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -10931,11 +10933,11 @@ html body .balmoral-demo {
     line-height: 38px;
     text-align: center; }
   html body .balmoral-demo .form-control-feedback {
-    color: #32b17c; }
+    color: #1c9249; }
   html body .balmoral-demo .has-error .form-control-feedback {
     color: #E03C31; }
   html body .balmoral-demo .has-warning .form-control-feedback {
-    color: #FFEC20; }
+    color: #ffe46d; }
   html body .balmoral-demo html,
   html body .balmoral-demo body {
     height: 100%; }
@@ -14370,20 +14372,20 @@ html body .balmoral-demo {
   html body .balmoral-demo .label-primary[href]:focus {
     background-color: #000000; }
   html body .balmoral-demo .label-success {
-    background-color: #B9FF2B; }
+    background-color: #6cdc97; }
   html body .balmoral-demo .label-success[href]:hover,
   html body .balmoral-demo .label-success[href]:focus {
-    background-color: #a5f700; }
+    background-color: #43d27a; }
   html body .balmoral-demo .label-info {
     background-color: #5bc0de; }
   html body .balmoral-demo .label-info[href]:hover,
   html body .balmoral-demo .label-info[href]:focus {
     background-color: #31b0d5; }
   html body .balmoral-demo .label-warning {
-    background-color: #FFEC20; }
+    background-color: #ffe46d; }
   html body .balmoral-demo .label-warning[href]:hover,
   html body .balmoral-demo .label-warning[href]:focus {
-    background-color: #ecd800; }
+    background-color: #ffdb3a; }
   html body .balmoral-demo .label-danger {
     background-color: #E03C31; }
   html body .balmoral-demo .label-danger[href]:hover,
@@ -16552,8 +16554,8 @@ html body .balmoral-demo {
       padding: 10px 20px;
       max-width: 244px; } }
   html body .balmoral-demo .m-field-panel {
-    background: #6b6a69;
-    color: #fff;
+    background: #e3e3e2;
+    color: #000;
     position: relative;
     padding: 10px;
     margin-top: 0.9375rem;
@@ -16580,16 +16582,16 @@ html body .balmoral-demo {
     background-color: #fff;
     width: 100%; }
   html body .balmoral-demo .m-field-panel a.link {
-    color: #FFD100;
+    color: #006499;
     font-weight: bold;
     margin-left: 2rem; }
   html body .balmoral-demo .m-field-panel .x-icon-link {
     position: absolute;
     right: 10px;
     top: 10px;
-    color: #ffffff; }
+    color: #000; }
   html body .balmoral-demo .m-field-panel .x-icon-link:hover {
-    color: #FFD100; }
+    color: #b42b22; }
   html body .balmoral-demo .m-field-panel p:last-of-type {
     margin-bottom: 0; }
   html body .balmoral-demo .m-field-panel .small a {
@@ -16601,6 +16603,12 @@ html body .balmoral-demo {
     color: #000; }
   html body .balmoral-demo .m-field-panel-turquoise {
     background: #00BFB3; }
+  html body .balmoral-demo .m-field-panel--info {
+    background: #85e5de; }
+  html body .balmoral-demo .m-field-panel--success {
+    background: #6cdc97; }
+  html body .balmoral-demo .m-field-panel--warning {
+    background: #ffe46d; }
   @media (min-width: 1440px) {
     html body .balmoral-demo .m-field-panel h3 {
       padding-right: 25px; } }
@@ -16747,7 +16755,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-form-line .form-group .help-block a {
     color: #E03C31; }
   html body .balmoral-demo .m-form-line .form-group.has-success .control-label {
-    color: #32b17c; }
+    color: #1c9249; }
   html body .balmoral-demo .m-form-line .form-group.has-error .control-label {
     color: #E03C31; }
   html body .balmoral-demo #hero {
@@ -17274,10 +17282,10 @@ html body .balmoral-demo {
     content: ""; }
   html body .balmoral-demo [class^="icon-"].warning:after,
   html body .balmoral-demo [class*=" icon-"].warning:after {
-    background-color: #FFEC20; }
+    background-color: #ffe46d; }
   html body .balmoral-demo [class^="icon-"].success:after,
   html body .balmoral-demo [class*=" icon-"].success:after {
-    background-color: #B9FF2B; }
+    background-color: #6cdc97; }
   html body .balmoral-demo [class^="icon-"].danger:after,
   html body .balmoral-demo [class*=" icon-"].danger:after {
     background-color: #E03C31; }
@@ -17478,12 +17486,12 @@ html body .balmoral-demo {
     content: "\e917"; }
   html body .balmoral-demo .icon-instagram:before {
     content: "\ea92"; }
-  html body .balmoral-demo .icon-interactif-hand-o:before {
-    content: "\e963"; }
   html body .balmoral-demo .icon-interactif:before {
     content: "\e618"; }
   html body .balmoral-demo .icon-interactif-hand:before {
     content: "\e90f"; }
+  html body .balmoral-demo .icon-interactif-hand-o:before {
+    content: "\e963"; }
   html body .balmoral-demo .icon-interactive-app:before {
     content: "\e909"; }
   html body .balmoral-demo .icon-interactive-code:before {
@@ -17498,6 +17506,8 @@ html body .balmoral-demo {
     content: "\e932"; }
   html body .balmoral-demo .icon-link:before {
     content: "\e941"; }
+  html body .balmoral-demo .icon-linkdin:before {
+    content: "\e966"; }
   html body .balmoral-demo .icon-loupe:before {
     content: "\e616"; }
   html body .balmoral-demo .icon-map-marker:before {
@@ -17546,13 +17556,15 @@ html body .balmoral-demo {
     content: "\e921"; }
   html body .balmoral-demo .icon-phone-circle:before {
     content: "\e607"; }
+  html body .balmoral-demo .icon-phone-o:before {
+    content: "\e965"; }
   html body .balmoral-demo .icon-picture:before {
     content: "\e91a"; }
   html body .balmoral-demo .icon-pinterest:before {
     content: "\e962"; }
-  html body .balmoral-demo .icon-brand:before {
+  html body .balmoral-demo .icon-brand1:before {
     content: "\e962"; }
-  html body .balmoral-demo .icon-social:before {
+  html body .balmoral-demo .icon-social1:before {
     content: "\e962"; }
   html body .balmoral-demo .icon-play:before {
     content: "\e613"; }
@@ -17591,7 +17603,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .icon-steam:before {
     content: "\eaac"; }
   html body .balmoral-demo .icon-study-guides:before {
-    content: "\e964"; }
+    content: "\e90b"; }
   html body .balmoral-demo .icon-study-guides-o:before {
     content: "\e964"; }
   html body .balmoral-demo .icon-switch:before {
@@ -18626,7 +18638,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-standalone-page section.m-questions-comments svg {
     left: 20px; }
   html body .balmoral-demo .m-ribbon {
-    background-color: #AAE2FF;
+    background-color: #86c7e9;
     position: relative;
     z-index: 2; }
   html body .balmoral-demo .m-ribbon [class*="l-largeur"] {
@@ -18645,7 +18657,7 @@ html body .balmoral-demo {
     position: absolute;
     top: 0px; }
   html body .balmoral-demo .m-ribbon .x-icon-link .x-icon path {
-    fill: #6b6a69;
+    fill: #000;
     -webkit-transition: fill 0.2s linear;
     -moz-transition: fill 0.2s linear;
     -o-transition: fill 0.2s linear;
@@ -18654,7 +18666,7 @@ html body .balmoral-demo {
     -moz-transform: translateZ(0px);
     -webkit-backface-visibility: hidden; }
   html body .balmoral-demo .m-ribbon .x-icon-link:hover .x-icon path {
-    fill: #000; }
+    fill: #b42b22; }
   html body .balmoral-demo .m-ribbon .l-contentContainer {
     padding: 12px 0px; }
   html body .balmoral-demo .m-ribbon p.message {
@@ -18673,16 +18685,11 @@ html body .balmoral-demo {
   html body .balmoral-demo .m-ribbon .message .icon {
     font-size: 14px; }
   html body .balmoral-demo .m-ribbon.warning {
-    background-color: #FFEC20; }
+    background-color: #ffe46d; }
   html body .balmoral-demo .m-ribbon.success {
-    background-color: #B9FF2B; }
+    background-color: #6cdc97; }
   html body .balmoral-demo .m-ribbon.danger {
-    background-color: #E03C31;
-    color: #fff; }
-  html body .balmoral-demo .m-ribbon.danger a {
-    color: #fff; }
-  html body .balmoral-demo .m-ribbon.danger a:hover {
-    color: #000; }
+    background-color: #eb736b; }
   html body .balmoral-demo .m-ribbon.withChoice {
     text-align: center; }
   html body .balmoral-demo .m-ribbon.withChoice .message {
@@ -18942,7 +18949,7 @@ html body .balmoral-demo {
     background: #0085CA;
     position: relative; }
   html body .balmoral-demo .standalone header.warning {
-    background: #FFEC20; }
+    background: #ffe46d; }
   html body .balmoral-demo .standalone header.warning h4 {
     color: #000; }
   html body .balmoral-demo .standalone header.warning #logo-onf-header path {
@@ -20910,6 +20917,8 @@ html body .balmoral-demo {
   @media (max-width: 767px) {
     html body .balmoral-demo .film-page #l-mainPageContent #filmContent h1 {
       font-size: 2em; } }
+  html body .balmoral-demo .film-page #l-mainPageContent #filmContent #filmDescription {
+    /*similar to m-field-panel*/ }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent #filmDescription > p {
     font-size: 1.1667rem;
     margin-bottom: 0.75em;
@@ -20945,9 +20954,9 @@ html body .balmoral-demo {
     text-transform: uppercase;
     font-family: "Ciutadella-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent #filmDescription #embed-block {
-    background: #00BFB3;
+    background: #e3e3e2;
     display: none;
-    color: #fff;
+    color: #000;
     position: relative;
     padding: 27px 20px 20px 20px;
     border-radius: 5px;
@@ -20969,7 +20978,7 @@ html body .balmoral-demo {
     width: auto;
     display: inline-block; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent #filmDescription #embed-block a.reset {
-    color: #FFD100;
+    color: #006499;
     font-weight: bold;
     margin-left: 2rem; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent #filmDescription #embed-block .x-icon-link {
@@ -20978,9 +20987,9 @@ html body .balmoral-demo {
     right: 20px;
     top: 20px; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent #filmDescription #embed-block .x-icon-link svg path {
-    fill: #fff; }
+    fill: #000; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent #filmDescription #embed-block .x-icon-link:hover svg path {
-    fill: #FFD100; }
+    fill: #b42b22; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerScreenshot {
     cursor: default; }
   html body .balmoral-demo .is-rented .film-page #l-mainPageContent #filmContent .containerScreenshot,
@@ -21004,7 +21013,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent #filmTransaction {
     padding: 0px; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent #filmTransaction #bodyDroits {
-    background: #FFEC20; }
+    background: #ffe46d; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent #filmTransaction #bodyDroits #container-rightsLoading {
     margin: 0 auto; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent #filmTransaction #btResolution {
@@ -22634,7 +22643,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .s-auth .pwstrength_viewport_progress .glyphicon {
     vertical-align: middle; }
   html body .balmoral-demo .s-auth .pwstrength_viewport_progress .glyphicon-exclamation-sign {
-    color: #FFEC20; }
+    color: #ffe46d; }
   @media (min-width: 768px) {
     html body .balmoral-demo .s-auth #containerFormSignIn {
       margin-right: 225px; }
