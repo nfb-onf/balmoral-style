@@ -51,31 +51,31 @@
 @import url("//hello.myfonts.net/count/2e1771");
 
 
-@font-face {font-family: 'Ciutadella-BoldItalic';src: url('../fonts/ciuatadella/2E1771_0_0.eot');src: url('../fonts/ciuatadella/2E1771_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ciuatadella/2E1771_0_0.woff2') format('woff2'),url('../fonts/ciuatadella/2E1771_0_0.woff') format('woff'),url('../fonts/ciuatadella/2E1771_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Ciutadella-BoldItalic';src: url('2E1771_0_0.eot');src: url('2E1771_0_0.eot?#iefix') format('embedded-opentype'),url('2E1771_0_0.woff2') format('woff2'),url('2E1771_0_0.woff') format('woff'),url('2E1771_0_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'Ciutadella-MediumItalic';src: url('../fonts/ciuatadella/2E1771_1_0.eot');src: url('../fonts/ciuatadella/2E1771_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ciuatadella/2E1771_1_0.woff2') format('woff2'),url('../fonts/ciuatadella/2E1771_1_0.woff') format('woff'),url('../fonts/ciuatadella/2E1771_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Ciutadella-MediumItalic';src: url('2E1771_1_0.eot');src: url('2E1771_1_0.eot?#iefix') format('embedded-opentype'),url('2E1771_1_0.woff2') format('woff2'),url('2E1771_1_0.woff') format('woff'),url('2E1771_1_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'Ciutadella-SemiBoldItalic';src: url('../fonts/ciuatadella/2E1771_2_0.eot');src: url('../fonts/ciuatadella/2E1771_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ciuatadella/2E1771_2_0.woff2') format('woff2'),url('../fonts/ciuatadella/2E1771_2_0.woff') format('woff'),url('../fonts/ciuatadella/2E1771_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Ciutadella-SemiBoldItalic';src: url('2E1771_2_0.eot');src: url('2E1771_2_0.eot?#iefix') format('embedded-opentype'),url('2E1771_2_0.woff2') format('woff2'),url('2E1771_2_0.woff') format('woff'),url('2E1771_2_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'Ciutadella-Light';src: url('../fonts/ciuatadella/2E1771_3_0.eot');src: url('../fonts/ciuatadella/2E1771_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ciuatadella/2E1771_3_0.woff2') format('woff2'),url('../fonts/ciuatadella/2E1771_3_0.woff') format('woff'),url('../fonts/ciuatadella/2E1771_3_0.ttf') format('truetype');}
+@font-face {font-family: 'Ciutadella-Light';src: url('2E1771_3_0.eot');src: url('2E1771_3_0.eot?#iefix') format('embedded-opentype'),url('2E1771_3_0.woff2') format('woff2'),url('2E1771_3_0.woff') format('woff'),url('2E1771_3_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'Ciutadella-Medium';src: url('../fonts/ciuatadella/2E1771_4_0.eot');src: url('../fonts/ciuatadella/2E1771_4_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ciuatadella/2E1771_4_0.woff2') format('woff2'),url('../fonts/ciuatadella/2E1771_4_0.woff') format('woff'),url('../fonts/ciuatadella/2E1771_4_0.ttf') format('truetype');}
+@font-face {font-family: 'Ciutadella-Medium';src: url('2E1771_4_0.eot');src: url('2E1771_4_0.eot?#iefix') format('embedded-opentype'),url('2E1771_4_0.woff2') format('woff2'),url('2E1771_4_0.woff') format('woff'),url('2E1771_4_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'Ciutadella-LightItalic';src: url('../fonts/ciuatadella/2E1771_5_0.eot');src: url('../fonts/ciuatadella/2E1771_5_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ciuatadella/2E1771_5_0.woff2') format('woff2'),url('../fonts/ciuatadella/2E1771_5_0.woff') format('woff'),url('../fonts/ciuatadella/2E1771_5_0.ttf') format('truetype');}
+@font-face {font-family: 'Ciutadella-LightItalic';src: url('2E1771_5_0.eot');src: url('2E1771_5_0.eot?#iefix') format('embedded-opentype'),url('2E1771_5_0.woff2') format('woff2'),url('2E1771_5_0.woff') format('woff'),url('2E1771_5_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'Ciutadella-SemiBold';src: url('../fonts/ciuatadella/2E1771_6_0.eot');src: url('../fonts/ciuatadella/2E1771_6_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ciuatadella/2E1771_6_0.woff2') format('woff2'),url('../fonts/ciuatadella/2E1771_6_0.woff') format('woff'),url('../fonts/ciuatadella/2E1771_6_0.ttf') format('truetype');}
+@font-face {font-family: 'Ciutadella-SemiBold';src: url('2E1771_6_0.eot');src: url('2E1771_6_0.eot?#iefix') format('embedded-opentype'),url('2E1771_6_0.woff2') format('woff2'),url('2E1771_6_0.woff') format('woff'),url('2E1771_6_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'Ciutadella-Bold';src: url('../fonts/ciuatadella/2E1771_7_0.eot');src: url('../fonts/ciuatadella/2E1771_7_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ciuatadella/2E1771_7_0.woff2') format('woff2'),url('../fonts/ciuatadella/2E1771_7_0.woff') format('woff'),url('../fonts/ciuatadella/2E1771_7_0.ttf') format('truetype');}
+@font-face {font-family: 'Ciutadella-Bold';src: url('2E1771_7_0.eot');src: url('2E1771_7_0.eot?#iefix') format('embedded-opentype'),url('2E1771_7_0.woff2') format('woff2'),url('2E1771_7_0.woff') format('woff'),url('2E1771_7_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'Ciutadella-RegularItalic';src: url('../fonts/ciuatadella/2E1771_8_0.eot');src: url('../fonts/ciuatadella/2E1771_8_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ciuatadella/2E1771_8_0.woff2') format('woff2'),url('../fonts/ciuatadella/2E1771_8_0.woff') format('woff'),url('../fonts/ciuatadella/2E1771_8_0.ttf') format('truetype');}
+@font-face {font-family: 'Ciutadella-RegularItalic';src: url('2E1771_8_0.eot');src: url('2E1771_8_0.eot?#iefix') format('embedded-opentype'),url('2E1771_8_0.woff2') format('woff2'),url('2E1771_8_0.woff') format('woff'),url('2E1771_8_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'Ciutadella-Regular';src: url('../fonts/ciuatadella/2E1771_9_0.eot');src: url('../fonts/ciuatadella/2E1771_9_0.eot?#iefix') format('embedded-opentype'),url('../fonts/ciuatadella/2E1771_9_0.woff2') format('woff2'),url('../fonts/ciuatadella/2E1771_9_0.woff') format('woff'),url('../fonts/ciuatadella/2E1771_9_0.ttf') format('truetype');}
+@font-face {font-family: 'Ciutadella-Regular';src: url('2E1771_9_0.eot');src: url('2E1771_9_0.eot?#iefix') format('embedded-opentype'),url('2E1771_9_0.woff2') format('woff2'),url('2E1771_9_0.woff') format('woff'),url('2E1771_9_0.ttf') format('truetype');}

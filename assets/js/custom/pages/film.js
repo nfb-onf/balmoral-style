@@ -232,3 +232,120 @@ var film = (function () {
     };
 
 })();
+
+/** Display product buttons under the video player in the player page */
+
+var productButtons = (function ($) {
+  /**
+   * Small note: resolve is used in place of rejection to create a soft-fail Promise.all
+   *             without this, the buttons will fail to show up, because at least one
+   *             promise will have been rejected, and we don't want that.
+   */
+  var BUTTONS_PATH = "/remote/transaction/purchase-button/";
+  var GEOLOCATION_PATH = "/remote/access_rights/geolocation/";
+
+  var request_rights = function (id_registre, language, product_type, market) {
+    if (!id_registre || !language) {
+      console.log("There is missing information in the request. The request must have an id_registre and language.");
+      return;
+    }
+
+    var query = "?product_type=" + product_type + "&market=" + market + "&language=" + language;
+
+    return new Promise(function(resolve, reject) {
+      $.ajax(GEOLOCATION_PATH + id_registre + query)
+        .done(function (response) {
+          if (!response.segda_available) {
+            resolve({error: 'Download and Rental currently unavailable.'})
+          }
+          resolve(response);
+        })
+        .fail(function (error) { resolve({error: error})});
+    });
+  }
+
+  var showRentalButton = function (id_registre, language) {
+    return new Promise(function (resolve, reject) {
+      request_rights(id_registre, language, "rental", "home")
+        .then(function (rights) {
+          if (rights.access_available) {
+            var querystring = "?id_registre=" + id_registre;
+            querystring += "&product_type=rental";
+            querystring += "&access_available=" + rights.access_available;
+
+            $.ajax(BUTTONS_PATH + querystring)
+              .done(function (response) {
+                resolve(response);
+              })
+              .fail(function (err) {
+                console.log('error fetching rental buttons')
+                console.log(err);
+              });
+          } else {
+            console.log('no access available')
+            resolve({});
+          }
+        })
+        .catch(function (error) {
+          resolve({error: error});
+        });
+    });
+  }
+
+  var showDownloadButton = function (id_registre, language) {
+    return new Promise(function (resolve, reject) {
+      // Wait for all the checks on the download markets
+      Promise.all([
+        request_rights(id_registre, language, "download", "home"),
+        request_rights(id_registre, language, "download", "education")
+      ])
+      .then(function (rights) {
+        // if at least one download market is available, allow button to show
+        if (rights.some(r => r.access_available == true)) {
+          var querystring = "?id_registre=" + id_registre;
+          querystring += "&product_type=download";
+          querystring += "&access_available_home=" + rights[0].access_available;
+          querystring += "&access_available_institutional=" + rights[1].access_available;
+
+          $.ajax(BUTTONS_PATH + querystring)
+            .done(function (response) {
+              resolve(response);
+            })
+            .fail(function (err) {
+              console.log('error fetching download buttons')
+              console.log(err);
+            });
+        } else {
+          resolve({});
+        }
+      }).catch(function (error) {
+        resolve({error: error});
+      });
+    });
+  }
+
+  return {
+    init: function (id_registre, language, downloads = false, rental = false) {
+      var calls = [];
+
+      if (rental) calls.push(showRentalButton(id_registre, language))
+      if (downloads) calls.push(showDownloadButton(id_registre, language))
+
+      Promise.all(calls).then(function (buttons) {
+        $(".nbBt2 .loading").remove();
+        if (buttons.error) {
+          $(".nbBt2").prepend("<div>" + error.error.message + "</div>");
+        } else {
+          if (buttons.length > 1) {
+            $(".nbBt2").prepend(buttons[1].html);
+            $(".nbBt2").prepend(buttons[0].html);
+          } else {
+            $(".nbBt2").prepend(buttons[0].html);
+          }
+          // Make sure tooltips are reinitialized
+          sf_popOver.init();
+        }
+      });
+    }
+  };
+}($));
