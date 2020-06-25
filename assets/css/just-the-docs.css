@@ -5830,20 +5830,6 @@ html body .balmoral-demo {
    */
   /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
   /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-  /*@import "code.less";*/
-  /*@import "input-groups.less";*/
-  /*@import "breadcrumbs.less";*/
-  /*@import "pager.less";
-  @import "labels.less";
-  @import "badges.less";
-  @import "jumbotron.less";
-  @import "thumbnails.less";
-  @import "alerts.less";*/
-  /*@import "media.less";
-  @import "list-group.less";
-  @import "panels.less";*/
-  /*@import "wells.less";
-  @import "close.less";*/
   /*@import "modals.less";*/
   /*ajout falcon*/
   /*!
@@ -5854,8 +5840,8 @@ html body .balmoral-demo {
    * contains bootstrap css and mixins, lesshat mixins
    * use idc-variables.less to overwrite/specify bootstrap variables
    */
-  @import url(../fonts/ciuatadella/ciuatadella.css);
-  @import url(../fonts/suisse/stylesheet.css);
+  @import url(../fonts/ciuatadella.css);
+  @import url(../fonts/suisse.css);
   /*Nouvelle couleur branding*/
   /*Ces couleurs doivent aussi être modifié dans le fichier film.js*/
   /*
@@ -5929,7 +5915,6 @@ html body .balmoral-demo {
   /*override pour un carousel generic*/
   /*BLOC DE COMMENTAIRE*/
   /*Film en feature*/
-  /*@import "modules/m-filter-bar.less";*/
   /* Menu push transitions */
   /*THE FILE*/
   /*Bande qui explique la location des films*/
@@ -5982,112 +5967,10 @@ html body .balmoral-demo {
    * Released on: January 13, 2018
    */
   /* pages et layout */
-  /*@import "pages/contact-us.less";*/
   /*Moins d'espace que dans le pop-up de sign in donc on met les label par dessus les champs dès qu'on tombe en md resolution */
-  /*@import "pages/partners-details-simple.less";*/
-  /*#rechercheModal{
-  
-  	#results,#noResults{display: none;}
-  	#loadingRechercheContainer{ margin-bottom: 20px; height: 2px; overflow: hidden;
-  		#loadingRecherche{width:0px; overflow: hidden;  .animation(growLoadingRecherche 5s linear infinite); position: relative;  height: 2px;}
-  		#degradeLoading{width: 600px; display: block; position: relative; height: 2px;
-  
-  			    animation: moveLoadingRecherche 1s linear infinite, stroke-color 16s steps(16) infinite;
-  		}
-  
-  
-  	}
-  	.tab-pane{display: none;
-  		&.active{display: block;}
-  	}
-  	.maxWidthRecherche{max-width: 600px; margin: 0 auto; position: relative; width: 86%;
-  		.x-icon-link{width: 30px; height: 30px; position: absolute; right: 0px; top:-40px;
-  			svg path{fill:@blanc;}
-  			&:hover{
-  				svg path{fill:@vert;}
-  			}
-  		}
-  		#search-tabs{ margin-bottom: 30px; overflow: hidden; margin-top: 10px;
-  			li{float: left; text-transform: uppercase; margin-left: 20px;
-  				a{color: @grisIntermediaire;}
-  				&:first-child{margin-left:0px;}
-  				&.active a{color: @vert; font-weight: bold;}
-  			}
-  		}
-  		> form{
-  			input[type=text]{background: none; font-size:32px; line-height: 100%; border: 0 none;padding: 0; color: @blanc;width: 100%; -webkit-appearance: none;}
-  		}
-  
-  		.vignette{background:@warmGrey; padding: 10px 10px 10px 0; margin-bottom: 10px; position: relative; overflow: hidden;
-  			> a {overflow: hidden; display: block;}
-  
-  			.timeBar{margin-bottom: 5px;margin-top: 5px;float: left;margin-right: 10px; width: 50%;}
-  			.bottomThumbnail,.infosDroite{padding-right: 40px;}
-  
-  			.titre{color: @blanc; font-size: 16px;
-  				&:hover{color: @bleu;}
-  			}
-  			&.is-hoverPlay{
-  				.titre{color: @bleu;}
-  			}
-  			.dash{color: @orange;}
-  			.centerHeightInContainer{position: absolute;}
-  			.watchLater{position: absolute; top:0px; right: 0px; float: none;}
-  			.creator{display: inline-block; 
-  				a{color: @grisPale;}
-  			}
-  			.tagType{ font-style: italic; color: @jaune; font-size: 16px; }
-  			.priceTag{margin-top: 6px; color: @blanc;}
-  			&.vignetteGratuite{ margin-left: -20px;
-  				.containerScreenshot{width: ~"calc(100% + 10px)";}
-  				.col-xs-9{padding-left: 20px;}
-  			}
-  			.infosSecondaires{color: @grisPale; font-size: 14px; display: block;}
-  			.centerHeightInContainer{padding-left: 24px;}
-  		}
-  	}
-  
-  	@keyframes stroke-color {
-  	  14% { background: @bleu; }
-  	  28% { background: @turquoise; }
-  	  41% { background: @violet; }
-  	  53% { background: @rouge; }
-  	  64% { background: @rose; }
-  	  76% { background: @orange; }
-  	  88% { background: @jaune; }
-  	  100% { background: @vert; }
-  	}
-  }
-  
-  @media (min-width: @screen-sm-min) {
-  	#rechercheModal{
-  		.maxWidthRecherche{
-  			.x-icon-link{top:-5px;}
-  			#search-tabs{ padding-right: 50px; margin-top: 0px;
-  				li{margin-left: 38px;}
-  			}
-  			.vignette{
-  				.titre{font-size: 24px;}
-  
-  				.tag-indication,.partner-tag{display: block;}
-  				&.vignetteGratuite{ margin-left: -40px;
-  					.containerScreenshot{width: ~"calc(100% + 30px)";}
-  					.col-xs-9{padding-left: 40px;}
-  				}
-  			}
-  		}
-  	}
-  }
-  
-  
-  
-  .lh-keyframes(~'moveLoadingRecherche, 0%{ background-position: 0 0; } 100%{ background-position: 600px 0; }');
-  .lh-keyframes(~'growLoadingRecherche, 0%{ width:0%; left:0px; } 25%{ width:100%; left:0px;} 50%{ width:100%; left:600px;} 75%{ width:100%; left:0px;} ');*/
   /*OLD TRANSAC*/
   /*OLD TRANSAC*/
-  /*@import "pages/iframe/iframe-pay.less";*/
   /*Bookmarks empty*/
-  /*@import "pages/userhub/download.less";*/
   /* specifique à auth
   à retiré quand auth sera lancé*/ }
   html body .balmoral-demo html {
@@ -12469,7 +12352,7 @@ html body .balmoral-demo {
     margin-bottom: 0px; }
   html body .balmoral-demo #m-footer-edu #logoEduFooter {
     margin: 0 auto;
-    width: 13.25rem;
+    width: 10.3125rem;
     height: 1.875rem;
     background: url(../img/education/ONF_Education_horiz_noir_FR.svg) left bottom no-repeat;
     background-size: 100% auto;
@@ -12502,7 +12385,8 @@ html body .balmoral-demo {
   @media (min-width: 768px) {
     html body .balmoral-demo #m-footer-edu #logoEduFooter {
       margin: 0;
-      width: auto; }
+      width: 220px;
+      height: 40px; }
     html body .balmoral-demo #m-footer-edu #socialEdu {
       width: 100%;
       float: left;
@@ -12510,9 +12394,6 @@ html body .balmoral-demo {
     html body .balmoral-demo #m-footer-edu #eduFAQLink {
       margin-top: 0; } }
   @media (min-width: 990px) {
-    html body .balmoral-demo #m-footer-edu #logoEduFooter {
-      width: 208px;
-      margin-top: 2px; }
     html body .balmoral-demo #m-footer-edu #faqEdu {
       width: auto; }
     html body .balmoral-demo #m-footer-edu #socialEdu {
@@ -12524,10 +12405,12 @@ html body .balmoral-demo {
       line-height: 2.5rem; } }
   @media (min-width: 1200px) {
     html body .balmoral-demo #m-footer-edu #logoEduFooter {
-      width: 194px; } }
+      width: 194px;
+      height: 38px; } }
   @media (min-width: 1440px) {
     html body .balmoral-demo #m-footer-edu #logoEduFooter {
       width: 13.25rem;
+      height: 46px;
       margin-top: 0; } }
   html body .balmoral-demo .m-alphabetical-index {
     text-align: center;
@@ -17358,6 +17241,10 @@ html body .balmoral-demo {
     content: "\e95d"; }
   html body .balmoral-demo .icon-avatar:before {
     content: "\e60c"; }
+  html body .balmoral-demo .icon-bold:before {
+    content: "\e969"; }
+  html body .balmoral-demo .icon-calendar-add-o:before {
+    content: "\e968"; }
   html body .balmoral-demo .icon-calendar-day:before {
     content: "\e93a"; }
   html body .balmoral-demo .icon-calendar-day-o:before {
@@ -17366,6 +17253,10 @@ html body .balmoral-demo {
     content: "\e93c"; }
   html body .balmoral-demo .icon-calendar-month-o:before {
     content: "\e939"; }
+  html body .balmoral-demo .icon-card-layout:before {
+    content: "\e976"; }
+  html body .balmoral-demo .icon-cart-o:before {
+    content: "\e967"; }
   html body .balmoral-demo .icon-cash:before {
     content: "\e608"; }
   html body .balmoral-demo .icon-cash-o:before {
@@ -17384,8 +17275,12 @@ html body .balmoral-demo {
     content: "\e94f"; }
   html body .balmoral-demo .icon-chat-o:before {
     content: "\e953"; }
+  html body .balmoral-demo .icon-check-box-o:before {
+    content: "\e972"; }
   html body .balmoral-demo .icon-check-circle:before {
     content: "\e919"; }
+  html body .balmoral-demo .icon-check-mark:before {
+    content: "\e971"; }
   html body .balmoral-demo .icon-check-o:before {
     content: "\e954"; }
   html body .balmoral-demo .icon-chevron-down:before {
@@ -17410,6 +17305,8 @@ html body .balmoral-demo {
     content: "\e916"; }
   html body .balmoral-demo .icon-collection:before {
     content: "\e95f"; }
+  html body .balmoral-demo .icon-compact-layout:before {
+    content: "\e975"; }
   html body .balmoral-demo .icon-credit-card:before {
     content: "\e628"; }
   html body .balmoral-demo .icon-credit-card-o:before {
@@ -17430,6 +17327,8 @@ html body .balmoral-demo {
     content: "\e950"; }
   html body .balmoral-demo .icon-desactivation:before {
     content: "\e629"; }
+  html body .balmoral-demo .icon-detailed-layout:before {
+    content: "\e974"; }
   html body .balmoral-demo .icon-down:before {
     content: "\e928"; }
   html body .balmoral-demo .icon-download:before {
@@ -17472,6 +17371,8 @@ html body .balmoral-demo {
     content: "\f09a"; }
   html body .balmoral-demo .icon-facture:before {
     content: "\e61b"; }
+  html body .balmoral-demo .icon-filter-o:before {
+    content: "\e973"; }
   html body .balmoral-demo .icon-gallery:before {
     content: "\e619"; }
   html body .balmoral-demo .icon-help-circle:before {
@@ -17496,8 +17397,12 @@ html body .balmoral-demo {
     content: "\e909"; }
   html body .balmoral-demo .icon-interactive-code:before {
     content: "\e960"; }
+  html body .balmoral-demo .icon-interactive-play:before {
+    content: "\e96e"; }
   html body .balmoral-demo .icon-ip-access:before {
     content: "\e908"; }
+  html body .balmoral-demo .icon-italic:before {
+    content: "\e96a"; }
   html body .balmoral-demo .icon-learning-bundles:before {
     content: "\e90a"; }
   html body .balmoral-demo .icon-left-arrow:before {
@@ -17506,7 +17411,7 @@ html body .balmoral-demo {
     content: "\e932"; }
   html body .balmoral-demo .icon-link:before {
     content: "\e941"; }
-  html body .balmoral-demo .icon-linkdin:before {
+  html body .balmoral-demo .icon-linkedin:before {
     content: "\e966"; }
   html body .balmoral-demo .icon-loupe:before {
     content: "\e616"; }
@@ -17548,6 +17453,8 @@ html body .balmoral-demo {
     content: "\e948"; }
   html body .balmoral-demo .icon-notification:before {
     content: "\e961"; }
+  html body .balmoral-demo .icon-o-list:before {
+    content: "\e96b"; }
   html body .balmoral-demo .icon-ocean_school:before {
     content: "\e93d"; }
   html body .balmoral-demo .icon-oculus:before {
@@ -17612,6 +17519,10 @@ html body .balmoral-demo {
     content: "\e610"; }
   html body .balmoral-demo .icon-twitter:before {
     content: "\f099"; }
+  html body .balmoral-demo .icon-u-list:before {
+    content: "\e96c"; }
+  html body .balmoral-demo .icon-underline:before {
+    content: "\e96d"; }
   html body .balmoral-demo .icon-unlink:before {
     content: "\f127"; }
   html body .balmoral-demo .icon-up:before {
@@ -17638,6 +17549,10 @@ html body .balmoral-demo {
     content: "\e61e"; }
   html body .balmoral-demo .icon-warning-o:before {
     content: "\e957"; }
+  html body .balmoral-demo .icon-web-recorder:before {
+    content: "\e970"; }
+  html body .balmoral-demo .icon-web-recorder-circle:before {
+    content: "\e96f"; }
   html body .balmoral-demo .icon-windows:before {
     content: "\eac1"; }
   html body .balmoral-demo .icon-youtube:before {
@@ -20108,10 +20023,8 @@ html body .balmoral-demo {
   html body .balmoral-demo .section-indigenous-cinema #indigenousVisual {
     width: 100%;
     height: 100%;
-    background: url();
     top: 0;
     left: 0;
-    background: url(../img/indigenous-cinema/bg1.jpg) no-repeat center center;
     position: absolute;
     background-size: cover; }
   html body .balmoral-demo .section-indigenous-cinema .oiseau {
@@ -21103,13 +21016,13 @@ html body .balmoral-demo {
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent #bigContainerTransactionBt {
     float: right; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat {
-    overflow: hidden;
     clear: both; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat li {
     float: left;
     margin-bottom: 1.25rem;
     width: 100%;
-    margin-right: 20px; }
+    margin-right: 20px;
+    position: relative; }
   html body .balmoral-demo .interactif.film-page #l-mainPageContent #filmContent .containerBtFloat li {
     margin-right: 22px; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat li:last-child {
@@ -21133,7 +21046,8 @@ html body .balmoral-demo {
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .btn {
     position: relative;
     font-family: "Ciutadella-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    width: 100%; }
+    width: 100%;
+    font-size: 15px; }
   html body .balmoral-demo .interactif.film-page #l-mainPageContent #filmContent .containerBtFloat .btn {
     width: 100%;
     -webkit-transition: color 0.2s linear, background-color 0.2s linear, fill 0.2s linear, opacity 0.2s linear, border-color 0.2s linear;
@@ -21161,6 +21075,55 @@ html body .balmoral-demo {
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .btn:hover {
     color: #000;
     background: #fff; }
+  html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat h5 {
+    font-size: 1em;
+    font-weight: bold;
+    padding-right: 1rem;
+    padding-left: 1rem; }
+  html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .dropdown-menu {
+    min-width: 290px;
+    left: auto;
+    right: 0;
+    top: 40px; }
+  html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent; }
+  html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #0085ca;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0; }
+  html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .dropdown-item:focus,
+  html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .dropdown-item:hover {
+    text-decoration: none;
+    background-color: #f5f4f4; }
+  html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .dropdown-divider {
+    height: 0;
+    margin: .5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #e9ecef; }
+  html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .btn-group {
+    display: block; }
+  html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .helpInfos {
+    background: #6b6a69;
+    vertical-align: top;
+    position: absolute;
+    right: -30px;
+    z-index: 15; }
   html body .balmoral-demo .film-page #l-mainPageContent #filmContent .permanentTransactionConfirmation {
     border: 2px solid #6b6a69;
     margin-bottom: 1.25rem;
@@ -21351,6 +21314,9 @@ html body .balmoral-demo {
   html body .balmoral-demo .film-page #l-mainPageContent .recommandations h4 {
     font-size: 1.1667rem;
     text-transform: uppercase; }
+  html body .balmoral-demo .film-page #conditionsUtilisationsLocation .popover,
+  html body .balmoral-demo .film-page #conditionsUtilisationsDTO .popover {
+    max-width: 700px; }
   @media (max-width: 1200px) {
     html body .balmoral-demo .film-page #l-mainPageContent #l-generalContainer .m-standalone-page #containerSignInSignUp .form-group label,
     html body .balmoral-demo .film-page #l-mainPageContent #l-generalContainer .m-standalone-page #formAddressRecap .form-group label {
@@ -21398,9 +21364,19 @@ html body .balmoral-demo {
     html body .balmoral-demo .interactif.film-page #l-mainPageContent #filmContent .containerBtFloat li {
       margin-right: 22px; }
     html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .btn {
-      width: 7.8125rem; }
+      width: 9.8125rem;
+      font-size: 1.1667rem; }
     html body .balmoral-demo .interactif.film-page #l-mainPageContent #filmContent .containerBtFloat .btn {
       width: auto; }
+    html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .btn-group {
+      display: inline-block; }
+    html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .dropdown-menu {
+      left: 0;
+      right: auto;
+      top: 100%; }
+    html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .helpInfos {
+      position: relative;
+      right: initial; }
     html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .chapter-link-container,
     html body .balmoral-demo .film-page #l-mainPageContent #shareFilm .watchLater-link-container {
       float: right;
@@ -21420,7 +21396,7 @@ html body .balmoral-demo {
     html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat li {
       margin-right: 1.5625rem; }
     html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat .btn {
-      width: 9.375rem;
+      width: 10rem;
       font-size: 1.1667rem; }
     html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat a.dvd-link,
     html body .balmoral-demo .film-page #l-mainPageContent #filmContent .containerBtFloat a.campus-link {
@@ -22727,6 +22703,13 @@ html body .balmoral-demo {
   src: url("../fonts/icomoon.eot?#iefix-qsgjbg") format("embedded-opentype"), url("../fonts/icomoon.svg?-qsgjbg#icomoon") format("svg"), url("../fonts/icomoon.woff?-qsgjbg") format("woff"), url("../fonts/icomoon.ttf?-qsgjbg") format("truetype");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'nfb-app_icons';
+  src: url("../fonts/nfb-app_icons.eot");
+  src: url("../fonts/nfb-app_icons.eot#iefix") format("embedded-opentype"), url("../fonts/nfb-app_icons.ttf") format("truetype"), url("../fonts/nfb-app_icons.woff") format("woff"), url("../fonts/nfb-app_icons.svg#nfb-app_icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
 /* balmoral vs just-the-doc theme conflics*/
 /* theme conflics*/
 /* theme conflics*/
@@ -22809,6 +22792,8 @@ code {
   line-height: 2; }
   .ico-block i {
     font-size: 36px; }
+  .ico-block.app i {
+    font-size: 48px; }
 
 /*Page Couleur*/
 .paint-chip {
@@ -23458,3 +23443,205 @@ html body .balmoral-demo .btn-inactive.btn-bleu {
 
 .label-lang {
   background-color: #BCD8E3; }
+
+[class^="app-icon-"], [class*=" app-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'nfb-app_icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.app-icon-home-sq:before {
+  content: "\e904"; }
+
+.app-icon-search-sq:before {
+  content: "\e90a"; }
+
+.app-icon-channel-sq:before {
+  content: "\e901"; }
+
+.app-icon-download-sq:before {
+  content: "\e903"; }
+
+.app-icon-download-done-sq:before {
+  content: "\e928"; }
+
+.app-icon-menu-sq:before {
+  content: "\e907"; }
+
+.app-icon-left-arr-sq:before {
+  content: "\e906"; }
+
+.app-icon-more-menu-vert-sq:before {
+  content: "\e945"; }
+
+.app-icon-more-menu-horz-sq:before {
+  content: "\e944"; }
+
+.app-icon-watchlater-sq:before {
+  content: "\e90b"; }
+
+.app-icon-favorite-sq:before {
+  content: "\e91a"; }
+
+.app-icon-check-sq:before {
+  content: "\e91c"; }
+
+.app-icon-share-sq:before {
+  content: "\e91d"; }
+
+.app-icon-share-classic-sq:before {
+  content: "\e91b"; }
+
+.app-icon-outside-sq:before {
+  content: "\e908"; }
+
+.app-icon-hourglass-sq:before {
+  content: "\e905"; }
+
+.app-icon-notification:before {
+  content: "\e93a"; }
+
+.app-icon-events:before {
+  content: "\e93b"; }
+
+.app-icon-map-marker:before {
+  content: "\e946"; }
+
+.app-icon-warning:before {
+  content: "\e91e"; }
+
+.app-icon-ticket:before {
+  content: "\e912"; }
+
+.app-icon-play-interactive:before {
+  content: "\e930"; }
+
+.app-icon-play:before {
+  content: "\e913"; }
+
+.app-icon-play-triangle:before {
+  content: "\e919"; }
+
+.app-icon-pause:before {
+  content: "\e92f"; }
+
+.app-icon-stop:before {
+  content: "\e91f"; }
+
+.app-icon-add-sq:before {
+  content: "\e900"; }
+
+.app-icon-cc-en:before {
+  content: "\e920"; }
+
+.app-icon-cc-fr:before {
+  content: "\e921"; }
+
+.app-icon-delete-sq:before {
+  content: "\e902"; }
+
+.app-icon-purchase-sq:before {
+  content: "\e909"; }
+
+.app-icon-settings:before {
+  content: "\e922"; }
+
+.app-icon-newsletter:before {
+  content: "\e925"; }
+
+.app-icon-link:before {
+  content: "\e923"; }
+
+.app-icon-envelope:before {
+  content: "\e924"; }
+
+.app-icon-twitter:before {
+  content: "\e926"; }
+
+.app-icon-facebook:before {
+  content: "\e927"; }
+
+.app-icon-youtube:before {
+  content: "\e936"; }
+
+.app-icon-instagram:before {
+  content: "\e937"; }
+
+.app-icon-android:before {
+  content: "\e931"; }
+
+.app-icon-apple:before {
+  content: "\e932"; }
+
+.app-icon-amazon:before {
+  content: "\e935"; }
+
+.app-icon-viveport:before {
+  content: "\e933"; }
+
+.app-icon-oculus:before {
+  content: "\e938"; }
+
+.app-icon-steam:before {
+  content: "\e934"; }
+
+.app-icon-windows:before {
+  content: "\e939"; }
+
+.app-icon-airplay:before {
+  content: "\e914"; }
+
+.app-icon-chromecast:before {
+  content: "\e915"; }
+
+.app-icon-chromecast-on:before {
+  content: "\e916"; }
+
+.app-icon-nfb-full:before {
+  content: "\e90c"; }
+
+.app-icon-nfb-full-flush:before {
+  content: "\e917"; }
+
+.app-icon-nfb-sq:before {
+  content: "\e90d"; }
+
+.app-icon-nfb-sq-flush:before {
+  content: "\e918"; }
+
+.app-icon-eycon-tr:before {
+  content: "\e90e"; }
+
+.app-icon-eycon-br:before {
+  content: "\e90f"; }
+
+.app-icon-eycon-tl:before {
+  content: "\e910"; }
+
+.app-icon-eycon-bl:before {
+  content: "\e911"; }
+
+.app-icon-eyecon3-br:before {
+  content: "\e929"; }
+
+.app-icon-eyecon3-bl:before {
+  content: "\e92a"; }
+
+.app-icon-eyecon2-br:before {
+  content: "\e92b"; }
+
+.app-icon-eyecon2-bl:before {
+  content: "\e92c"; }
+
+.app-icon-collapse-up:before {
+  content: "\e92d"; }
+
+.app-icon-pause-circle:before {
+  content: "\e92e"; }
