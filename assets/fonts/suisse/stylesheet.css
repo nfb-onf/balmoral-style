@@ -14,27 +14,3 @@
     font-style: normal;
 
 }
-@font-face {
-    font-family: 'Suisse-sm';
-    src: url('suisseneue-regular-webs.eot');
-    src: url('suisseneue-regular-webs.eot?#iefix') format('embedded-opentype'),
-         url('suisseneue-regular-webs.woff2') format('woff2'),
-         url('suisseneue-regular-webs.woff') format('woff'),
-         url('suisseneue-regular-webs.ttf') format('truetype'),
-         url('suisseneue-regular-webs.svg#fontuploaded_file') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'Suisse-Bold-xl';
-    src: url('suisseneue-medium-webxl.eot');
-    src: url('suisseneue-medium-webxl.eot?#iefix') format('embedded-opentype'),
-         url('suisseneue-medium-webxl.woff2') format('woff2'),
-         url('suisseneue-medium-webxl.woff') format('woff'),
-         url('suisseneue-medium-webxl.ttf') format('truetype'),
-         url('suisseneue-medium-webxl.svg#fontuploaded_file') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}

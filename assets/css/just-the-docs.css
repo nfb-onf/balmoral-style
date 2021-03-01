@@ -5,6 +5,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url(../fonts/balmoral-icons.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -5852,6 +5853,8 @@ html body .balmoral-demo {
   If the build path changes then these relative paths need to be updated!
   This is a fragile system but there's no foolproof way to manage font imports in a CSS preprocessor.
   */
+  @import url("//hello.myfonts.net/count/2e1771?css");
+  @import url(../fonts/balmoral-icons.css);
   /*Nouvelle couleur branding*/
   /*Ces couleurs doivent aussi être modifié dans le fichier film.js*/
   /*
@@ -5863,7 +5866,6 @@ html body .balmoral-demo {
   /*ajustement pour (large) texte de couleur*/
   /*EASING*/
   /*Spacing*/
-  /*WPierre comment : is this normal? this size is > md */
   /* legacy and custom assignation */
   /*Convert units*/
   /* Fonts */
@@ -5981,11 +5983,8 @@ html body .balmoral-demo {
   /*Film en feature*/
   /*THE FILE*/
   /*Bande qui explique la location des films*/
-  /*Ne pas remplacer cette partie*/
   /*ICONE*/
   /*Icône custom svg*/
-  /*Fin de : Ne pas remplacer cette partie*/
-  /*Copier-coller ici*/
   /*Header en image des pages comme le détail d'une playlist*/
   /*Options à droite dans les pages de playlist, inclu le nombre de films et des boutons comme watch playlist, delete, share...*/
   /*Liste des partenaires dans la page des films*/
@@ -11930,7 +11929,8 @@ html body .balmoral-demo {
     display: none; }
   html body .balmoral-demo #l-leftNav .logo-container img {
     width: 100%;
-    max-width: 100%; }
+    max-width: 100%;
+    height: 100%; }
   html body .balmoral-demo #l-leftNav .logo-container svg {
     width: 100%;
     max-width: 100%; }
@@ -12521,7 +12521,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .branding-color-red.film-page #l-mainPageContent #l-background,
   html body .balmoral-demo .branding-color-red.film-page #l-mainPageContent .border-top {
     background-color: #E03C31; }
-  html body .balmoral-demo .branding-color-red.film-page #l-mainPageContent .containerBtFloat .btn {
+  html body .balmoral-demo .branding-color-red.film-page #l-mainPageContent .products .btn-lg {
     background-color: #E03C31;
     color: #fff;
     border: 3px #E03C31 solid; }
@@ -12534,7 +12534,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .branding-color-pink.film-page #l-mainPageContent #l-background,
   html body .balmoral-demo .branding-color-pink.film-page #l-mainPageContent .border-top {
     background-color: #F6416C; }
-  html body .balmoral-demo .branding-color-pink.film-page #l-mainPageContent .containerBtFloat .btn {
+  html body .balmoral-demo .branding-color-pink.film-page #l-mainPageContent .products .btn-lg {
     background-color: #F6416C;
     color: #fff;
     border: 3px #F6416C solid; }
@@ -12547,7 +12547,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .branding-color-orange.film-page #l-mainPageContent #l-background,
   html body .balmoral-demo .branding-color-orange.film-page #l-mainPageContent .border-top {
     background-color: #FF5C39; }
-  html body .balmoral-demo .branding-color-orange.film-page #l-mainPageContent .containerBtFloat .btn {
+  html body .balmoral-demo .branding-color-orange.film-page #l-mainPageContent .products .btn-lg {
     background-color: #FF5C39;
     color: #000;
     border: 3px #FF5C39 solid; }
@@ -12560,7 +12560,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .branding-color-turquoise.film-page #l-mainPageContent #l-background,
   html body .balmoral-demo .branding-color-turquoise.film-page #l-mainPageContent .border-top {
     background-color: #00BFB3; }
-  html body .balmoral-demo .branding-color-turquoise.film-page #l-mainPageContent .containerBtFloat .btn {
+  html body .balmoral-demo .branding-color-turquoise.film-page #l-mainPageContent .products .btn-lg {
     background-color: #00BFB3;
     color: #000;
     border: 3px #00BFB3 solid; }
@@ -12573,7 +12573,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .branding-color-purple.film-page #l-mainPageContent #l-background,
   html body .balmoral-demo .branding-color-purple.film-page #l-mainPageContent .border-top {
     background-color: #87319A; }
-  html body .balmoral-demo .branding-color-purple.film-page #l-mainPageContent .containerBtFloat .btn {
+  html body .balmoral-demo .branding-color-purple.film-page #l-mainPageContent .products .btn-lg {
     background-color: #87319A;
     color: #fff;
     border: 3px #87319A solid; }
@@ -12586,7 +12586,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .branding-color-green.film-page #l-mainPageContent #l-background,
   html body .balmoral-demo .branding-color-green.film-page #l-mainPageContent .border-top {
     background-color: #C4D600; }
-  html body .balmoral-demo .branding-color-green.film-page #l-mainPageContent .containerBtFloat .btn {
+  html body .balmoral-demo .branding-color-green.film-page #l-mainPageContent .products .btn-lg {
     background-color: #C4D600;
     color: #000;
     border: 3px #C4D600 solid; }
@@ -12599,7 +12599,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .branding-color-blue.film-page #l-mainPageContent #l-background,
   html body .balmoral-demo .branding-color-blue.film-page #l-mainPageContent .border-top {
     background-color: #0085CA; }
-  html body .balmoral-demo .branding-color-blue.film-page #l-mainPageContent .containerBtFloat .btn {
+  html body .balmoral-demo .branding-color-blue.film-page #l-mainPageContent .products .btn-lg {
     background-color: #0085CA;
     color: #fff;
     border: 3px #0085CA solid; }
@@ -12612,7 +12612,7 @@ html body .balmoral-demo {
   html body .balmoral-demo .branding-color-yellow.film-page #l-mainPageContent #l-background,
   html body .balmoral-demo .branding-color-yellow.film-page #l-mainPageContent .border-top {
     background-color: #FFD100; }
-  html body .balmoral-demo .branding-color-yellow.film-page #l-mainPageContent .containerBtFloat .btn {
+  html body .balmoral-demo .branding-color-yellow.film-page #l-mainPageContent .products .btn-lg {
     background-color: #FFD100;
     color: #000;
     border: 3px #FFD100 solid; }
@@ -13503,8 +13503,8 @@ html body .balmoral-demo {
     color: #6b6a69;
     border-width: 4px; }
   html body .balmoral-demo .m-exploreMoreFilm .btn:hover {
-    color: #0085CA;
-    border-color: #0085CA;
+    color: #000;
+    border-color: #263EA6;
     background-color: transparent; }
   html body .balmoral-demo .m-load-more {
     position: relative; }
@@ -16460,7 +16460,7 @@ html body .balmoral-demo {
     border-radius: 50%;
     background: #0085CA; }
   html body .balmoral-demo ul.m-director-list li a:hover {
-    color: #0085CA;
+    color: #263EA6;
     text-decoration: none; }
   html body .balmoral-demo ul.m-director-list li a:hover span:before {
     opacity: 0.5; }
@@ -17151,7 +17151,7 @@ html body .balmoral-demo {
     margin-left: 5px; }
   html body .balmoral-demo .m-horizontal-thumbnails article.is-hoverPlay .headerAndText .titre,
   html body .balmoral-demo .m-horizontal-thumbnails li.is-hoverPlay .headerAndText .titre {
-    color: #0085CA; }
+    color: #263EA6; }
   html body .balmoral-demo .m-horizontal-thumbnails article .partner-tag,
   html body .balmoral-demo .m-horizontal-thumbnails li .partner-tag {
     left: -10px; }
@@ -17173,7 +17173,7 @@ html body .balmoral-demo {
     padding-right: 40px; }
   html body .balmoral-demo .m-horizontal-thumbnails article .headerAndText > a:hover,
   html body .balmoral-demo .m-horizontal-thumbnails li .headerAndText > a:hover {
-    color: #0085CA; }
+    color: #263EA6; }
   html body .balmoral-demo .m-horizontal-thumbnails article .headerAndText .infosSecondaires,
   html body .balmoral-demo .m-horizontal-thumbnails li .headerAndText .infosSecondaires {
     font-size: 0.83333rem;
@@ -17379,14 +17379,6 @@ html body .balmoral-demo {
       position: absolute;
       left: 0px;
       top: 0px; } }
-@font-face {
-  html body .balmoral-demo {
-    font-family: 'balmoral-icons';
-    src: url("../fonts/balmoral-icons.eot?zgp4k");
-    src: url("../fonts/balmoral-icons.eot?zgp4k#iefix") format("embedded-opentype"), url("../fonts/balmoral-icons.ttf?zgp4k") format("truetype"), url("../fonts/balmoral-icons.woff?zgp4k") format("woff"), url("../fonts/balmoral-icons.svg?zgp4k#balmoral-icons") format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: block; } }
   html body .balmoral-demo .inline-icon-end [class^="icon-"],
   html body .balmoral-demo .inline-icon-end[class*=" icon-"] {
     margin-left: 0.3em; }
@@ -17482,7 +17474,7 @@ html body .balmoral-demo {
     font-size: 28px;
     transition: color 0.2s linear; }
   html body .balmoral-demo .watchLater:hover .icon-add-o {
-    color: #0085CA; }
+    color: #263EA6; }
   html body .balmoral-demo .watchLater .ico-clock-check {
     width: 28px;
     height: 28px;
@@ -17581,369 +17573,6 @@ html body .balmoral-demo {
   html body .balmoral-demo [class*=" icon-"].square-badge.noir {
     background-color: #000;
     color: #fff; }
-  html body .balmoral-demo [class^="icon-"],
-  html body .balmoral-demo [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'balmoral-icons' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
-  html body .balmoral-demo .icon-48h-rental:before {
-    content: "\e60b"; }
-  html body .balmoral-demo .icon-add-circle:before {
-    content: "\e918"; }
-  html body .balmoral-demo .icon-add-o:before {
-    content: "\e955"; }
-  html body .balmoral-demo .icon-airplay:before {
-    content: "\e97a"; }
-  html body .balmoral-demo .icon-amazon:before {
-    content: "\ea87"; }
-  html body .balmoral-demo .icon-android:before {
-    content: "\eac0"; }
-  html body .balmoral-demo .icon-appleinc:before {
-    content: "\eabe"; }
-  html body .balmoral-demo .icon-arrowhead:before {
-    content: "\e95d"; }
-  html body .balmoral-demo .icon-avatar:before {
-    content: "\e60c"; }
-  html body .balmoral-demo .icon-bold:before {
-    content: "\e969"; }
-  html body .balmoral-demo .icon-calendar-add-o:before {
-    content: "\e968"; }
-  html body .balmoral-demo .icon-calendar-day:before {
-    content: "\e93a"; }
-  html body .balmoral-demo .icon-calendar-day-o:before {
-    content: "\e937"; }
-  html body .balmoral-demo .icon-calendar-month:before {
-    content: "\e93c"; }
-  html body .balmoral-demo .icon-calendar-month-o:before {
-    content: "\e939"; }
-  html body .balmoral-demo .icon-card-layout:before {
-    content: "\e976"; }
-  html body .balmoral-demo .icon-cart-o:before {
-    content: "\e967"; }
-  html body .balmoral-demo .icon-cash:before {
-    content: "\e608"; }
-  html body .balmoral-demo .icon-cash-o:before {
-    content: "\e61d"; }
-  html body .balmoral-demo .icon-cast:before {
-    content: "\e97b"; }
-  html body .balmoral-demo .icon-cc-en:before {
-    content: "\e602"; }
-  html body .balmoral-demo .icon-cc-en-o:before {
-    content: "\e958"; }
-  html body .balmoral-demo .icon-cc-fr:before {
-    content: "\e61a"; }
-  html body .balmoral-demo .icon-cc-fr-o:before {
-    content: "\e956"; }
-  html body .balmoral-demo .icon-cd:before {
-    content: "\e609"; }
-  html body .balmoral-demo .icon-channel-o:before {
-    content: "\e94f"; }
-  html body .balmoral-demo .icon-chat-o:before {
-    content: "\e953"; }
-  html body .balmoral-demo .icon-check-box-o:before {
-    content: "\e972"; }
-  html body .balmoral-demo .icon-check-circle:before {
-    content: "\e919"; }
-  html body .balmoral-demo .icon-check-mark:before {
-    content: "\e971"; }
-  html body .balmoral-demo .icon-check-o:before {
-    content: "\e954"; }
-  html body .balmoral-demo .icon-chevron-down:before {
-    content: "\e95b"; }
-  html body .balmoral-demo .icon-chevron-left:before {
-    content: "\e945"; }
-  html body .balmoral-demo .icon-chevron-right:before {
-    content: "\e95c"; }
-  html body .balmoral-demo .icon-chevron-up:before {
-    content: "\e95a"; }
-  html body .balmoral-demo .icon-circle-fat:before {
-    content: "\e923"; }
-  html body .balmoral-demo .icon-ciseaux:before {
-    content: "\e620"; }
-  html body .balmoral-demo .icon-clock:before {
-    content: "\e60d"; }
-  html body .balmoral-demo .icon-closeNav:before {
-    content: "\e600"; }
-  html body .balmoral-demo .icon-collapse-down:before {
-    content: "\e914"; }
-  html body .balmoral-demo .icon-collapse-up:before {
-    content: "\e916"; }
-  html body .balmoral-demo .icon-collection:before {
-    content: "\e95f"; }
-  html body .balmoral-demo .icon-compact-layout:before {
-    content: "\e975"; }
-  html body .balmoral-demo .icon-credit-card:before {
-    content: "\e628"; }
-  html body .balmoral-demo .icon-credit-card-o:before {
-    content: "\e95e"; }
-  html body .balmoral-demo .icon-ctrl-pause:before {
-    content: "\e959"; }
-  html body .balmoral-demo .icon-ctrl-play:before {
-    content: "\e94a"; }
-  html body .balmoral-demo .icon-ctrl-skip-back:before {
-    content: "\e944"; }
-  html body .balmoral-demo .icon-ctrl-skip-forward:before {
-    content: "\e942"; }
-  html body .balmoral-demo .icon-ctrl-stop:before {
-    content: "\e949"; }
-  html body .balmoral-demo .icon-delete-circle:before {
-    content: "\e905"; }
-  html body .balmoral-demo .icon-delete-o:before {
-    content: "\e950"; }
-  html body .balmoral-demo .icon-desactivation:before {
-    content: "\e629"; }
-  html body .balmoral-demo .icon-detailed-layout:before {
-    content: "\e974"; }
-  html body .balmoral-demo .icon-down:before {
-    content: "\e928"; }
-  html body .balmoral-demo .icon-download:before {
-    content: "\e93f"; }
-  html body .balmoral-demo .icon-dto-circle:before {
-    content: "\e94e"; }
-  html body .balmoral-demo .icon-dto-disk:before {
-    content: "\e621"; }
-  html body .balmoral-demo .icon-dto-o:before {
-    content: "\e606"; }
-  html body .balmoral-demo .icon-duplicate-lesson:before {
-    content: "\e922"; }
-  html body .balmoral-demo .icon-dv:before {
-    content: "\e906"; }
-  html body .balmoral-demo .icon-dv-o:before {
-    content: "\e903"; }
-  html body .balmoral-demo .icon-edit:before {
-    content: "\e902"; }
-  html body .balmoral-demo .icon-edit-cicle-o:before {
-    content: "\e952"; }
-  html body .balmoral-demo .icon-edit-circle:before {
-    content: "\e907"; }
-  html body .balmoral-demo .icon-edit-o:before {
-    content: "\e979"; }
-  html body .balmoral-demo .icon-edu-institutions:before {
-    content: "\e90d"; }
-  html body .balmoral-demo .icon-edu-institutions-business:before {
-    content: "\e90e"; }
-  html body .balmoral-demo .icon-enlarge:before {
-    content: "\e989"; }
-  html body .balmoral-demo .icon-enveloppe-0:before {
-    content: "\e951"; }
-  html body .balmoral-demo .icon-enveloppe-o:before {
-    content: "\e951"; }
-  html body .balmoral-demo .icon-external:before {
-    content: "\e935"; }
-  html body .balmoral-demo .icon-external-link:before {
-    content: "\e61c"; }
-  html body .balmoral-demo .icon-eye:before {
-    content: "\e931"; }
-  html body .balmoral-demo .icon-eye-blocked:before {
-    content: "\e92e"; }
-  html body .balmoral-demo .icon-facebook:before {
-    content: "\f09a"; }
-  html body .balmoral-demo .icon-facture:before {
-    content: "\e61b"; }
-  html body .balmoral-demo .icon-filter-o:before {
-    content: "\e973"; }
-  html body .balmoral-demo .icon-gallery:before {
-    content: "\e619"; }
-  html body .balmoral-demo .icon-help-circle:before {
-    content: "\e94d"; }
-  html body .balmoral-demo .icon-help-o:before {
-    content: "\e94c"; }
-  html body .balmoral-demo .icon-helpcenter:before {
-    content: "\e60a"; }
-  html body .balmoral-demo .icon-home-o:before {
-    content: "\e94b"; }
-  html body .balmoral-demo .icon-hourglass-start-o:before {
-    content: "\e97c"; }
-  html body .balmoral-demo .icon-hourglass-end-o:before {
-    content: "\e97d"; }
-  html body .balmoral-demo .icon-hourglass-o:before {
-    content: "\e97e"; }
-  html body .balmoral-demo .icon-info-o:before {
-    content: "\e917"; }
-  html body .balmoral-demo .icon-instagram:before {
-    content: "\ea92"; }
-  html body .balmoral-demo .icon-interactif:before {
-    content: "\e618"; }
-  html body .balmoral-demo .icon-interactif-hand:before {
-    content: "\e90f"; }
-  html body .balmoral-demo .icon-interactif-hand-o:before {
-    content: "\e963"; }
-  html body .balmoral-demo .icon-interactive-app:before {
-    content: "\e909"; }
-  html body .balmoral-demo .icon-interactive-code:before {
-    content: "\e960"; }
-  html body .balmoral-demo .icon-interactive-play:before {
-    content: "\e96e"; }
-  html body .balmoral-demo .icon-ip-access:before {
-    content: "\e908"; }
-  html body .balmoral-demo .icon-italic:before {
-    content: "\e96a"; }
-  html body .balmoral-demo .icon-learning-bundles:before {
-    content: "\e90a"; }
-  html body .balmoral-demo .icon-left-arrow:before {
-    content: "\e913"; }
-  html body .balmoral-demo .icon-lesson:before {
-    content: "\e932"; }
-  html body .balmoral-demo .icon-link:before {
-    content: "\e941"; }
-  html body .balmoral-demo .icon-linkdin:before {
-    content: "\e966"; }
-  html body .balmoral-demo .icon-loupe:before {
-    content: "\e616"; }
-  html body .balmoral-demo .icon-map-marker:before {
-    content: "\e93b"; }
-  html body .balmoral-demo .icon-map-marker-o:before {
-    content: "\e980"; }
-  html body .balmoral-demo .icon-marc-ip:before {
-    content: "\e91e"; }
-  html body .balmoral-demo .icon-marc-records:before {
-    content: "\e915"; }
-  html body .balmoral-demo .icon-marker:before {
-    content: "\e91c"; }
-  html body .balmoral-demo .icon-marker-plain:before {
-    content: "\e927"; }
-  html body .balmoral-demo .icon-maximize:before {
-    content: "\e92c"; }
-  html body .balmoral-demo .icon-minimize:before {
-    content: "\e92d"; }
-  html body .balmoral-demo .icon-more-menu-horiz:before {
-    content: "\e934"; }
-  html body .balmoral-demo .icon-more-menu-vert:before {
-    content: "\e933"; }
-  html body .balmoral-demo .icon-move:before {
-    content: "\e924"; }
-  html body .balmoral-demo .icon-move-horizontal:before {
-    content: "\e925"; }
-  html body .balmoral-demo .icon-move-marker:before {
-    content: "\e930"; }
-  html body .balmoral-demo .icon-move-vertical:before {
-    content: "\e926"; }
-  html body .balmoral-demo .icon-mute:before {
-    content: "\e92a"; }
-  html body .balmoral-demo .icon-newsletter-o:before {
-    content: "\e947"; }
-  html body .balmoral-demo .icon-next:before {
-    content: "\e615"; }
-  html body .balmoral-demo .icon-nfb-onf-logo:before {
-    content: "\e901"; }
-  html body .balmoral-demo .icon-nfb-sq:before {
-    content: "\e948"; }
-  html body .balmoral-demo .icon-notification:before {
-    content: "\e961"; }
-  html body .balmoral-demo .icon-o-list:before {
-    content: "\e96b"; }
-  html body .balmoral-demo .icon-ocean_school:before {
-    content: "\e93d"; }
-  html body .balmoral-demo .icon-oculus:before {
-    content: "\e936"; }
-  html body .balmoral-demo .icon-pause-circle:before {
-    content: "\e921"; }
-  html body .balmoral-demo .icon-phone-circle:before {
-    content: "\e607"; }
-  html body .balmoral-demo .icon-phone-o:before {
-    content: "\e965"; }
-  html body .balmoral-demo .icon-picture:before {
-    content: "\e91a"; }
-  html body .balmoral-demo .icon-pinterest:before {
-    content: "\e962"; }
-  html body .balmoral-demo .icon-play:before {
-    content: "\e613"; }
-  html body .balmoral-demo .icon-play-o:before {
-    content: "\e605"; }
-  html body .balmoral-demo .icon-play-only:before {
-    content: "\e90c"; }
-  html body .balmoral-demo .icon-playlist:before {
-    content: "\e910"; }
-  html body .balmoral-demo .icon-prev:before {
-    content: "\e614"; }
-  html body .balmoral-demo .icon-re-order:before {
-    content: "\e91d"; }
-  html body .balmoral-demo .icon-reduce:before {
-    content: "\e946"; }
-  html body .balmoral-demo .icon-revert:before {
-    content: "\e904"; }
-  html body .balmoral-demo .icon-right-arrow:before {
-    content: "\e912"; }
-  html body .balmoral-demo .icon-roundedArrow:before {
-    content: "\e612"; }
-  html body .balmoral-demo .icon-settings:before {
-    content: "\e943"; }
-  html body .balmoral-demo .icon-share:before {
-    content: "\e92f"; }
-  html body .balmoral-demo .icon-share-lesson:before {
-    content: "\e91b"; }
-  html body .balmoral-demo .icon-share-o:before {
-    content: "\e940"; }
-  html body .balmoral-demo .icon-share2:before {
-    content: "\e611"; }
-  html body .balmoral-demo .icon-shield-o:before {
-    content: "\e977"; }
-  html body .balmoral-demo .icon-skip-back:before {
-    content: "\e91f"; }
-  html body .balmoral-demo .icon-skip-forward:before {
-    content: "\e920"; }
-  html body .balmoral-demo .icon-star-o:before {
-    content: "\e97f"; }
-  html body .balmoral-demo .icon-steam:before {
-    content: "\eaac"; }
-  html body .balmoral-demo .icon-study-guides:before {
-    content: "\e90b"; }
-  html body .balmoral-demo .icon-study-guides-o:before {
-    content: "\e964"; }
-  html body .balmoral-demo .icon-switch:before {
-    content: "\e900"; }
-  html body .balmoral-demo .icon-top:before {
-    content: "\e610"; }
-  html body .balmoral-demo .icon-trash-o:before {
-    content: "\e978"; }
-  html body .balmoral-demo .icon-twitter:before {
-    content: "\f099"; }
-  html body .balmoral-demo .icon-u-list:before {
-    content: "\e96c"; }
-  html body .balmoral-demo .icon-underline:before {
-    content: "\e96d"; }
-  html body .balmoral-demo .icon-unlink:before {
-    content: "\f127"; }
-  html body .balmoral-demo .icon-up:before {
-    content: "\e929"; }
-  html body .balmoral-demo .icon-video-camera:before {
-    content: "\e938"; }
-  html body .balmoral-demo .icon-vimeo:before {
-    content: "\e60e"; }
-  html body .balmoral-demo .icon-virtual-class:before {
-    content: "\e911"; }
-  html body .balmoral-demo .icon-viveport:before {
-    content: "\e93e"; }
-  html body .balmoral-demo .icon-vod:before {
-    content: "\e604"; }
-  html body .balmoral-demo .icon-vod-o:before {
-    content: "\e601"; }
-  html body .balmoral-demo .icon-vod-tilt:before {
-    content: "\e60f"; }
-  html body .balmoral-demo .icon-vod-tilt-o:before {
-    content: "\e617"; }
-  html body .balmoral-demo .icon-volume:before {
-    content: "\e92b"; }
-  html body .balmoral-demo .icon-warning:before {
-    content: "\e61e"; }
-  html body .balmoral-demo .icon-warning-o:before {
-    content: "\e957"; }
-  html body .balmoral-demo .icon-web-recorder:before {
-    content: "\e970"; }
-  html body .balmoral-demo .icon-web-recorder-circle:before {
-    content: "\e96f"; }
-  html body .balmoral-demo .icon-windows:before {
-    content: "\eac1"; }
-  html body .balmoral-demo .icon-youtube:before {
-    content: "\e61f"; }
   html body .balmoral-demo .m-icon-list {
     overflow: hidden;
     margin: 0.5rem 0 1rem 0;
@@ -24767,21 +24396,21 @@ html body .balmoral-demo {
   src: url("../fonts/ciuatadella/2E1771_9_0.eot");
   src: url("../fonts/ciuatadella/2E1771_9_0.eot?#iefix") format("embedded-opentype"), url("../fonts/ciuatadella/2E1771_9_0.woff2") format("woff2"), url("../fonts/ciuatadella/2E1771_9_0.woff") format("woff"), url("../fonts/ciuatadella/2E1771_9_0.ttf") format("truetype"); }
 @font-face {
-  font-family: 'Suisse-Regular';
+  font-family: 'Suisse';
   src: url("../fonts/suisse/suisseneue-regular-webxl-webfont.eot");
   src: url("../fonts/suisse/suisseneue-regular-webxl-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/suisse/suisseneue-regular-webxl-webfont.woff2") format("woff2"), url("../fonts/suisse/suisseneue-regular-webxl-webfont.woff") format("woff"), url("../fonts/suisse/suisseneue-regular-webxl-webfont.ttf") format("truetype"), url("../fonts/suisse/suisseneue-regular-webxl-webfont.svg#fontuploaded_file") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'Suisse-Bold';
-  src: url("../fonts/suisse/SuisseNeue-medium-WebXL.eot");
-  src: url("../fonts/suisse/SuisseNeue-medium-WebXL.eot?#iefix") format("embedded-opentype"), url("../fonts/suisse/SuisseNeue-medium-WebXL.woff2") format("woff2"), url("../fonts/suisse/SuisseNeue-medium-WebXL.woff") format("woff"), url("../fonts/suisse/SuisseNeue-medium-WebXL.ttf") format("truetype"), url("../fonts/suisse/SuisseNeue-medium-WebXL.svg#fontuploaded_file") format("svg");
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?-qsgjbg");
+  src: url("../fonts/icomoon.eot?#iefix-qsgjbg") format("embedded-opentype"), url("../fonts/icomoon.svg?-qsgjbg#icomoon") format("svg"), url("../fonts/icomoon.woff?-qsgjbg") format("woff"), url("../fonts/icomoon.ttf?-qsgjbg") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'balmoral-icons';
-  src: url("../fonts/balmoral-icons.eot?zgp4k");
-  src: url("../fonts/balmoral-icons.eot?zgp4k#iefix") format("embedded-opentype"), url("../fonts/balmoral-icons.ttf?zgp4k") format("truetype"), url("../fonts/balmoral-icons.woff?zgp4k") format("woff"), url("../fonts/balmoral-icons.svg?zgp4k#balmoral-icons") format("svg");
+  src: url("../fonts/balmoral-icons/balmoral-icons.eot?zgp4k");
+  src: url("../fonts/balmoral-icons/balmoral-icons.eot?zgp4k#iefix") format("embedded-opentype"), url("../fonts/balmoral-icons/balmoral-icons.ttf?zgp4k") format("truetype"), url("../fonts/balmoral-icons/balmoral-icons.woff?zgp4k") format("woff"), url("../fonts/balmoral-icons/balmoral-icons.svg?zgp4k#balmoral-icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
@@ -24796,29 +24425,19 @@ html body .balmoral-demo {
 /* theme conflics*/
 /* theme conflics*/
 .balmoral-demo {
-  font-family: 'Suisse-Regular'; }
+  font-family: Suisse; }
 
-html body .balmoral-demo {
-  color: #313030; }
-  html body .balmoral-demo ul li::before {
-    content: " "; }
-  html body .balmoral-demo ol li::before {
-    content: " "; }
-  html body .balmoral-demo .table {
-    box-shadow: none; }
-  html body .balmoral-demo a {
-    background-image: none; }
-  html body .balmoral-demo a:not([class]):hover {
-    background-image: none;
-    background-size: 0 0; }
-  html body .balmoral-demo .copy p b {
-    font-family: 'Suisse-Bold';
-    font-weight: bold;
-    color: black; }
-  html body .balmoral-demo .copy p strong {
-    font-family: 'Suisse-Bold';
-    font-weight: bold;
-    color: black; }
+html body .balmoral-demo ul li::before {
+  content: " "; }
+html body .balmoral-demo ol li::before {
+  content: " "; }
+html body .balmoral-demo .table {
+  box-shadow: none; }
+html body .balmoral-demo a {
+  background-image: none; }
+html body .balmoral-demo a:not([class]):hover {
+  background-image: none;
+  background-size: 0 0; }
 
 /* personalisation*/
 .site-title {
@@ -24865,10 +24484,7 @@ code {
   font-family: "Ciutadella-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .font-expo.suisse {
-  font-family: "Suisse-Regular", Georgia, serif; }
-
-.font-expo.suisse-bold {
-  font-family: "Suisse-Bold", Georgia, serif; }
+  font-family: "Suisse", Georgia, serif; }
 
 .font-expo {
   font-size: 1.5rem; }
@@ -24881,7 +24497,7 @@ code {
   align-content: flex-start; }
 
 .ico-block {
-  flex-basis: 150px;
+  flex-basis: 160px;
   padding: 10px;
   text-align: center;
   line-height: 2; }
@@ -25334,12 +24950,6 @@ code {
 
 .fg-orange-30 {
   color: #C24421; }
-
-.fg-indigo {
-  color: #263EA6; }
-
-.bg-indigo {
-  background-color: #263EA6; }
 
 .bg-blueInfo {
   background-color: #5bc0de; }
