@@ -24984,6 +24984,9 @@ code {
 .bg-success {
   background-color: #6cdc97; }
 
+.bg-text-link {
+  background-color: #263EA6; }
+
 #styleGuide_icones_page #svgIconList {
   width: 100%; }
 
@@ -25168,122 +25171,17 @@ html body .balmoral-demo .btn-inactive.btn-bleu {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.app-icon-home-sq:before {
-  content: "\e904"; }
-
-.app-icon-search-sq:before {
-  content: "\e90a"; }
-
-.app-icon-channel-sq:before {
-  content: "\e901"; }
-
-.app-icon-download-sq:before {
-  content: "\e903"; }
-
-.app-icon-download-done-sq:before {
-  content: "\e928"; }
-
-.app-icon-menu-sq:before {
-  content: "\e907"; }
-
-.app-icon-left-arr-sq:before {
-  content: "\e906"; }
-
-.app-icon-more-menu-vert-sq:before {
-  content: "\e945"; }
-
-.app-icon-more-menu-horz-sq:before {
-  content: "\e944"; }
-
-.app-icon-watchlater-sq:before {
-  content: "\e90b"; }
-
-.app-icon-favorite-sq:before {
-  content: "\e91a"; }
-
-.app-icon-check-sq:before {
-  content: "\e91c"; }
-
-.app-icon-share-sq:before {
-  content: "\e91d"; }
-
-.app-icon-share-classic-sq:before {
-  content: "\e91b"; }
-
-.app-icon-outside-sq:before {
-  content: "\e908"; }
-
-.app-icon-hourglass-sq:before {
-  content: "\e905"; }
-
-.app-icon-notification:before {
-  content: "\e93a"; }
-
-.app-icon-events:before {
-  content: "\e93b"; }
-
-.app-icon-map-marker:before {
-  content: "\e946"; }
-
-.app-icon-warning:before {
-  content: "\e91e"; }
-
-.app-icon-ticket:before {
-  content: "\e912"; }
-
-.app-icon-play-interactive:before {
-  content: "\e930"; }
-
-.app-icon-play:before {
-  content: "\e913"; }
-
-.app-icon-play-triangle:before {
-  content: "\e919"; }
-
-.app-icon-pause:before {
-  content: "\e92f"; }
-
-.app-icon-stop:before {
-  content: "\e91f"; }
+.app-icon-add-f:before {
+  content: "\e93c"; }
 
 .app-icon-add-sq:before {
   content: "\e900"; }
 
-.app-icon-cc-en:before {
-  content: "\e920"; }
+.app-icon-airplay:before {
+  content: "\e914"; }
 
-.app-icon-cc-fr:before {
-  content: "\e921"; }
-
-.app-icon-delete-sq:before {
-  content: "\e902"; }
-
-.app-icon-purchase-sq:before {
-  content: "\e909"; }
-
-.app-icon-settings:before {
-  content: "\e922"; }
-
-.app-icon-newsletter:before {
-  content: "\e925"; }
-
-.app-icon-link:before {
-  content: "\e923"; }
-
-.app-icon-envelope:before {
-  content: "\e924"; }
-
-.app-icon-twitter:before {
-  content: "\e926"; }
-
-.app-icon-facebook:before {
-  content: "\e927"; }
-
-.app-icon-youtube:before {
-  content: "\e936"; }
-
-.app-icon-instagram:before {
-  content: "\e937"; }
+.app-icon-amazon:before {
+  content: "\e935"; }
 
 .app-icon-android:before {
   content: "\e931"; }
@@ -25291,29 +25189,119 @@ html body .balmoral-demo .btn-inactive.btn-bleu {
 .app-icon-apple:before {
   content: "\e932"; }
 
-.app-icon-amazon:before {
-  content: "\e935"; }
+.app-icon-cc-en:before {
+  content: "\e920"; }
 
-.app-icon-viveport:before {
-  content: "\e933"; }
+.app-icon-cc-en-f:before {
+  content: "\e93d"; }
 
-.app-icon-oculus:before {
-  content: "\e938"; }
+.app-icon-cc-fr:before {
+  content: "\e921"; }
 
-.app-icon-steam:before {
-  content: "\e934"; }
+.app-icon-channel-f:before {
+  content: "\e93e"; }
 
-.app-icon-windows:before {
-  content: "\e939"; }
+.app-icon-channel-sq:before {
+  content: "\e901"; }
 
-.app-icon-airplay:before {
-  content: "\e914"; }
+.app-icon-check-f:before {
+  content: "\e93f"; }
+
+.app-icon-check-sq:before {
+  content: "\e91c"; }
 
 .app-icon-chromecast:before {
   content: "\e915"; }
 
 .app-icon-chromecast-on:before {
   content: "\e916"; }
+
+.app-icon-collapse-up:before {
+  content: "\e92d"; }
+
+.app-icon-delete-f:before {
+  content: "\e940"; }
+
+.app-icon-delete-sq:before {
+  content: "\e902"; }
+
+.app-icon-download-done-sq:before {
+  content: "\e928"; }
+
+.app-icon-download-sq:before {
+  content: "\e903"; }
+
+.app-icon-envelope:before {
+  content: "\e924"; }
+
+.app-icon-enveloppe-f:before {
+  content: "\e941"; }
+
+.app-icon-events:before {
+  content: "\e93b"; }
+
+.app-icon-events-f:before {
+  content: "\e942"; }
+
+.app-icon-eyecon2-bl:before {
+  content: "\e92c"; }
+
+.app-icon-eyecon2-br:before {
+  content: "\e92b"; }
+
+.app-icon-eyecon3-bl:before {
+  content: "\e92a"; }
+
+.app-icon-eyecon3-br:before {
+  content: "\e929"; }
+
+.app-icon-facebook:before {
+  content: "\e927"; }
+
+.app-icon-favorite-f:before {
+  content: "\e943"; }
+
+.app-icon-favorite-sq:before {
+  content: "\e91a"; }
+
+.app-icon-home-f:before {
+  content: "\e947"; }
+
+.app-icon-home-sq:before {
+  content: "\e904"; }
+
+.app-icon-hourglass-sq:before {
+  content: "\e905"; }
+
+.app-icon-instagram:before {
+  content: "\e937"; }
+
+.app-icon-left-arr-sq:before {
+  content: "\e906"; }
+
+.app-icon-link:before {
+  content: "\e923"; }
+
+.app-icon-map-marker:before {
+  content: "\e946"; }
+
+.app-icon-map-marker-f:before {
+  content: "\e948"; }
+
+.app-icon-menu-sq:before {
+  content: "\e907"; }
+
+.app-icon-more-menu-horz-sq:before {
+  content: "\e944"; }
+
+.app-icon-more-menu-vert-sq:before {
+  content: "\e945"; }
+
+.app-icon-newsletter:before {
+  content: "\e925"; }
+
+.app-icon-newsletter-f:before {
+  content: "\e949"; }
 
 .app-icon-nfb-full:before {
   content: "\e90c"; }
@@ -25327,32 +25315,122 @@ html body .balmoral-demo .btn-inactive.btn-bleu {
 .app-icon-nfb-sq-flush:before {
   content: "\e918"; }
 
-.app-icon-eycon-tr:before {
-  content: "\e90e"; }
+.app-icon-notification:before {
+  content: "\e93a"; }
 
-.app-icon-eycon-br:before {
-  content: "\e90f"; }
+.app-icon-notification-f:before {
+  content: "\e94a"; }
+
+.app-icon-oculus:before {
+  content: "\e938"; }
+
+.app-icon-outside-sq:before {
+  content: "\e908"; }
+
+.app-icon-pause:before {
+  content: "\e92f"; }
+
+.app-icon-pause-circle:before {
+  content: "\e92e"; }
+
+.app-icon-pause-circle-f:before {
+  content: "\e94b"; }
+
+.app-icon-play:before {
+  content: "\e913"; }
+
+.app-icon-play-disc:before {
+  content: "\e94c"; }
+
+.app-icon-play-interactive:before {
+  content: "\e930"; }
+
+.app-icon-play-interactive-f:before {
+  content: "\e94d"; }
+
+.app-icon-play-triangle:before {
+  content: "\e919"; }
+
+.app-icon-purchase-f:before {
+  content: "\e94e"; }
+
+.app-icon-purchase-sq:before {
+  content: "\e909"; }
+
+.app-icon-search-f:before {
+  content: "\e94f"; }
+
+.app-icon-search-sq:before {
+  content: "\e90a"; }
+
+.app-icon-settings:before {
+  content: "\e922"; }
+
+.app-icon-settings-f:before {
+  content: "\e950"; }
+
+.app-icon-share-classic-sq:before {
+  content: "\e91b"; }
+
+.app-icon-share-sq:before {
+  content: "\e91d"; }
+
+.app-icon-shield:before {
+  content: "\e951"; }
+
+.app-icon-shield-f:before {
+  content: "\e952"; }
+
+.app-icon-steam:before {
+  content: "\e934"; }
+
+.app-icon-stop:before {
+  content: "\e91f"; }
+
+.app-icon-subtitles:before {
+  content: "\e953"; }
+
+.app-icon-subtitles-f:before {
+  content: "\e954"; }
+
+.app-icon-ticket:before {
+  content: "\e912"; }
+
+.app-icon-ticket-f:before {
+  content: "\e955"; }
+
+.app-icon-twitter:before {
+  content: "\e926"; }
+
+.app-icon-viveport:before {
+  content: "\e933"; }
+
+.app-icon-warning:before {
+  content: "\e91e"; }
+
+.app-icon-warning-f:before {
+  content: "\e956"; }
+
+.app-icon-watchlater-f:before {
+  content: "\e957"; }
+
+.app-icon-watchlater-sq:before {
+  content: "\e90b"; }
+
+.app-icon-windows:before {
+  content: "\e939"; }
+
+.app-icon-youtube:before {
+  content: "\e936"; }
 
 .app-icon-eycon-tl:before {
   content: "\e910"; }
 
+.app-icon-eycon-br:before {
+  content: "\e90f"; }
+
 .app-icon-eycon-bl:before {
   content: "\e911"; }
 
-.app-icon-eyecon3-br:before {
-  content: "\e929"; }
-
-.app-icon-eyecon3-bl:before {
-  content: "\e92a"; }
-
-.app-icon-eyecon2-br:before {
-  content: "\e92b"; }
-
-.app-icon-eyecon2-bl:before {
-  content: "\e92c"; }
-
-.app-icon-collapse-up:before {
-  content: "\e92d"; }
-
-.app-icon-pause-circle:before {
-  content: "\e92e"; }
+.app-icon-eycon-tr:before {
+  content: "\e90e"; }
